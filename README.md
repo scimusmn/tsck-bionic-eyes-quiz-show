@@ -11,6 +11,7 @@ Quiz show app using GatsbyJS
         "audio": PATH,
         "captions": PATH
     },
+    
     "question": {
         "type": NUMBER,
         "text": TEXT,
@@ -23,6 +24,7 @@ Quiz show app using GatsbyJS
         "singleVideo": PATH,
         "singleImage": PATH
     },
+    
     "solution": {
         "correctOptionIndex": NUMBER,
         "text": TEXT,
