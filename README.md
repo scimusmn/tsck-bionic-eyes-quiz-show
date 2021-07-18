@@ -7,26 +7,26 @@ Quiz show app using GatsbyJS
 ```json
 {
     "questionIntro": {
-    "title": STRING,
-    "audio": PATH,
-    "captions": PATH
+        "title": STRING,
+        "audio": PATH,
+        "captions": PATH
     },
     "question": {
-    "type": NUMBER,
-    "text": TEXT,
-    "audio": PATH,
-    "options": [
-        BOOLEAN/TEXT/PATH,
-        BOOLEAN/TEXT/PATH,
-        TEXT/PATH
-    ],
-    "singleVideo": PATH,
-    "singleImage": PATH
+        "type": NUMBER,
+        "text": TEXT,
+        "audio": PATH,
+        "options": [
+            BOOLEAN/TEXT/PATH,
+            BOOLEAN/TEXT/PATH,
+            TEXT/PATH
+        ],
+        "singleVideo": PATH,
+        "singleImage": PATH
     },
     "solution": {
-    "correctOptionIndex": NUMBER,
-    "text": TEXT,
-    "audio": PATH
+        "correctOptionIndex": NUMBER,
+        "text": TEXT,
+        "audio": PATH
     }
 }
 ```
