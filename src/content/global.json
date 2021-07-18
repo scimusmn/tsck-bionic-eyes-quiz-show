@@ -1,0 +1,12 @@
+{
+  "timePerQuestion": 15,
+  "pointPerQuestion": 5,
+
+  "soundEffect": {
+    "wait": "/path/to/players/waiting/music",
+    "correct": "/path/to/correct/answer/sound",
+    "wrong": "/path/to/wrong/answer/sound",
+    "beforeTimer": "/path/to/players/answer/before/timer/sound",
+    "afterTimer": "/path/to/players/answer/after/timer/sound"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "en": {  
+      "video": "/path/to/background/video",
+      "captions": "/path/to/video/captions"
+    },
+  
+    "ar": {  
+      "video": "/path/to/background/video",
+      "captions": "/path/to/video/captions"
+    }
+}
