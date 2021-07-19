@@ -12,6 +12,22 @@ body {
   //'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-.p-4 {
-  padding: 40px;
+pre {
+  outline: 1px solid #ccc;
+  padding: 20px;
+  .string {
+    color: #008000;
+  }
+  .number {
+    color: #0ff;
+  }
+  .boolean {
+    color: #b22222;
+  }
+  .null {
+    color: #808080;
+  }
+  .key {
+    color: #000;
+  }
 }

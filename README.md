@@ -3,8 +3,8 @@ Quiz show app using GatsbyJS
 
 ## Content Structure
 
-### 1. Question
-```json
+### 1. Quiz
+```js
 {
     "questionIntro": {
         "title": STRING,
@@ -14,21 +14,25 @@ Quiz show app using GatsbyJS
     
     "question": {
         "type": NUMBER,
-        "text": TEXT,
+        "text": STRING,
         "audio": PATH,
         "options": [
-            BOOLEAN/TEXT/PATH,
-            BOOLEAN/TEXT/PATH,
-            TEXT/PATH
+            STRING,
+            STRING,
+            STRING
         ],
-        "singleVideo": PATH,
-        "singleImage": PATH
+        "visualMedia": {
+          "image": PATH,
+          "video": PATH,
+          "images": ARRAY
+        }
     },
     
     "solution": {
         "correctOptionIndex": NUMBER,
-        "text": TEXT,
+        "text": STRING,
         "audio": PATH
     }
 }
 ```
+

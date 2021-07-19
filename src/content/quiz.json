@@ -10,13 +10,16 @@
         "type": 3,
         "text": "Which image best represents the earliest bionic vision?",
         "audio": "/path/to/audio/narration/file",
-        "options": [
-          "/path/to/option/image/1",
-          "/path/to/option/image/2",
-          "/path/to/option/image/3"
-        ],
-        "singleVideo": "",
-        "singleImage": ""
+        "options": ["1", "2", "3"],
+        "visualMedia": {
+          "image": "",
+          "video": "",
+          "images": [
+            "/path/to/option/image/1",
+            "/path/to/option/image/2",
+            "/path/to/option/image/3"
+          ]
+        }
       },
       "solution": {
         "correctOptionIndex": 0,
@@ -36,8 +39,11 @@
         "text": "What do you see?",
         "audio": "/path/to/audio/narration/file",
         "options": ["A bird", "A kite", "A plane"],
-        "singleVideo": "",
-        "singleImage": "/path/to/image/file"
+        "visualMedia": {
+          "image": "/path/to/image/file",
+          "video": "",
+          "images": []
+        }
       },
       "solution": {
         "correctOptionIndex": 2,
@@ -57,8 +63,11 @@
         "text": "When was the first bionic eye implanted?",
         "audio": "/path/to/audio/narration/file",
         "options": ["1980", "1999", "2009"],
-        "singleVideo": "",
-        "singleImage": "/path/to/image/file"
+        "visualMedia": {
+          "image": "/path/to/image/file",
+          "video": "",
+          "images": []
+        }
       },
       "solution": {
         "correctOptionIndex": 2,
@@ -77,10 +86,12 @@
         "type": 1,
         "text": "True or False: Bionic eye vision will never be better than this, simulated here:",
         "audio": "/path/to/audio/narration/file",
-
-        "options": [true, false],
-        "singleVideo": "/path/to/video/file",
-        "singleImage": ""
+        "options": ["True", "False"],
+        "visualMedia": {
+          "image": "",
+          "video": "/path/to/video/file",
+          "images": []
+        }
       },
       "solution": {
         "correctOptionIndex": 1,
@@ -89,5 +100,105 @@
       }
     }
   ],
-  "ar": []
+  "ar": [
+    {
+      "questionIntro": {
+        "title": "سؤال واحد",
+        "audio": "/path/to/audio/narration/file",
+        "captions": "/path/to/captions/file"
+      },
+      "question": {
+        "type": 3,
+        "text": "؟ﺔﻴﻟوأ ﺔﻴﻧوﺮﺘﻜﻟإ ﺔﻳؤر ﻞﻀﻓأ ﻞﺜﻤﺗ ﻲﺘﻟا ةرﻮﺼﻟا ﺎﻣ",
+        "audio": "/path/to/audio/narration/file",
+        "options": ["1", "2", "3"],
+        "visualMedia": {
+          "image": "",
+          "video": "",
+          "images": [
+            "/path/to/option/image/1",
+            "/path/to/option/image/2",
+            "/path/to/option/image/3"
+          ]
+        }
+      },
+      "solution": {
+        "correctOptionIndex": 0,
+        "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
+        "audio": "/path/to/audio/narration/file"
+      }
+    },
+
+    {
+      "questionIntro": {
+        "title": "سؤال واحد",
+        "audio": "/path/to/audio/narration/file",
+        "captions": "/path/to/captions/file"
+      },
+      "question": {
+        "type": 2,
+        "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
+        "audio": "/path/to/audio/narration/file",
+        "options": ["طائر", "طائرة ورقية", "طائرة"],
+        "visualMedia": {
+          "image": "/path/to/image/file",
+          "video": "",
+          "images": []
+        }
+      },
+      "solution": {
+        "correctOptionIndex": 2,
+        "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
+        "audio": "/path/to/audio/narration/file"
+      }
+    },
+
+    {
+      "questionIntro": {
+        "title": "سؤال واحد",
+        "audio": "/path/to/audio/narration/file",
+        "captions": "/path/to/captions/file"
+      },
+      "question": {
+        "type": 2,
+        "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
+        "audio": "/path/to/audio/narration/file",
+        "options": ["1980", "1999", "2009"],
+        "visualMedia": {
+          "image": "/path/to/image/file",
+          "video": "",
+          "images": []
+        }
+      },
+      "solution": {
+        "correctOptionIndex": 2,
+        "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
+        "audio": "/path/to/audio/narration/file"
+      }
+    },
+
+    {
+      "questionIntro": {
+        "title": "سؤال واحد",
+        "audio": "/path/to/audio/narration/file",
+        "captions": "/path/to/captions/file"
+      },
+      "question": {
+        "type": 1,
+        "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
+        "audio": "/path/to/audio/narration/file",
+        "options": ["حقيقية", "خاطئة"],
+        "visualMedia": {
+          "image": "",
+          "video": "/path/to/video/file",
+          "images": []
+        }
+      },
+      "solution": {
+        "correctOptionIndex": 1,
+        "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
+        "audio": "/path/to/audio/narration/file"
+      }
+    }
+  ]
 }
