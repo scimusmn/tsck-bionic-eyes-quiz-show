@@ -11,3 +11,23 @@ body {
   //font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   //'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+
+pre {
+  outline: 1px solid #ccc;
+  padding: 20px;
+  .string {
+    color: #008000;
+  }
+  .number {
+    color: #00ff;
+  }
+  .boolean {
+    color: #b22222;
+  }
+  .null {
+    color: #808080;
+  }
+  .key {
+    color: #000;
+  }
+}

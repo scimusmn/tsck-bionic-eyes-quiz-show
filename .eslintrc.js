@@ -1,18 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  extends: [
-    'airbnb',
-    'plugin:jsx-a11y/strict',
-  ],
+  extends: ['airbnb', 'plugin:jsx-a11y/strict', 'prettier'],
   env: {
     browser: true,
   },
-  ignorePatterns: [
-    'public/*',
-    'src/Arduino/arduino-base',
-    'src/html.js',
-  ],
+  ignorePatterns: ['public/*', 'src/Arduino/arduino-base', 'src/html.js'],
   rules: {
     'import/no-extraneous-dependencies': 'off',
     // The SMM team doesn't write React code in .jsx files exclusively, as is suggested in the
@@ -20,10 +13,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: [
-          '.js',
-          '.jsx',
-        ],
+        extensions: ['.js', '.jsx'],
       },
     ],
   },

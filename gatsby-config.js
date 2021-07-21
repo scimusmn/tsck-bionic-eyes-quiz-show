@@ -16,9 +16,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         data: '@import "src/styles/variables";',
-        includePaths: [
-          'src/components',
-        ],
+        includePaths: ['src/components'],
       },
     },
     'gatsby-plugin-react-helmet',
