@@ -1,0 +1,18 @@
+{
+  "attract": {
+    "title": "Quiz Title",
+    "instructions": "Press start to begin"
+  },
+
+  "introduction": {
+    "title": "Quiz Title",
+    "video": "/path/to/background/video",
+    "captions": "/path/to/video/captions"
+  },
+
+  "score": {
+    "title": "Final Score",
+    "video": "/path/to/background/video",
+    "captions": "/path/to/video/captions"
+  }
+}
