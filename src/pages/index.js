@@ -1,29 +1,55 @@
-import React from 'react';
-import Home from '@components/Home';
-import { Container } from 'reactstrap';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout';
+import {
+  AttractScreen,
+  IntroductionScreen,
+  QuizScreen,
+  ScoreScreen,
+} from '../components/screens';
+import useKeyPress from '../hooks/useKeyPress';
 
 const IndexPage = () => {
-  const { t, i18n } = useTranslation();
+  const [activeScreen, setActiveScreen] = useState('attract');
+  const { i18n } = useTranslation();
 
-  function changeLang() {
-    if (i18n.language === 'ar') i18n.changeLanguage('en');
-    else i18n.changeLanguage('ar');
+  // Change screen
+  function goTo(screen) {
+    setActiveScreen(screen);
   }
 
-  return (
-    <Layout>
-      <Home />
+  // Change language
+  const ar = useKeyPress('1');
+  const en = useKeyPress('2');
+  useEffect(() => {
+    if (en) {
+      i18n.changeLanguage('en');
+      goTo('introduction');
+    } else if (ar) {
+      i18n.changeLanguage('ar');
+      goTo('introduction');
+    }
+  }, [en, ar]);
 
-      <Container>
-        <h1>{t('attract.title')}</h1>
-        <button type='button' onClick={changeLang}>
-          Change lang
-        </button>
-      </Container>
-    </Layout>
-  );
+  // Render active screen component
+  function renderScreen() {
+    let screen;
+    switch (activeScreen) {
+      case 'introduction':
+        screen = <IntroductionScreen goTo={goTo} />;
+        break;
+      case 'quiz':
+        screen = <QuizScreen goTo={goTo} />;
+        break;
+      case 'score':
+        screen = <ScoreScreen />;
+        break;
+      default:
+        screen = <AttractScreen />;
+    }
+    return screen;
+  }
+
+  return <Layout>{renderScreen()}</Layout>;
 };
-
 export default IndexPage;

@@ -6,7 +6,7 @@
 
   "introduction": {
     "title": "عنوان الإختبار",
-    "video": "/path/to/background/video",
+    "video": "/intro_video_ar.mp4",
     "captions": "/path/to/video/captions"
   },
 
