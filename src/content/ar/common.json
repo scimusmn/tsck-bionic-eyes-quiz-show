@@ -1,11 +1,16 @@
 {
-  "en": {
-    "title": "Final Score",
+  "attract": {
+    "title": "عنوان الإختبار",
+    "instructions": "اضغط على ابدأ للبدء"
+  },
+
+  "introduction": {
+    "title": "عنوان الإختبار",
     "video": "/path/to/background/video",
     "captions": "/path/to/video/captions"
   },
 
-  "ar": {
+  "score": {
     "title": "النتيجة النهائية",
     "video": "/path/to/background/video",
     "captions": "/path/to/video/captions"
