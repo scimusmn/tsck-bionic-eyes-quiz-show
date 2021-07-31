@@ -16,6 +16,7 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     ],
+    'jsx-a11y/media-has-caption': 'off',
   },
   settings: {
     'import/resolver': {

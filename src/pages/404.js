@@ -1,9 +1,10 @@
 import React from 'react';
 
-import NoMatch from '@components/NoMatch';
-
 const NotFoundPage = () => (
-  <NoMatch />
+  <div>
+    <h2>Sorry</h2>
+    <p>We can not find anything here.</p>
+  </div>
 );
 
 export default NotFoundPage;

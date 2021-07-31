@@ -23,13 +23,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        name: 'assets',
+        path: `${__dirname}/src/assets`,
       },
     },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        icon: 'src/assets/smm.png',
         name: 'app-default',
         short_name: 'app',
         start_url: '/',
