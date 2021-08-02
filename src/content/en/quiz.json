@@ -4,7 +4,7 @@
       {
         "questionIntro": {
           "title": "Question 1",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_en.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
@@ -32,7 +32,7 @@
       {
         "questionIntro": {
           "title": "Question 2",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_en.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
@@ -56,7 +56,7 @@
       {
         "questionIntro": {
           "title": "Question 3",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_en.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
@@ -80,7 +80,7 @@
       {
         "questionIntro": {
           "title": "Question 4",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_en.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {

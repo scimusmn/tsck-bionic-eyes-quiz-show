@@ -1,4 +1,6 @@
 {
+  "players": ["Player 1", "Player 2", "Player 3"],
+
   "attract": {
     "title": "Quiz Title",
     "instructions": "Press start to begin"
@@ -12,7 +14,7 @@
 
   "score": {
     "title": "Final Score",
-    "video": "/path/to/background/video",
+    "video": "/score_video_en.mp4",
     "captions": "/path/to/video/captions"
   }
 }

@@ -20,37 +20,22 @@ const IntroductionScreen = ({ goTo }) => {
   }, [url]);
 
   return (
-    <div className='full-screen flex-center'>
-      <div
-        style={{ height: '100%', flex: 1, position: 'relative' }}
-        className='flex-center'
-      >
+    <div className='introduction'>
+      <div className='introduction__videoWrapper'>
         <video
           ref={video}
-          controls={false}
+          controls
           preload='metadata'
-          style={{ width: '100%' }}
           autoPlay
           onEnded={() => goTo('quiz')}
         >
           <source ref={source} src={t('introduction.video')} type='video/mp4' />
-          {/* <track
-            label='English'
-            kind='subtitles'
-            srcLang='en'
-            default
-            src={t('introduction.captions')}
-          /> */}
         </video>
-        <button
-          className='abs-center'
-          type='button'
-          onClick={() => goTo('quiz')}
-        >
+        <button type='button' onClick={() => goTo('quiz')}>
           Skip
         </button>
       </div>
-      <div style={{ height: '100%', flex: 1 }} className='flex-center'>
+      <div className='introduction__titleWrapper'>
         <h1>{t('introduction.title')}</h1>
       </div>
     </div>

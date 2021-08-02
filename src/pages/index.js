@@ -10,7 +10,7 @@ import {
 import useKeyPress from '../hooks/useKeyPress';
 
 const IndexPage = () => {
-  const [activeScreen, setActiveScreen] = useState('attract');
+  const [activeScreen, setActiveScreen] = useState('quiz'); // change to attract
   const { i18n } = useTranslation();
 
   // Change screen
@@ -42,7 +42,7 @@ const IndexPage = () => {
         screen = <QuizScreen goTo={goTo} />;
         break;
       case 'score':
-        screen = <ScoreScreen />;
+        screen = <ScoreScreen goTo={goTo} />;
         break;
       default:
         screen = <AttractScreen />;

@@ -1,0 +1,11 @@
+.question__intro__videoWrapper {
+  position: relative;
+
+  video {
+    width: 100%;
+  }
+
+  button {
+    @extend %abs-center;
+  }
+}

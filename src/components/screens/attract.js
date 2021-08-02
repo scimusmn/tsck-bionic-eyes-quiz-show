@@ -2,7 +2,7 @@ import React from 'react';
 import { commonAR, commonEN } from '../../content';
 
 const AttractScreen = () => (
-  <div className='full-screen flex-center text-center'>
+  <div className='attract'>
     <div>
       <h1 className='display-3'>{commonAR.attract.title}</h1>
       <h1 className='display-3'>{commonEN.attract.title}</h1>

@@ -11,6 +11,7 @@
       "custom-properties",
       "declarations"
     ],
-    "order/properties-alphabetical-order": null
+    "order/properties-alphabetical-order": null,
+    "at-rule-no-unknown": null,
   }
 }

@@ -4,7 +4,7 @@
       {
         "questionIntro": {
           "title": "سؤال واحد",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_ar.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
@@ -32,7 +32,7 @@
       {
         "questionIntro": {
           "title": "سؤال واحد",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_ar.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
@@ -56,7 +56,7 @@
       {
         "questionIntro": {
           "title": "سؤال واحد",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_ar.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
@@ -80,13 +80,13 @@
       {
         "questionIntro": {
           "title": "سؤال واحد",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_ar.mp3",
           "captions": "/path/to/captions/file"
         },
         "question": {
           "type": "true-false",
           "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
-          "audio": "/path/to/audio/narration/file",
+          "audio": "/s1_i1_audio_ar.mp3",
           "options": ["حقيقية", "خاطئة"],
           "visualMedia": {
             "image": "",
