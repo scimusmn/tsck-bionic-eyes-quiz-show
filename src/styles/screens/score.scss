@@ -1,0 +1,28 @@
+.score {
+  @extend %full-screen;
+  @extend %text-center;
+}
+
+.score__videoWrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+
+  video {
+    width: 100%;
+  }
+
+  button {
+    @extend %abs-center;
+  }
+}
+
+.score__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .item {
+    padding: 50px;
+    border: 2px solid $white;
+  }
+}

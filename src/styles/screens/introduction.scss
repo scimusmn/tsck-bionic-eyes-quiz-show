@@ -1,0 +1,23 @@
+.introduction {
+  @extend %full-screen;
+  @extend %flex-center;
+}
+
+.introduction__videoWrapper {
+  flex: 1;
+  position: relative;
+
+  video {
+    width: 100%;
+  }
+
+  button {
+    @extend %abs-center;
+  }
+}
+
+.introduction__titleWrapper {
+  @extend %text-center;
+
+  flex: 1;
+}

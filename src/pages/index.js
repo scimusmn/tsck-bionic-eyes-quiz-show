@@ -1,59 +1,55 @@
-import React from 'react';
-import Home from '@components/Home';
-import { Container } from 'reactstrap';
-import { Link } from 'gatsby';
-import { Global, Attract, Introduction, Score } from '../content';
-import syntaxHighlight from '../helpers/syntaxHighlight';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Layout from '../components/layout';
+import {
+  AttractScreen,
+  IntroductionScreen,
+  QuizScreen,
+  ScoreScreen,
+} from '../components/screens';
+import useKeyPress from '../hooks/useKeyPress';
 
-const IndexPage = () => (
-  <>
-    <Home />
+const IndexPage = () => {
+  const [activeScreen, setActiveScreen] = useState('attract');
+  const { i18n } = useTranslation();
 
-    <Container>
-      <div className='py-5'>
-        <h2>Global Config</h2>
-        <pre>
-          <code
-            dangerouslySetInnerHTML={{
-              __html: syntaxHighlight(JSON.stringify(Global, null, 4)),
-            }}
-          />
-        </pre>
+  // Change screen
+  function goTo(screen) {
+    setActiveScreen(screen);
+  }
 
-        <h2 className='mt-5'>Attract Screen</h2>
-        <pre>
-          <code
-            dangerouslySetInnerHTML={{
-              __html: syntaxHighlight(JSON.stringify(Attract, null, 4)),
-            }}
-          />
-        </pre>
+  // Change language
+  const ar = useKeyPress('1');
+  const en = useKeyPress('2');
+  useEffect(() => {
+    if (en) {
+      i18n.changeLanguage('en');
+      goTo('introduction');
+    } else if (ar) {
+      i18n.changeLanguage('ar');
+      goTo('introduction');
+    }
+  }, [en, ar]);
 
-        <h2 className='mt-5'>Introduction Screen</h2>
-        <pre>
-          <code
-            dangerouslySetInnerHTML={{
-              __html: syntaxHighlight(JSON.stringify(Introduction, null, 4)),
-            }}
-          />
-        </pre>
+  // Render active screen component
+  function renderScreen() {
+    let screen;
+    switch (activeScreen) {
+      case 'introduction':
+        screen = <IntroductionScreen goTo={goTo} />;
+        break;
+      case 'quiz':
+        screen = <QuizScreen goTo={goTo} />;
+        break;
+      case 'score':
+        screen = <ScoreScreen goTo={goTo} />;
+        break;
+      default:
+        screen = <AttractScreen />;
+    }
+    return screen;
+  }
 
-        <h2 className='mt-5'>Quiz Screen</h2>
-        <p>
-          <Link to='/quiz'>Click here</Link> to view the quiz screen content.
-        </p>
-
-        <h2 className='mt-5'>Score Screen</h2>
-        <pre>
-          <code
-            dangerouslySetInnerHTML={{
-              __html: syntaxHighlight(JSON.stringify(Score, null, 4)),
-            }}
-          />
-        </pre>
-      </div>
-    </Container>
-  </>
-);
-
+  return <Layout>{renderScreen()}</Layout>;
+};
 export default IndexPage;

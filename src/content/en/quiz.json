@@ -1,0 +1,105 @@
+{
+  "questionSets": [
+    [
+      {
+        "questionIntro": {
+          "title": "Question 1",
+          "audio": "/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "multi-choice-media",
+          "text": "Which image best represents the earliest bionic vision?",
+          "audio": "/path/to/audio/narration/file",
+          "options": ["1", "2", "3"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": [
+              "/path/to/option/image/1",
+              "/path/to/option/image/2",
+              "/path/to/option/image/3"
+            ]
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 0,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
+          "audio": "/path/to/audio/narration/file"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question 2",
+          "audio": "/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see?",
+          "audio": "/path/to/audio/narration/file",
+          "options": ["A bird", "A kite", "A plane"],
+          "visualMedia": {
+            "image": "/path/to/image/file",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 2,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
+          "audio": "/path/to/audio/narration/file"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question 3",
+          "audio": "/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "When was the first bionic eye implanted?",
+          "audio": "/path/to/audio/narration/file",
+          "options": ["1980", "1999", "2009"],
+          "visualMedia": {
+            "image": "/path/to/image/file",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 2,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
+          "audio": "/path/to/audio/narration/file"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question 4",
+          "audio": "/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "true-false",
+          "text": "True or False: Bionic eye vision will never be better than this, simulated here:",
+          "audio": "/path/to/audio/narration/file",
+          "options": ["True", "False"],
+          "visualMedia": {
+            "image": "",
+            "video": "/path/to/video/file",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 1,
+          "text": "The correct answer is False. This simulation shows what vision could be like in a few decades.",
+          "audio": "/path/to/audio/narration/file"
+        }
+      }
+    ]
+  ]
+}
