@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import Question from '../question';
 
-const QuizScreen = ({ goTo }) => {
-  const { t } = useTranslation('quiz');
-  const questionSets = t('questionSets', { returnObjects: true });
-  const quiz = questionSets[0];
-
+const QuizScreen = ({ goTo, quiz }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   function showResults() {
@@ -15,7 +10,9 @@ const QuizScreen = ({ goTo }) => {
   }
 
   function goToNext() {
-    if (quiz.length - 1 === activeIndex) showResults();
+    if (quiz.length - 1 === activeIndex) {
+      showResults();
+    }
     setActiveIndex(activeIndex + 1);
   }
 
@@ -33,4 +30,5 @@ export default QuizScreen;
 
 QuizScreen.propTypes = {
   goTo: PropTypes.func.isRequired,
+  quiz: PropTypes.instanceOf(Array).isRequired,
 };

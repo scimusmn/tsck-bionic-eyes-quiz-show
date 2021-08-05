@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
+import useKeyPress from '../../hooks/useKeyPress';
+import { controls } from '../../config.json';
 
 const IntroductionScreen = ({ goTo }) => {
   const { t } = useTranslation();
@@ -19,6 +21,12 @@ const IntroductionScreen = ({ goTo }) => {
     reloadVideo();
   }, [url]);
 
+  // skip media
+  const skip = useKeyPress(controls.skip);
+  useEffect(() => {
+    if (skip) goTo('quiz');
+  }, [skip]);
+
   return (
     <div className='introduction'>
       <div className='introduction__videoWrapper'>
@@ -31,9 +39,7 @@ const IntroductionScreen = ({ goTo }) => {
         >
           <source ref={source} src={t('introduction.video')} type='video/mp4' />
         </video>
-        <button type='button' onClick={() => goTo('quiz')}>
-          Skip
-        </button>
+        <button type='button'>Skip</button>
       </div>
       <div className='introduction__titleWrapper'>
         <h1>{t('introduction.title')}</h1>

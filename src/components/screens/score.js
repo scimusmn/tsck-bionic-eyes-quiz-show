@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
+import useKeyPress from '../../hooks/useKeyPress';
+import { controls } from '../../config.json';
 
 const ScoreScreen = ({ goTo }) => {
   const { t } = useTranslation();
+
+  // skip media
+  const skip = useKeyPress(controls.skip);
+  useEffect(() => {
+    if (skip) goTo('attract');
+  }, [skip]);
 
   return (
     <div className='score container'>
@@ -16,9 +24,7 @@ const ScoreScreen = ({ goTo }) => {
         >
           <source src={t('score.video')} type='video/mp4' />
         </video>
-        <button type='button' onClick={() => goTo('attract')}>
-          Skip
-        </button>
+        <button type='button'>Skip</button>
       </div>
       <div className='score__resultWrapper mt-4'>
         <h1>{t('score.title')}</h1>

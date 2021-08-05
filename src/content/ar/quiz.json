@@ -100,6 +100,36 @@
           "audio": "/path/to/audio/narration/file"
         }
       }
+    ],
+
+    [
+      {
+        "questionIntro": {
+          "title": "Question 1 (from second quiz)",
+          "audio": "/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "multi-choice-media",
+          "text": "Which image best represents the earliest bionic vision?",
+          "audio": "/path/to/audio/narration/file",
+          "options": ["1", "2", "3"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": [
+              "/path/to/option/image/1",
+              "/path/to/option/image/2",
+              "/path/to/option/image/3"
+            ]
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 0,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
+          "audio": "/path/to/audio/narration/file"
+        }
+      }
     ]
   ]
 }

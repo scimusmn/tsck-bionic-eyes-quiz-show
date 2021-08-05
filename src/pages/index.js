@@ -8,48 +8,50 @@ import {
   ScoreScreen,
 } from '../components/screens';
 import useKeyPress from '../hooks/useKeyPress';
+import { controls } from '../config.json';
 
 const IndexPage = () => {
+  const { i18n, t } = useTranslation('quiz');
+  const questionSets = t('questionSets', { returnObjects: true });
+  const numOfQuiz = questionSets.length;
+
+  // Game state
   const [activeScreen, setActiveScreen] = useState('attract');
-  const { i18n } = useTranslation();
+  const [quizIndex, setQuizIndex] = useState(0);
+  // const [scores, setScores] = useState({ p1: 0, p2: 0, p3: 0 });
+
+  // Change question set
+  function handleNextQuiz() {
+    setQuizIndex((quizIndex + 1) % numOfQuiz);
+  }
 
   // Change screen
   function goTo(screen) {
     setActiveScreen(screen);
+    if (screen === 'attract') handleNextQuiz();
   }
 
   // Change language
-  const ar = useKeyPress('1');
-  const en = useKeyPress('2');
+  const ar = useKeyPress(controls.start.ar);
+  const en = useKeyPress(controls.start.en);
   useEffect(() => {
-    if (en) {
-      i18n.changeLanguage('en');
-      goTo('introduction');
-    } else if (ar) {
-      i18n.changeLanguage('ar');
-      goTo('introduction');
-    }
+    if (!(en || ar)) return;
+    if (en) i18n.changeLanguage('en');
+    else if (ar) i18n.changeLanguage('ar');
+    goTo('introduction');
   }, [en, ar]);
 
-  // Render active screen component
-  function renderScreen() {
-    let screen;
-    switch (activeScreen) {
-      case 'introduction':
-        screen = <IntroductionScreen goTo={goTo} />;
-        break;
-      case 'quiz':
-        screen = <QuizScreen goTo={goTo} />;
-        break;
-      case 'score':
-        screen = <ScoreScreen goTo={goTo} />;
-        break;
-      default:
-        screen = <AttractScreen />;
-    }
-    return screen;
-  }
-
-  return <Layout>{renderScreen()}</Layout>;
+  return (
+    <Layout>
+      {
+        {
+          attract: <AttractScreen />,
+          introduction: <IntroductionScreen goTo={goTo} />,
+          quiz: <QuizScreen goTo={goTo} quiz={questionSets[quizIndex]} />,
+          score: <ScoreScreen goTo={goTo} />,
+        }[activeScreen]
+      }
+    </Layout>
+  );
 };
 export default IndexPage;

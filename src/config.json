@@ -8,5 +8,28 @@
     "wrong": "/path/to/wrong/answer/sound",
     "beforeTimer": "/path/to/players/answer/before/timer/sound",
     "afterTimer": "/path/to/players/answer/after/timer/sound"
+  },
+
+  "controls": {
+    "start": {
+      "ar": "1",
+      "en": "2"
+    },
+    "skip": " ",
+    "p1": {
+      "one": "q",
+      "two": "a",
+      "three": "z"
+    },
+    "p2": {
+      "one": "w",
+      "two": "s",
+      "three": "x"
+    },
+    "p3": {
+      "one": "e",
+      "two": "d",
+      "three": "c"
+    }
   }
 }

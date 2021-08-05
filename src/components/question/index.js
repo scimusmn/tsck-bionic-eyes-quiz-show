@@ -5,7 +5,7 @@ import Intro from './intro';
 const Question = ({ content, goToNext }) => {
   const [ready, setReady] = useState(false);
 
-  const { question, solution, questionIntro } = content;
+  const { question, questionIntro } = content;
 
   function startQuestion() {
     setReady(true);
@@ -14,8 +14,6 @@ const Question = ({ content, goToNext }) => {
   if (!ready) {
     return <Intro content={questionIntro} startQuestion={startQuestion} />;
   }
-
-  console.log(solution);
 
   return (
     <div>
@@ -34,6 +32,6 @@ const Question = ({ content, goToNext }) => {
 export default Question;
 
 Question.propTypes = {
-  content: PropTypes.objectOf(PropTypes.any).isRequired,
+  content: PropTypes.instanceOf(Object).isRequired,
   goToNext: PropTypes.func.isRequired,
 };
