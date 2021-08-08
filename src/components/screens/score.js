@@ -10,7 +10,7 @@ const ScoreScreen = ({ goTo }) => {
   // skip media
   const skip = useKeyPress(controls.skip);
   useEffect(() => {
-    if (skip) goTo('attract');
+    if (skip) goTo('attract', true);
   }, [skip]);
 
   return (

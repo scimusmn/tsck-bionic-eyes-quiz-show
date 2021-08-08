@@ -1,3 +1,27 @@
 .question {
+  width: 100%;
   display: block;
 }
+
+.question__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+// Solution
+
+// Media
+
+.question__grid .media .multi-choice {
+  border: 2px solid red;
+  width: 100%;
+  img,
+  video {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+  }
+}
+
+// Options

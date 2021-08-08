@@ -8,13 +8,13 @@
 
   "introduction": {
     "title": "عنوان الإختبار",
-    "video": "/intro_video_ar.mp4",
+    "video": "introduction/introduction_video_ar.mp4",
     "captions": "/path/to/video/captions"
   },
 
   "score": {
     "title": "النتيجة النهائية",
-    "video": "/score_video_ar.mp4",
+    "video": "score/score_video_ar.mp4",
     "captions": "/path/to/video/captions"
   }
 }
