@@ -16,7 +16,7 @@ const Intro = ({ content, startQuestion }) => {
 
       <div className='question__intro__videoWrapper'>
         <video controls autoPlay preload='metadata' onEnded={startQuestion}>
-          <source src={content.audio} type='video/mp3' />
+          <source src={content.audio} type='video/mp4' />
         </video>
         <div className='mt-4'>
           <button type='button'>Skip</button>

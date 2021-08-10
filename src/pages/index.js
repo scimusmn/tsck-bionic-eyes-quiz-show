@@ -19,11 +19,6 @@ const IndexPage = () => {
   const [activeScreen, setActiveScreen] = useState('quiz'); // change to attract
   const [quizIndex, setQuizIndex] = useState(0);
   const [scores, setScores] = useState({ p1: 0, p2: 0, p3: 0 });
-  const [hasAnswered, setHasAnswered] = useState({
-    p1: false,
-    p2: false,
-    p3: false,
-  });
 
   // Jump to next quiz
   function handleNextQuiz() {
@@ -50,9 +45,6 @@ const IndexPage = () => {
   function increaseScore(player) {
     setScores({ ...scores, [player]: scores[player] + 1 });
   }
-  function takeTurn(player) {
-    setHasAnswered({ ...hasAnswered, [player]: true });
-  }
 
   return (
     <Layout>
@@ -65,8 +57,6 @@ const IndexPage = () => {
               goTo={goTo}
               quiz={questionSets[quizIndex]}
               increaseScore={increaseScore}
-              hasAnswered={hasAnswered}
-              takeTurn={takeTurn}
             />
           ),
           score: <ScoreScreen goTo={goTo} />,

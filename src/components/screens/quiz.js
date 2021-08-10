@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Question from '../question';
 
-const QuizScreen = ({ goTo, quiz, increaseScore, takeTurn }) => {
+const QuizScreen = ({ goTo, quiz, increaseScore }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   function showResults() {
@@ -16,7 +16,7 @@ const QuizScreen = ({ goTo, quiz, increaseScore, takeTurn }) => {
     setActiveIndex(activeIndex + 1);
   }
 
-  console.log(increaseScore, takeTurn);
+  console.log(increaseScore);
 
   return (
     <div className='quiz'>
@@ -34,5 +34,4 @@ QuizScreen.propTypes = {
   goTo: PropTypes.func.isRequired,
   quiz: PropTypes.instanceOf(Array).isRequired,
   increaseScore: PropTypes.func.isRequired,
-  takeTurn: PropTypes.func.isRequired,
 };

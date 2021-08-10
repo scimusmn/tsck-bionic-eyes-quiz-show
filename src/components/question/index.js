@@ -4,19 +4,26 @@ import Intro from './intro';
 import useKeyPress from '../../hooks/useKeyPress';
 import { controls } from '../../config.json';
 import { MultiChoice, TrueFalse } from './types';
+import Solution from './solution';
 
 const Question = ({ content, goToNext }) => {
-  const { question, questionIntro } = content;
+  const { question, questionIntro, solution } = content;
 
-  const [ready, setReady] = useState(false);
+  const [showQuestion, setShowQuestion] = useState(false);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState({
     p1: null,
     p2: null,
     p3: null,
   });
+  const [showSolution, setShowSolution] = useState(false);
 
   function startQuestion() {
-    setReady(true);
+    setShowQuestion(true);
+  }
+
+  function revealSolution() {
+    setShowSolution(true);
+    console.log(solution);
   }
 
   function choose(player, optionIndex) {
@@ -27,12 +34,12 @@ const Question = ({ content, goToNext }) => {
     });
   }
 
+  // players keyboard input
   const p1Keys = question.options.map((_, i) => useKeyPress(controls.p1[i]));
   const p2Keys = question.options.map((_, i) => useKeyPress(controls.p2[i]));
   const p3Keys = question.options.map((_, i) => useKeyPress(controls.p3[i]));
-
   useEffect(() => {
-    if (!ready) return;
+    if (!showQuestion) return;
     p1Keys.forEach((key, i) => key && choose('p1', i));
     p2Keys.forEach((key, i) => key && choose('p2', i));
     p3Keys.forEach((key, i) => key && choose('p3', i));
@@ -40,10 +47,12 @@ const Question = ({ content, goToNext }) => {
 
   // if everyone has answered - go to the next question
   useEffect(() => {
-    if (Object.values(selectedOptionIndex).every((p) => p !== null)) goToNext();
+    if (Object.values(selectedOptionIndex).every((p) => p !== null)) {
+      revealSolution();
+    }
   }, [selectedOptionIndex]);
 
-  if (!ready) {
+  if (!showQuestion) {
     return <Intro content={questionIntro} startQuestion={startQuestion} />;
   }
 
@@ -53,8 +62,10 @@ const Question = ({ content, goToNext }) => {
       <p>{question.text}</p>
 
       <div className='question__grid mt-4'>
-        <div className='solution'>Solution</div>
-        <div className='media'>
+        <div className='solution-wrapper'>
+          {showSolution && <Solution content={solution} goToNext={goToNext} />}
+        </div>
+        <div className='media-wrapper'>
           {
             {
               'true-false': <TrueFalse media={question.visualMedia} />,
@@ -65,7 +76,7 @@ const Question = ({ content, goToNext }) => {
             }[question.type]
           }
         </div>
-        <div className='options'>Options</div>
+        <div className='options-wrapper'>Options</div>
       </div>
     </div>
   );

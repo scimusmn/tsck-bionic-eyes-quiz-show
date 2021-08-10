@@ -9,10 +9,14 @@
 }
 
 // Solution
+.solution {
+  text-align: left;
+  padding: 0 50px;
+}
 
 // Media
 
-.question__grid .media .multi-choice {
+.question__grid .media-wrapper .multi-choice {
   border: 2px solid red;
   width: 100%;
   img,
