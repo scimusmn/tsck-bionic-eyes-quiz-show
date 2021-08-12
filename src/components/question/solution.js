@@ -16,6 +16,9 @@ const Solution = ({ content, goToNext }) => {
       <video controls autoPlay preload='metadata' onEnded={goToNext}>
         <source src={content.audio} type='video/mp4' />
       </video>
+      <div className='mt-4'>
+        Correct option index: {content.correctOptionIndex}
+      </div>
     </div>
   );
 };

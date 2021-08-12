@@ -5,10 +5,10 @@ import useKeyPress from '../../hooks/useKeyPress';
 import { controls } from '../../config.json';
 import { MultiChoice, TrueFalse } from './types';
 import Solution from './solution';
+import CurrentScores from './currentScores';
 
-const Question = ({ content, goToNext }) => {
+const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
-
   const [showQuestion, setShowQuestion] = useState(false);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState({
     p1: null,
@@ -23,7 +23,11 @@ const Question = ({ content, goToNext }) => {
 
   function revealSolution() {
     setShowSolution(true);
-    console.log(solution);
+    Object.entries(selectedOptionIndex).forEach(([key, value]) => {
+      if (value === solution.correctOptionIndex) {
+        increaseScore(key);
+      }
+    });
   }
 
   function choose(player, optionIndex) {
@@ -57,28 +61,39 @@ const Question = ({ content, goToNext }) => {
   }
 
   return (
-    <div className='question'>
-      <h2>{questionIntro.title}</h2>
-      <p>{question.text}</p>
+    <>
+      <div className='question'>
+        <h2>{questionIntro.title}</h2>
+        <p>{question.text}</p>
 
-      <div className='question__grid mt-4'>
-        <div className='solution-wrapper'>
-          {showSolution && <Solution content={solution} goToNext={goToNext} />}
-        </div>
-        <div className='media-wrapper'>
-          {
+        <div className='question__grid mt-4'>
+          <div className='solution-wrapper'>
+            {showSolution && (
+              <Solution content={solution} goToNext={goToNext} />
+            )}
+          </div>
+          <div className='media-wrapper'>
             {
-              'true-false': <TrueFalse media={question.visualMedia} />,
-              'multi-choice-text': <MultiChoice media={question.visualMedia} />,
-              'multi-choice-media': (
-                <MultiChoice media={question.visualMedia} />
-              ),
-            }[question.type]
-          }
+              {
+                'true-false': <TrueFalse media={question.visualMedia} />,
+                'multi-choice-text': (
+                  <MultiChoice media={question.visualMedia} />
+                ),
+                'multi-choice-media': (
+                  <MultiChoice media={question.visualMedia} />
+                ),
+              }[question.type]
+            }
+          </div>
+          <div className='options-wrapper'>Options</div>
         </div>
-        <div className='options-wrapper'>Options</div>
       </div>
-    </div>
+
+      <CurrentScores
+        scores={scores}
+        selectedOptionIndex={selectedOptionIndex}
+      />
+    </>
   );
 };
 
@@ -87,4 +102,6 @@ export default Question;
 Question.propTypes = {
   content: PropTypes.instanceOf(Object).isRequired,
   goToNext: PropTypes.func.isRequired,
+  scores: PropTypes.instanceOf(Object).isRequired,
+  increaseScore: PropTypes.func.isRequired,
 };

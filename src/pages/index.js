@@ -23,6 +23,7 @@ const IndexPage = () => {
   // Jump to next quiz
   function handleNextQuiz() {
     setQuizIndex((quizIndex + 1) % numOfQuiz);
+    setScores({ p1: 0, p2: 0, p3: 0 });
   }
 
   // Change screen
@@ -43,7 +44,10 @@ const IndexPage = () => {
 
   // Handle game state
   function increaseScore(player) {
-    setScores({ ...scores, [player]: scores[player] + 1 });
+    setScores((prevState) => ({
+      ...prevState,
+      [player]: prevState[player] + 1,
+    }));
   }
 
   return (
@@ -56,10 +60,11 @@ const IndexPage = () => {
             <QuizScreen
               goTo={goTo}
               quiz={questionSets[quizIndex]}
+              scores={scores}
               increaseScore={increaseScore}
             />
           ),
-          score: <ScoreScreen goTo={goTo} />,
+          score: <ScoreScreen goTo={goTo} scores={scores} />,
         }[activeScreen]
       }
     </Layout>
