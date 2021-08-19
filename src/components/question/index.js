@@ -9,14 +9,17 @@ import CurrentScores from './currentScores';
 
 const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
+
+  // state
   const [selectedOptionIndex, setSelectedOptionIndex] = useState({
     p1: null,
     p2: null,
     p3: null,
   });
-
   const [showSolution, setShowSolution] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(timePerQuestion);
 
+  // show solution and increase scores
   function revealSolution() {
     if (showSolution) return;
     setShowSolution(true);
@@ -27,6 +30,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     });
   }
 
+  // choose option for player
   function choose(player, optionIndex) {
     if (selectedOptionIndex[player] !== null) return;
     setSelectedOptionIndex({
@@ -35,7 +39,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     });
   }
 
-  // players keyboard input
+  // listen to players keyboard input
   const p1Keys = question.options.map((_, i) => useKeyPress(controls.p1[i]));
   const p2Keys = question.options.map((_, i) => useKeyPress(controls.p2[i]));
   const p3Keys = question.options.map((_, i) => useKeyPress(controls.p3[i]));
@@ -53,7 +57,6 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   }, [selectedOptionIndex]);
 
   // set timer for every question
-  const [timeLeft, setTimeLeft] = useState(timePerQuestion);
   useEffect(() => {
     if (!timeLeft) {
       revealSolution();

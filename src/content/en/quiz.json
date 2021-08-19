@@ -76,6 +76,60 @@
           "audio": "/quiz/s1_i1_audio_en.mp3"
         }
       }
+    ],
+
+    [
+      {
+        "questionIntro": {
+          "title": "Question 1 (from quiz 2)",
+          "audio": "/quiz/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "multi-choice-media",
+          "text": "Which image best represents the earliest bionic vision?",
+          "audio": "/quiz/s1_i1_audio_en.mp3",
+          "options": ["1", "2", "3"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": [
+              "/quiz/s1_q1_image_1.png",
+              "/quiz/s1_q1_image_2.png",
+              "/quiz/s1_q1_image_3.png"
+            ]
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 0,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
+          "audio": "/quiz/s1_i1_audio_en.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question 2 (from quiz 2)",
+          "audio": "/quiz/s1_i1_audio_en.mp3",
+          "captions": "/path/to/captions/file"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see?",
+          "audio": "/quiz/s1_i1_audio_en.mp3",
+          "options": ["A bird", "A kite", "A plane"],
+          "visualMedia": {
+            "image": "/quiz/s1_q2_image.png",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOptionIndex": 2,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
+          "audio": "/quiz/s1_i1_audio_en.mp3"
+        }
+      }
     ]
   ]
 }
