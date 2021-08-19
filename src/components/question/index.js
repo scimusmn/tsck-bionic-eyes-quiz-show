@@ -32,7 +32,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
 
   // choose option for player
   function choose(player, optionIndex) {
-    if (selectedOptionIndex[player] !== null) return;
+    if (showSolution || selectedOptionIndex[player] !== null) return;
     setSelectedOptionIndex({
       ...selectedOptionIndex,
       [player]: optionIndex,
@@ -43,11 +43,9 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   const p1Keys = question.options.map((_, i) => useKeyPress(controls.p1[i]));
   const p2Keys = question.options.map((_, i) => useKeyPress(controls.p2[i]));
   const p3Keys = question.options.map((_, i) => useKeyPress(controls.p3[i]));
-  useEffect(() => {
-    p1Keys.forEach((key, i) => key && choose('p1', i));
-    p2Keys.forEach((key, i) => key && choose('p2', i));
-    p3Keys.forEach((key, i) => key && choose('p3', i));
-  }, [p1Keys, p2Keys, p3Keys]);
+  p1Keys.forEach((key, i) => key && choose('p1', i));
+  p2Keys.forEach((key, i) => key && choose('p2', i));
+  p3Keys.forEach((key, i) => key && choose('p3', i));
 
   // if everyone has answered - go to the next question
   useEffect(() => {
@@ -60,6 +58,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   useEffect(() => {
     if (!timeLeft) {
       revealSolution();
+      console.clear();
       return;
     }
     const intervalId = setInterval(() => {

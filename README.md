@@ -63,9 +63,19 @@ You can set the global config of the application in `/src/config.json`.
 ```
 
 ## To Do
-1. Styling
-2. Captions
-3. Code cleanup & optimization
-4. Sound effects
-5. Some edge cases 
+- Styling
+- Captions for all the audio/video files
+- Sound effects used throughout the application
+- Update with final assets
+- Code cleanup and optimization
+- Some edge cases for the quiz
+
+## Edge cases
+1. The users are able to answer even after the solution has been revealed. *This is only relevant for styling purposes, as the scores are not updated*.
+2. If all players enter answers before audio narration completes, the results are shown as soon as the audio narration completes.
+3. When appropriate, the media asset updates to display the "reveal" answer version.
+4. Inactivity timeout - if no answers are entered for two quiz questions in a row, the application reloads/resets to the Attract screen.
+5. Software must be able to run in an exhibit for ~twelve hours without crashing or noticeable performance issues. You may reload the
+page programmatically after a period of inactivity to help avoid memory issues.
+
 
