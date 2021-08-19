@@ -58,7 +58,6 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   useEffect(() => {
     if (!timeLeft) {
       revealSolution();
-      console.clear();
       return;
     }
     const intervalId = setInterval(() => {
