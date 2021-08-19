@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import styles from '@styles/quiz/questionIntro.module.scss';
 import useKeyPress from '../../hooks/useKeyPress';
 import { controls } from '../../config.json';
 
@@ -11,10 +12,10 @@ const Intro = ({ content, startQuestion }) => {
   }, [skip]);
 
   return (
-    <div className='question__intro'>
+    <div>
       <h1 className='display-3'>{content.title}</h1>
 
-      <div className='question__intro__videoWrapper'>
+      <div className={styles.videoWrapper}>
         <video controls autoPlay preload='metadata' onEnded={startQuestion}>
           <source src={content.audio} type='video/mp4' />
         </video>

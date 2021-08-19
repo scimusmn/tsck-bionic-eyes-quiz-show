@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
+import styles from '@styles/screens/introduction.module.scss';
 import useKeyPress from '../../hooks/useKeyPress';
 import { controls } from '../../config.json';
 
@@ -28,8 +29,8 @@ const IntroductionScreen = ({ goTo }) => {
   }, [skip]);
 
   return (
-    <div className='introduction'>
-      <div className='introduction__videoWrapper'>
+    <div className={styles.introduction}>
+      <div className={styles.videoWrapper}>
         <video
           ref={video}
           controls
@@ -41,7 +42,7 @@ const IntroductionScreen = ({ goTo }) => {
         </video>
         <button type='button'>Skip</button>
       </div>
-      <div className='introduction__titleWrapper'>
+      <div className={styles.titleWrapper}>
         <h1>{t('introduction.title')}</h1>
       </div>
     </div>

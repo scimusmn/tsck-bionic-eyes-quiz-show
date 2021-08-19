@@ -16,7 +16,7 @@ const IndexPage = () => {
   const numOfQuiz = questionSets.length;
 
   // Game state
-  const [activeScreen, setActiveScreen] = useState('quiz'); // change to attract
+  const [activeScreen, setActiveScreen] = useState('attract'); // change to attract
   const [quizIndex, setQuizIndex] = useState(0);
   const [scores, setScores] = useState({ p1: 0, p2: 0, p3: 0 });
 

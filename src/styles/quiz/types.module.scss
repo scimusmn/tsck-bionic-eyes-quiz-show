@@ -1,0 +1,14 @@
+.media {
+  img,
+  video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  &.multi img {
+    max-width: 300px;
+  }
+}

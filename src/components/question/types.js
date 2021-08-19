@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '@styles/quiz/types.module.scss';
 
-export const TrueFalse = ({ media }) => (
-  <div>
+export const LayoutOne = ({ media }) => (
+  <div className={styles.media}>
     {media.video ? (
       <video controls autoPlay preload='metadata'>
         <source src={media.video} type='video/mp4' />
@@ -13,8 +14,8 @@ export const TrueFalse = ({ media }) => (
   </div>
 );
 
-export const MultiChoice = ({ media }) => (
-  <div className='multi-choice'>
+export const LayoutTwo = ({ media }) => (
+  <div className={`${styles.media} ${styles.multi}`}>
     {media.images.map((src) => (
       <div key={src}>
         <img src={src} alt='' />
@@ -23,10 +24,10 @@ export const MultiChoice = ({ media }) => (
   </div>
 );
 
-TrueFalse.propTypes = {
+LayoutOne.propTypes = {
   media: PropTypes.instanceOf(Object).isRequired,
 };
 
-MultiChoice.propTypes = {
+LayoutTwo.propTypes = {
   media: PropTypes.instanceOf(Object).isRequired,
 };

@@ -37,8 +37,9 @@ Quiz show app using GatsbyJS
 ```
 
 ## To Do
-1. Question set cycle
-2. Quiz functionality
-3. Global state of the game
-4. Captions
+1. Styling
+2. Captions
+3. Code cleanup & optimization
+4. Sound effects
+5. Some edge cases 
 
