@@ -4,7 +4,7 @@ Quiz show app using GatsbyJS
 ## Content Structure
 You can find all the content files in the `/src/content` directory.
 ### 1. Quiz
-```json
+```js
 {
     "questionIntro": {
         "title": STRING,
