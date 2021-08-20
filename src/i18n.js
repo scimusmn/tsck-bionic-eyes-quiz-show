@@ -19,8 +19,8 @@ i18n
     ns: ['common', 'quiz'],
     defaultNS: 'common',
 
-    lng: 'ar',
-    fallbackLng: 'ar',
+    lng: 'en', // change to ar
+    fallbackLng: 'en', // change to ar
 
     react: {
       useSuspense: false,

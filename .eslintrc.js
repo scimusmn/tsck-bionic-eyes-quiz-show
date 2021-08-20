@@ -17,6 +17,7 @@ module.exports = {
       },
     ],
     'jsx-a11y/media-has-caption': 'off',
+    'consistent-return': 'off',
   },
   settings: {
     'import/resolver': {

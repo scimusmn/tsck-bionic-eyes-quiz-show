@@ -8,13 +8,13 @@
 
   "introduction": {
     "title": "Quiz Title",
-    "video": "/intro_video_en.mp4",
+    "video": "/introduction/introduction_video_en.mp4",
     "captions": "/path/to/video/captions"
   },
 
   "score": {
     "title": "Final Score",
-    "video": "/score_video_en.mp4",
+    "video": "/score/score_video_en.mp4",
     "captions": "/path/to/video/captions"
   }
 }

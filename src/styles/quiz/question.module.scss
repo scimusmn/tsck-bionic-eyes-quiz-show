@@ -1,0 +1,36 @@
+.question {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  &.layout-two {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.solution {
+  text-align: left;
+  padding: 0 50px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    margin-top: 20px;
+  }
+  button {
+    width: 200px;
+    padding: 10px 0;
+    &.active {
+      color: $white;
+      background-color: $smm-green;
+    }
+  }
+}
