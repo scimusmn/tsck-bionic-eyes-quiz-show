@@ -9,7 +9,7 @@
   "introduction": {
     "title": "Quiz Title",
     "video": "/introduction/introduction_video_en.mp4",
-    "captions": "/path/to/video/captions"
+    "captions": "/introduction/placeholder_captions_en.vtt"
   },
 
   "score": {

@@ -9,7 +9,7 @@
   "introduction": {
     "title": "عنوان الإختبار",
     "video": "/introduction/introduction_video_ar.mp4",
-    "captions": "/path/to/video/captions"
+    "captions": "/introduction/placeholder_captions_ar.vtt"
   },
 
   "score": {
