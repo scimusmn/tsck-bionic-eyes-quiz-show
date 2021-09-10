@@ -9,6 +9,7 @@ import {
 } from '../components/screens';
 import useKeyPress from '../hooks/useKeyPress';
 import { controls } from '../config.json';
+import { addClass } from '../helpers';
 
 const IndexPage = () => {
   const { i18n, t } = useTranslation('quiz');
@@ -33,12 +34,18 @@ const IndexPage = () => {
   }
 
   // Change language
+
   const ar = useKeyPress(controls.start.ar);
   const en = useKeyPress(controls.start.en);
   useEffect(() => {
     if (!(en || ar)) return;
-    if (en) i18n.changeLanguage('en');
-    else if (ar) i18n.changeLanguage('ar');
+    if (en) {
+      i18n.changeLanguage('en');
+      addClass('en');
+    } else if (ar) {
+      i18n.changeLanguage('ar');
+      addClass('ar');
+    }
     goTo('introduction', activeScreen !== 'attract');
   }, [en, ar]);
 

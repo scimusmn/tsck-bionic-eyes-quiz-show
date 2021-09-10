@@ -5,7 +5,7 @@
         "questionIntro": {
           "title": "سؤال واحد",
           "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/path/to/captions/file"
+          "captions": "/introduction/placeholder_captions_ar.vtt"
         },
         "question": {
           "type": "multi-choice-media",

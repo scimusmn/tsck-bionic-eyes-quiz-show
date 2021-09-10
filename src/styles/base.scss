@@ -1,11 +1,15 @@
 body {
-  font-family: $smm-default-font;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: $smm-dark-gray;
   color: $white;
+  // font-size: calc(100vw / 3840 * 10);
+  font-family: $smm-ar-font;
+  &.en {
+    font-family: $smm-en-font;
+  }
 }
 
-.debug {
-  border: 3px solid red;
+p {
+  @include localize('font-family', $smm-ar-font, $smm-en-secondary-font);
 }

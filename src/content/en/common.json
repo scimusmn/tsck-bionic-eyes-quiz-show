@@ -15,6 +15,6 @@
   "score": {
     "title": "Final Score",
     "video": "/score/score_video_en.mp4",
-    "captions": "/path/to/video/captions"
+    "captions": "/introduction/placeholder_captions_en.vtt"
   }
 }

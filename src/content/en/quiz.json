@@ -5,7 +5,7 @@
         "questionIntro": {
           "title": "Question 1",
           "audio": "/quiz/s1_i1_audio_en.mp3",
-          "captions": "/path/to/captions/file"
+          "captions": "/introduction/placeholder_captions_en.vtt"
         },
         "question": {
           "type": "multi-choice-media",
