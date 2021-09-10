@@ -2,4 +2,42 @@
   @extend %full-screen;
   @extend %flex-center;
   @extend %text-center;
+  position: relative;
+}
+
+.titleAR {
+  font-size: toRem(250);
+}
+
+.titleEN {
+  font-family: $smm-en-font;
+  font-size: toRem(125);
+  font-weight: 500;
+  letter-spacing: toRem(42.25);
+  margin-top: toRem(102.88);
+}
+
+.instructions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: toRem(51.93);
+
+  span {
+    display: block;
+  }
+
+  span:first-child {
+    font-size: toRem(60);
+    font-weight: 700;
+  }
+
+  span:last-child {
+    font-size: toRem(45);
+    letter-spacing: toRem(25.25);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: toRem(17.96);
+  }
 }
