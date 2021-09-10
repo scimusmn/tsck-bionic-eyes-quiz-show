@@ -1,6 +1,6 @@
 .score {
   @extend %full-screen;
-  @extend %text-center;
+  text-align: center;
 }
 
 .video-wrapper {

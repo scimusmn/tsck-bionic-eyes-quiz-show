@@ -1,5 +1,5 @@
 .quiz {
   @extend %full-screen;
   @extend %flex-center;
-  @extend %text-center;
+  text-align: center;
 }

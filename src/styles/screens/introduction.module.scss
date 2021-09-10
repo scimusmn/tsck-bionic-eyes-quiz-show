@@ -1,22 +1,40 @@
 .introduction {
   @extend %full-screen;
-  @extend %flex-center;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
 }
 
 .video-wrapper {
-  flex: 1;
-  position: relative;
-
+  height: 100%;
   video {
-    width: 100%;
+    @extend %cover;
   }
 
+  position: relative;
   button {
     @extend %abs-center;
   }
 }
 
 .title-wrapper {
-  flex: 1;
-  @extend %text-center;
+  height: 100%;
+  @extend %flex-center;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    @include localize('font-size', toRem(160), toRem(100));
+    @include localize('letter-spacing', 0, toRem(18));
+  }
+
+  p {
+    padding: 0 1rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    @include localize('bottom', toRem(81.03), toRem(99.09));
+    @include localize('font-size', toRem(45), toRem(35));
+  }
 }
