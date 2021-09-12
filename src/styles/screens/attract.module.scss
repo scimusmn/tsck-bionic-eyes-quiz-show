@@ -3,6 +3,11 @@
   @extend %flex-center;
   text-align: center;
   position: relative;
+  background: radial-gradient(
+    100% 316.05% at 100% 3.27%,
+    #1cd8bc 0%,
+    #0d003a 100%
+  );
 }
 
 .titleAR {
@@ -34,9 +39,10 @@
   }
 
   span:last-child {
+    font-family: $smm-en-font;
     font-size: toRem(45);
-    letter-spacing: toRem(25.25);
     font-weight: 500;
+    letter-spacing: toRem(25.25);
     text-transform: uppercase;
     margin-top: toRem(17.96);
   }

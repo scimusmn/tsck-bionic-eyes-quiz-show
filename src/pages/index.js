@@ -25,6 +25,7 @@ const IndexPage = () => {
   function handleNextQuiz() {
     setQuizIndex((quizIndex + 1) % numOfQuiz);
     setScores({ p1: 0, p2: 0, p3: 0 });
+    addClass('ar');
   }
 
   // Change screen

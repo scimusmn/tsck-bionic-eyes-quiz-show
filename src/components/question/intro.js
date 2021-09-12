@@ -17,8 +17,8 @@ const Intro = ({ content, startQuestion }) => {
   const captions = useCaptions(videoRef);
 
   return (
-    <div>
-      <h1 className='display-3'>{content.title}</h1>
+    <div className={styles.questionIntro}>
+      <h1 className={styles.title}>{content.title}</h1>
 
       <div className={styles.videoWrapper}>
         <video
@@ -31,12 +31,9 @@ const Intro = ({ content, startQuestion }) => {
           <source src={content.audio} type='video/mp4' />
           <track kind='subtitles' src={content.captions} default />
         </video>
-        <div className='mt-4'>
-          <button type='button'>Skip</button>
-        </div>
       </div>
 
-      <div>{captions}</div>
+      <p className={styles.captions}>{captions}</p>
     </div>
   );
 };

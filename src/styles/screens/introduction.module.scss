@@ -1,20 +1,15 @@
 .introduction {
   @extend %full-screen;
-
   display: grid;
   grid-template-columns: 60% 40%;
   align-items: center;
+  background: linear-gradient(360deg, #0d003a 0%, #242466 100%);
 }
 
 .video-wrapper {
   height: 100%;
   video {
     @extend %cover;
-  }
-
-  position: relative;
-  button {
-    @extend %abs-center;
   }
 }
 
@@ -26,7 +21,7 @@
 
   h1 {
     @include localize('font-size', toRem(160), toRem(100));
-    @include localize('letter-spacing', 0, toRem(18));
+    @include localize('letter-spacing', 0, 0.18em);
   }
 
   p {

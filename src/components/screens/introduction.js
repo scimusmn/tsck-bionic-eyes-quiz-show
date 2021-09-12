@@ -55,7 +55,6 @@ const IntroductionScreen = ({ goTo }) => {
           <source ref={sourceRef} src={videoSrc} type='video/mp4' />
           <track ref={trackRef} kind='subtitles' src={trackSrc} default />
         </video>
-        <button type='button'>Skip</button>
       </div>
       <div className={styles.titleWrapper}>
         <h1>{t('introduction.title')}</h1>
