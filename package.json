@@ -63,6 +63,9 @@
     "lint": "npm-run-all lint:*",
     "lint:code": "node_modules/.bin/eslint .",
     "lint:style": "node_modules/.bin/stylelint \"**/*.*css\"",
-    "serve": "gatsby serve --port 3000"
+    "serve": "gatsby serve --port 3000",
+    "drive-bucket-sync": "",
+    "update-media-urls": "",
+    "save-captions": ""
   }
 }
