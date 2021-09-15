@@ -14,7 +14,7 @@ api_url = "http://amara.org/api/videos/?team=" + os.environ["AMARA_TEAM"]
 
 # GCP bucket files passed in from update-urls.js
 file_array = os.environ["CAPTION_BUCKET_LIST"].split('\n')
-file_types = ['.m4v', '.mp4', '.mp3', '.wav']
+file_types = ['.m4v', '.mp4', '.mp3', '.wav', '.ogg']
 
 # post media urls to specific amara project
 for filename in file_array:
