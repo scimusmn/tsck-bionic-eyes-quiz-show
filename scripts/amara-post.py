@@ -4,13 +4,15 @@ from google.cloud import storage
 
 project = os.environ["AMARA_PROJECT"]
 bucket_name = os.environ["GCP_BUCKET_NAME"]
+team = os.environ["AMARA_TEAM"]
+
 headers = {
     "X-api-key": os.environ["AMARA_API_KEY"],
     "X-api-username": os.environ["AMARA_USER"],
 }
 lang = 'en'
 google_prefix = 'https://storage.googleapis.com/'
-api_url = "http://amara.org/api/videos/?team=" + os.environ["AMARA_TEAM"]
+api_url = "http://amara.org/api/videos/?team=" + team
 
 # GCP bucket files passed in from update-urls.js
 file_array = os.environ["CAPTION_BUCKET_LIST"].split('\n')
@@ -24,6 +26,6 @@ for filename in file_array:
       requests.post(api_url, headers=headers, data={
           "video_url": media_url,
           "project": project,
-          "team": os.environ["AMARA_TEAM"],
+          "team": team,
           "primary_audio_language_code": lang
       }, timeout=10)
