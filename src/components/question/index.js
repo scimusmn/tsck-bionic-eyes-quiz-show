@@ -68,44 +68,40 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   }, [timeLeft]);
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <div className={styles.question}>
         <h2>{questionIntro.title}</h2>
         <p>{question.text}</p>
+      </div>
 
-        <div
-          className={`${styles.grid} ${
-            question.type === 'multi-choice-media'
-              ? styles.layoutTwo
-              : undefined
-          } mt-4`}
-        >
-          <div className={styles.solution}>
-            {showSolution && (
-              <Solution content={solution} goToNext={goToNext} />
-            )}
-          </div>
-          {question.type === 'multi-choice-media' ? (
-            <LayoutTwo media={question.visualMedia} />
-          ) : (
-            <LayoutOne media={question.visualMedia} />
-          )}
-          <div className={styles.options}>
-            {question.options.map((option, index) => (
-              <div key={option}>
-                <button
-                  type='button'
-                  className={
-                    showSolution && solution.correctOptionIndex === index
-                      ? styles.active
-                      : undefined
-                  }
-                >
-                  {option}
-                </button>
-              </div>
-            ))}
-          </div>
+      <div
+        className={`${styles.content} ${
+          question.type === 'multi-choice-media' ? styles.layoutTwo : undefined
+        }`}
+      >
+        <div className={styles.solution}>
+          {showSolution && <Solution content={solution} goToNext={goToNext} />}
+        </div>
+        {question.type === 'multi-choice-media' ? (
+          <LayoutTwo media={question.visualMedia} />
+        ) : (
+          <LayoutOne media={question.visualMedia} />
+        )}
+        <div className={styles.options}>
+          {question.options.map((option, index) => (
+            <div key={option}>
+              <button
+                type='button'
+                className={
+                  showSolution && solution.correctOptionIndex === index
+                    ? styles.active
+                    : undefined
+                }
+              >
+                {option}
+              </button>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -115,7 +111,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         showSolution={showSolution}
         correctOptionIndex={solution.correctOptionIndex}
       />
-    </>
+    </div>
   );
 };
 

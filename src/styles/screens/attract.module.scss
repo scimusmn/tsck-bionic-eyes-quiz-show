@@ -12,6 +12,8 @@
 
 .titleAR {
   font-size: toRem(250);
+  @include localize('font-family', $smm-ar-font, $smm-ar-font);
+  @include localize('font-weight', 700, 700);
 }
 
 .titleEN {
@@ -35,7 +37,8 @@
 
   span:first-child {
     font-size: toRem(60);
-    font-weight: 700;
+    @include localize('font-family', $smm-ar-font, $smm-ar-font);
+    @include localize('font-weight', 700, 700);
   }
 
   span:last-child {

@@ -52,7 +52,7 @@ const ScoreScreen = ({ goTo, scores }) => {
             }`}
           >
             <div>{scores.p1}</div>
-            <div>{t('players', { returnObjects: true })[0]}</div>
+            <div>{t('quizCommon.players', { returnObjects: true })[0]}</div>
           </div>
           <div
             className={`${styles.item} ${
@@ -60,7 +60,7 @@ const ScoreScreen = ({ goTo, scores }) => {
             }`}
           >
             <div>{scores.p2}</div>
-            <div>{t('players', { returnObjects: true })[1]}</div>
+            <div>{t('quizCommon.players', { returnObjects: true })[1]}</div>
           </div>
           <div
             className={`${styles.item} ${
@@ -68,7 +68,7 @@ const ScoreScreen = ({ goTo, scores }) => {
             }`}
           >
             <div>{scores.p3}</div>
-            <div>{t('players', { returnObjects: true })[2]}</div>
+            <div>{t('quizCommon.players', { returnObjects: true })[2]}</div>
           </div>
         </div>
       </div>

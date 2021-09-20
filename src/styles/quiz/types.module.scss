@@ -2,10 +2,7 @@
   img,
   video {
     width: 100%;
-    max-width: 600px;
-    display: block;
-    height: auto;
-    margin: 10px auto;
+    height: 100%;
   }
 
   &.multi img {

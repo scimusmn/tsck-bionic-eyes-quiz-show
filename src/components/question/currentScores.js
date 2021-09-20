@@ -23,29 +23,34 @@ const CurrentScores = ({
 
   return (
     <div className={styles.currentScores}>
-      <div
-        className={`${styles.item} 
+      <h3 className={styles.heading}>{t('quizCommon.scoreTitle')}</h3>
+      <div className={styles.grid}>
+        <div
+          className={`${styles.item} 
         ${getSelectClass(selectedOptionIndex.p1)}
         ${getCorrectClass(selectedOptionIndex.p1)}`}
-      >
-        <div className='number display-4'>{scores.p1}</div>
-        <div className='label'>{t('players', { returnObjects: true })[0]}</div>
-      </div>
-      <div
-        className={`${styles.item}
+        >
+          <span>{scores.p1}</span>
+          <span>{t('quizCommon.players', { returnObjects: true })[0]}</span>
+        </div>
+
+        <div
+          className={`${styles.item}
         ${getSelectClass(selectedOptionIndex.p2)}
         ${getCorrectClass(selectedOptionIndex.p2)}`}
-      >
-        <div className='number display-4'>{scores.p2}</div>
-        <div className='label'>{t('players', { returnObjects: true })[1]}</div>
-      </div>
-      <div
-        className={`${styles.item}
+        >
+          <span>{scores.p2}</span>
+          <span>{t('quizCommon.players', { returnObjects: true })[1]}</span>
+        </div>
+
+        <div
+          className={`${styles.item}
         ${getSelectClass(selectedOptionIndex.p3)}
         ${getCorrectClass(selectedOptionIndex.p3)}`}
-      >
-        <div className='number display-4'>{scores.p3}</div>
-        <div className='label'>{t('players', { returnObjects: true })[2]}</div>
+        >
+          <span>{scores.p3}</span>
+          <span>{t('quizCommon.players', { returnObjects: true })[2]}</span>
+        </div>
       </div>
     </div>
   );

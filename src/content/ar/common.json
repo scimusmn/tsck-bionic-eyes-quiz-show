@@ -1,6 +1,4 @@
 {
-  "players": ["اللاعب 1", "اللاعب 2", "اللاعب 3"],
-
   "attract": {
     "title": "عنوان الإختبار",
     "instructions": "اضغط على ابدأ للبدء"
@@ -10,6 +8,11 @@
     "title": "عنوان الإختبار",
     "video": "/introduction/introduction_video_ar.mp4",
     "captions": "/introduction/placeholder_captions_ar.vtt"
+  },
+
+  "quizCommon": {
+    "players": ["اللاعب 1", "اللاعب 2", "اللاعب 3"],
+    "scoreTitle": "نتيجة"
   },
 
   "score": {

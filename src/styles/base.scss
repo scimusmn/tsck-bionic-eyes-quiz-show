@@ -18,6 +18,7 @@ body {
 
 p {
   @include localize('font-family', $smm-ar-font, $smm-en-secondary-font);
+  @include localize('font-weight', 500, 400);
 }
 
 h1,

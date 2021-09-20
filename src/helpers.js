@@ -1,8 +1,8 @@
-export function addClass(className) {
+export function removeLangClass() {
   document.documentElement.className = '';
-  document.documentElement.classList.add(className);
 }
 
-export function test() {
-  console.log('this is a test');
+export function addLangClass(className) {
+  removeLangClass();
+  document.documentElement.classList.add(className);
 }
