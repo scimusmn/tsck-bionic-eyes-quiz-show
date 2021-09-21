@@ -6,6 +6,7 @@ import { controls, timePerQuestion } from '../../config.json';
 import { LayoutOne, LayoutTwo } from './types';
 import Solution from './solution';
 import CurrentScores from './currentScores';
+import Timer from './timer';
 
 const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
@@ -62,7 +63,6 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     }
     const intervalId = setInterval(() => {
       setTimeLeft(timeLeft - 1);
-      console.log('time left: ', timeLeft - 1);
     }, 1000);
     return () => clearInterval(intervalId);
   }, [timeLeft]);
@@ -115,6 +115,8 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         showSolution={showSolution}
         correctOptionIndex={solution.correctOptionIndex}
       />
+
+      <Timer timeLeft={timeLeft} />
     </div>
   );
 };
