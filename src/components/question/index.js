@@ -83,25 +83,29 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
           {showSolution && <Solution content={solution} goToNext={goToNext} />}
         </div>
         {question.type === 'multi-choice-media' ? (
-          <LayoutTwo media={question.visualMedia} />
+          <LayoutTwo
+            media={question.visualMedia}
+            showSolution={showSolution}
+            correctOptionIndex={solution.correctOptionIndex}
+          />
         ) : (
-          <LayoutOne media={question.visualMedia} />
+          <LayoutOne media={question.visualMedia} showSolution={showSolution} />
         )}
         <div className={styles.options}>
-          {question.options.map((option, index) => (
-            <div key={option}>
-              <button
-                type='button'
+          {question.type !== 'multi-choice-media' &&
+            question.options.map((option, index) => (
+              <div
+                key={option}
                 className={
                   showSolution && solution.correctOptionIndex === index
-                    ? styles.active
+                    ? styles.correct
                     : undefined
                 }
               >
-                {option}
-              </button>
-            </div>
-          ))}
+                <button type='button'>{option}</button>
+                <span className={styles.index}>{index + 1}</span>
+              </div>
+            ))}
         </div>
       </div>
 

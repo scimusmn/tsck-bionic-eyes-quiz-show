@@ -1,3 +1,17 @@
 .solution {
+  position: relative;
   display: block;
+  margin-left: toRem(150);
+
+  @include localize('text-align', right, left);
+  @include localize('font-size', toRem(45), toRem(40));
+  @include localize('line-height', toRem(54), toRem(77.5));
+
+  video {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
