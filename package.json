@@ -66,6 +66,7 @@
     "serve": "gatsby serve --port 3000",
     "drive-bucket-sync": "node scripts/drive-sync.js",
     "update-media-urls": "node scripts/update-urls.js",
-    "save-captions": "node scripts/save-captions.js"
+    "save-captions": "node scripts/save-captions.js",
+    "save-assets": "node scripts/save-assets.js"
   }
 }
