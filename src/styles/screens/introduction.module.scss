@@ -1,22 +1,35 @@
 .introduction {
   @extend %full-screen;
-  @extend %flex-center;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  background: linear-gradient(360deg, #0d003a 0%, #242466 100%);
 }
 
 .video-wrapper {
-  flex: 1;
-  position: relative;
-
+  height: 100%;
   video {
-    width: 100%;
-  }
-
-  button {
-    @extend %abs-center;
+    @extend %cover;
   }
 }
 
 .title-wrapper {
-  flex: 1;
-  @extend %text-center;
+  height: 100%;
+  @extend %flex-center;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    @include localize('font-size', toRem(160), toRem(100));
+    @include localize('letter-spacing', 0, 0.18em);
+  }
+
+  p {
+    padding: 0 1rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    @include localize('bottom', toRem(81.03), toRem(99.09));
+    @include localize('font-size', toRem(45), toRem(35));
+  }
 }

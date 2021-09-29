@@ -3,15 +3,17 @@ import styles from '@styles/screens/attract.module.scss';
 import { commonAR, commonEN } from '../../content';
 
 const AttractScreen = () => (
-  <div className={styles.attract}>
+  <section className={styles.attract}>
     <div>
-      <h1 className='display-3'>{commonAR.attract.title}</h1>
-      <h1 className='display-3'>{commonEN.attract.title}</h1>
-
-      <p className='mt-5'>{commonAR.attract.instructions}</p>
-      <p>{commonEN.attract.instructions}</p>
+      <h1 className={styles.titleAR}>{commonAR.attract.title}</h1>
+      <h1 className={styles.titleEN}>{commonEN.attract.title}</h1>
     </div>
-  </div>
+
+    <div className={styles.instructions}>
+      <span>{commonAR.attract.instructions}</span>
+      <span>{commonEN.attract.instructions}</span>
+    </div>
+  </section>
 );
 
 export default AttractScreen;

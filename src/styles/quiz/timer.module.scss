@@ -1,0 +1,29 @@
+.timer {
+  position: fixed;
+  bottom: toRem(103);
+  left: toRem(200);
+
+  font-family: $smm-en-font;
+  font-size: toRem(40);
+  font-weight: 700;
+
+  width: toRem(125);
+  height: toRem(125);
+
+  span {
+    position: absolute;
+    @extend %abs-center;
+  }
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  circle {
+    fill: transparent;
+    stroke: $white;
+    stroke-width: toRem(10);
+  }
+}

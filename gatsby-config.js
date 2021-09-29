@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        data: '@import "src/styles/variables"; @import "src/styles/shared";',
+        data: '@import "src/styles/_variables"; @import "src/styles/_shared";',
         includePaths: ['src/components'],
       },
     },
@@ -37,6 +37,14 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#000000',
         display: 'minimal-ui',
+      },
+    },
+
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [`montserrat:500,700`, `open sans:400`, `tajawal:500,700`],
+        display: 'swap',
       },
     },
   ],

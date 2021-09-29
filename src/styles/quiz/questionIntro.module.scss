@@ -1,7 +1,30 @@
-.video-wrapper {
+.questionIntro {
   position: relative;
+  width: 100%;
+  height: 100%;
+  @extend %flex-center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1cd8bc 0.77%, #0d003a 80.91%);
+}
 
-  video {
-    width: 100%;
-  }
+.title {
+  @include localize('font-size', toRem(160), toRem(150));
+  @include localize('letter-spacing', 0, 0.18em);
+}
+
+.video-wrapper {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.captions {
+  position: absolute;
+  right: toRem(88.65);
+  // @include localize('left', auto, toRem(2601.25));
+  // @include localize('right', toRem(88.65), auto);
+  @include localize('bottom', toRem(80.63), toRem(95.86));
+  @include localize('font-size', toRem(45), toRem(40));
 }

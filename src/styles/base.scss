@@ -1,11 +1,32 @@
-body {
-  font-family: $smm-default-font;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  background-color: $smm-dark-gray;
-  color: $white;
+@import './reset';
+
+html {
+  font-size: calc(100vw / 3840 * #{$base-font-size});
+  font-family: $smm-ar-font;
+  font-weight: 500;
+  &.en {
+    font-family: $smm-en-font;
+  }
 }
 
-.debug {
-  border: 3px solid red;
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $white;
+  font-family: inherit;
+}
+
+p {
+  @include localize('font-family', $smm-ar-font, $smm-en-secondary-font);
+  @include localize('font-weight', 500, 400);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  @include localize('font-weight', 700, 500);
 }

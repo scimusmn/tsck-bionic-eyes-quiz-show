@@ -8,7 +8,8 @@ import {
   ScoreScreen,
 } from '../components/screens';
 import useKeyPress from '../hooks/useKeyPress';
-import { controls } from '../config.json';
+import { controls, pointPerQuestion } from '../config.json';
+import { addLangClass } from '../helpers';
 
 const IndexPage = () => {
   const { i18n, t } = useTranslation('quiz');
@@ -33,20 +34,26 @@ const IndexPage = () => {
   }
 
   // Change language
+
   const ar = useKeyPress(controls.start.ar);
   const en = useKeyPress(controls.start.en);
   useEffect(() => {
-    if (!(en || ar)) return;
-    if (en) i18n.changeLanguage('en');
-    else if (ar) i18n.changeLanguage('ar');
+    if (!(ar || en)) return;
+    if (ar) {
+      i18n.changeLanguage('ar');
+      addLangClass('ar');
+    } else if (en) {
+      i18n.changeLanguage('en');
+      addLangClass('en');
+    }
     goTo('introduction', activeScreen !== 'attract');
-  }, [en, ar]);
+  }, [ar, en]);
 
   // Handle game state
   function increaseScore(player) {
     setScores((prevState) => ({
       ...prevState,
-      [player]: prevState[player] + 1,
+      [player]: prevState[player] + pointPerQuestion,
     }));
   }
 
