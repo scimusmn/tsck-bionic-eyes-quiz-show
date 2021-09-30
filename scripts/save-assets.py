@@ -16,4 +16,4 @@ for filename in file_array:
       media_url = google_prefix + bucket_name + '/' + filename
       print(media_url)
       r = requests.get(media_url, timeout=10)
-      open('./static/caption-assets/' + filename, 'wb').write(r.content)
+      open('./static/captions/' + filename, 'wb').write(r.content)
