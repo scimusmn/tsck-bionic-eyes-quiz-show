@@ -5,7 +5,7 @@
         "questionIntro": {
           "title": "سؤال واحد",
           "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/path/to/captions/file"
+          "captions": "/introduction/placeholder_captions_ar.vtt"
         },
         "question": {
           "type": "multi-choice-media",
@@ -16,9 +16,9 @@
             "image": "",
             "video": "",
             "images": [
-              "/path/to/option/image/1",
-              "/path/to/option/image/2",
-              "/path/to/option/image/3"
+              "/quiz/s1_q1_image_1.png",
+              "/quiz/s1_q1_image_2.png",
+              "/quiz/s1_q1_image_3.png"
             ]
           }
         },
@@ -94,9 +94,9 @@
             "image": "",
             "video": "",
             "images": [
-              "/path/to/option/image/1",
-              "/path/to/option/image/2",
-              "/path/to/option/image/3"
+              "/quiz/s1_q1_image_1.png",
+              "/quiz/s1_q1_image_2.png",
+              "/quiz/s1_q1_image_3.png"
             ]
           }
         },

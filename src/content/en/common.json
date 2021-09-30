@@ -1,6 +1,4 @@
 {
-  "players": ["Player 1", "Player 2", "Player 3"],
-
   "attract": {
     "title": "Quiz Title",
     "instructions": "Press start to begin"
@@ -9,12 +7,17 @@
   "introduction": {
     "title": "Quiz Title",
     "video": "/introduction/introduction_video_en.mp4",
-    "captions": "/path/to/video/captions"
+    "captions": "/introduction/placeholder_captions_en.vtt"
+  },
+
+  "quizCommon": {
+    "players": ["Player 1", "Player 2", "Player 3"],
+    "scoreTitle": "Score"
   },
 
   "score": {
     "title": "Final Score",
     "video": "/score/score_video_en.mp4",
-    "captions": "/path/to/video/captions"
+    "captions": "/introduction/placeholder_captions_en.vtt"
   }
 }

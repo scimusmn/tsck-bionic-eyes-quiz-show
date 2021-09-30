@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/types.module.scss';
 
-export const LayoutOne = ({ media }) => (
-  <div className={styles.media}>
+export const LayoutOne = ({ media, showSolution = false }) => (
+  <div
+    className={`${styles.media}
+      ${showSolution ? styles.active : undefined}`}
+  >
     {media.video ? (
       <video controls autoPlay preload='metadata'>
         <source src={media.video} type='video/mp4' />
@@ -14,11 +17,23 @@ export const LayoutOne = ({ media }) => (
   </div>
 );
 
-export const LayoutTwo = ({ media }) => (
-  <div className={`${styles.media} ${styles.multi}`}>
-    {media.images.map((src) => (
-      <div key={src}>
+export const LayoutTwo = ({
+  media,
+  correctOptionIndex,
+  showSolution = false,
+}) => (
+  <div className={`${styles.media} ${styles.multi} `}>
+    {media.images.map((src, index) => (
+      <div
+        key={src}
+        className={
+          showSolution && correctOptionIndex === index
+            ? styles.correct
+            : undefined
+        }
+      >
         <img src={src} alt='' />
+        <span className={styles.index}>{index + 1}</span>
       </div>
     ))}
   </div>
@@ -26,8 +41,11 @@ export const LayoutTwo = ({ media }) => (
 
 LayoutOne.propTypes = {
   media: PropTypes.instanceOf(Object).isRequired,
+  showSolution: PropTypes.bool.isRequired,
 };
 
 LayoutTwo.propTypes = {
   media: PropTypes.instanceOf(Object).isRequired,
+  showSolution: PropTypes.bool.isRequired,
+  correctOptionIndex: PropTypes.number.isRequired,
 };

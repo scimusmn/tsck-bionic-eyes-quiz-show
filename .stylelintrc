@@ -1,5 +1,8 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ],
   "ignoreFiles": [
     "public/*.*css"
   ],
@@ -13,5 +16,7 @@
     ],
     "order/properties-alphabetical-order": null,
     "at-rule-no-unknown": null,
+    "function-name-case": null,
+    "declaration-empty-line-before": null
   }
 }

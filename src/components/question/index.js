@@ -6,6 +6,7 @@ import { controls, timePerQuestion } from '../../config.json';
 import { LayoutOne, LayoutTwo } from './types';
 import Solution from './solution';
 import CurrentScores from './currentScores';
+import Timer from './timer';
 
 const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
@@ -62,50 +63,49 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     }
     const intervalId = setInterval(() => {
       setTimeLeft(timeLeft - 1);
-      console.log('time left: ', timeLeft - 1);
     }, 1000);
     return () => clearInterval(intervalId);
   }, [timeLeft]);
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <div className={styles.question}>
         <h2>{questionIntro.title}</h2>
         <p>{question.text}</p>
+      </div>
 
-        <div
-          className={`${styles.grid} ${
-            question.type === 'multi-choice-media'
-              ? styles.layoutTwo
-              : undefined
-          } mt-4`}
-        >
-          <div className={styles.solution}>
-            {showSolution && (
-              <Solution content={solution} goToNext={goToNext} />
-            )}
-          </div>
-          {question.type === 'multi-choice-media' ? (
-            <LayoutTwo media={question.visualMedia} />
-          ) : (
-            <LayoutOne media={question.visualMedia} />
-          )}
-          <div className={styles.options}>
-            {question.options.map((option, index) => (
-              <div key={option}>
-                <button
-                  type='button'
-                  className={
-                    showSolution && solution.correctOptionIndex === index
-                      ? styles.active
-                      : undefined
-                  }
-                >
-                  {option}
-                </button>
+      <div
+        className={`${styles.content} ${
+          question.type === 'multi-choice-media' ? styles.layoutTwo : undefined
+        }`}
+      >
+        <div className={styles.solution}>
+          {showSolution && <Solution content={solution} goToNext={goToNext} />}
+        </div>
+        {question.type === 'multi-choice-media' ? (
+          <LayoutTwo
+            media={question.visualMedia}
+            showSolution={showSolution}
+            correctOptionIndex={solution.correctOptionIndex}
+          />
+        ) : (
+          <LayoutOne media={question.visualMedia} showSolution={showSolution} />
+        )}
+        <div className={styles.options}>
+          {question.type !== 'multi-choice-media' &&
+            question.options.map((option, index) => (
+              <div
+                key={option}
+                className={
+                  showSolution && solution.correctOptionIndex === index
+                    ? styles.correct
+                    : undefined
+                }
+              >
+                <button type='button'>{option}</button>
+                <span className={styles.index}>{index + 1}</span>
               </div>
             ))}
-          </div>
         </div>
       </div>
 
@@ -115,7 +115,9 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         showSolution={showSolution}
         correctOptionIndex={solution.correctOptionIndex}
       />
-    </>
+
+      <Timer timeLeft={timeLeft} />
+    </div>
   );
 };
 

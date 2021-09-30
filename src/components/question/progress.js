@@ -4,7 +4,9 @@ import styles from '@styles/quiz/progress.module.scss';
 
 const Progress = ({ current, total }) => (
   <div className={styles.progress}>
-    {current} / {total}
+    <span>{current}</span>
+    <div className={styles.bar} />
+    <span>{total}</span>
   </div>
 );
 

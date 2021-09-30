@@ -1,5 +1,52 @@
 .attract {
   @extend %full-screen;
   @extend %flex-center;
-  @extend %text-center;
+  text-align: center;
+  position: relative;
+  background: radial-gradient(
+    100% 316.05% at 100% 3.27%,
+    #1cd8bc 0%,
+    #0d003a 100%
+  );
+}
+
+.titleAR {
+  font-size: toRem(250);
+  @include localize('font-family', $smm-ar-font, $smm-ar-font);
+  @include localize('font-weight', 700, 700);
+}
+
+.titleEN {
+  font-family: $smm-en-font;
+  font-size: toRem(125);
+  font-weight: 500;
+  letter-spacing: toRem(42.25);
+  margin-top: toRem(102.88);
+}
+
+.instructions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: toRem(51.93);
+
+  span {
+    display: block;
+  }
+
+  span:first-child {
+    font-size: toRem(60);
+    @include localize('font-family', $smm-ar-font, $smm-ar-font);
+    @include localize('font-weight', 700, 700);
+  }
+
+  span:last-child {
+    font-family: $smm-en-font;
+    font-size: toRem(45);
+    font-weight: 500;
+    letter-spacing: toRem(25.25);
+    text-transform: uppercase;
+    margin-top: toRem(17.96);
+  }
 }

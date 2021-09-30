@@ -1,8 +1,21 @@
 .progress {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
-  padding: 20px;
-  background-color: $smm-blue;
+  bottom: toRem(103);
+  right: toRem(200);
+
+  font-family: $smm-en-font;
+  font-size: toRem(40);
+  font-weight: 700;
+
+  span {
+    display: block;
+    padding: 0 toRem(20);
+  }
+}
+
+.bar {
+  height: toRem(6);
+  width: toRem(98);
+  background-color: $white;
+  margin: toRem(17.55);
 }
