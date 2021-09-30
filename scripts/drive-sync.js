@@ -1,3 +1,4 @@
+// TODO: Refactor this to Google functions
 const open = require('open');
 require('dotenv').config({
   path: '.env.development',
