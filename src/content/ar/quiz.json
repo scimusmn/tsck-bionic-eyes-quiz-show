@@ -4,76 +4,120 @@
       {
         "questionIntro": {
           "title": "سؤال واحد",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/introduction/placeholder_captions_ar.vtt"
+          "audio": "/audio/s1_i1_audio_ar.mp3",
+          "captions": "/captions/s1_i1_audio_ar.vtt"
         },
         "question": {
           "type": "multi-choice-media",
-          "text": "؟ﺔﻴﻟوأ ﺔﻴﻧوﺮﺘﻜﻟإ ﺔﻳؤر ﻞﻀﻓأ ﻞﺜﻤﺗ ﻲﺘﻟا ةرﻮﺼﻟا ﺎﻣ",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
+          "text": "أول الأشخاص الذين استخدموا العيون الإلكترونية حصلوا على غرساتهم في عام 2009. ما الصورة التي تمثل أفضل رؤية أولية؟",
+          "audio": "/audio/s1_q1_audio_ar.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
             "image": "",
             "video": "",
-            "images": [
-              "/quiz/s1_q1_image_1.png",
-              "/quiz/s1_q1_image_2.png",
-              "/quiz/s1_q1_image_3.png"
-            ]
+            "images": ["", "", ""]
           }
         },
         "solution": {
-          "correctOptionIndex": 0,
-          "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
-          "audio": "/quiz/s1_i1_audio_ar.mp3"
+          "correctOption": 1,
+          "text": ".أعطت العيون الإلكترونية الأقدم رؤية محدودة للغاية. يمكن للمستخدمين التمييز بين الضوء والظل ، ولكن ليس أكثر من ذلك",
+          "audio": "/audio/s1_a1_audio_ar.mp3"
         }
       },
 
       {
         "questionIntro": {
-          "title": "سؤال واحد",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "السؤال الثاني",
+          "audio": "/audio/s1_i2_audio_ar.mp3",
+          "captions": "/captions/s1_i2_audio_ar.vtt"
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
-          "audio": "/path/to/audio/narration/file",
-          "options": ["طائر", "طائرة ورقية", "طائرة"],
+          "text": "ماذا ترى في هذه الصورة؟",
+          "audio": "/audio/s1_q2_audio_ar.mp3",
+          "options": ["طائرة ورقية", "طائرة", "طائر"],
           "visualMedia": {
-            "image": "/quiz/s1_q2_image.png",
+            "image": "",
             "video": "",
             "images": []
           }
         },
         "solution": {
-          "correctOptionIndex": 2,
-          "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
-          "audio": "/quiz/s1_i1_audio_ar.mp3"
+          "correctOption": 2,
+          "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
+          "audio": "/audio/s1_a2_audio_ar.mp3"
         }
       },
 
       {
         "questionIntro": {
-          "title": "سؤال واحد",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "السؤال الثالث",
+          "audio": "/audio/s1_i3_audio_ar.mp3",
+          "captions": "/captions/s1_i3_audio_ar.vtt"
         },
         "question": {
-          "type": "true-false",
-          "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "options": ["حقيقية", "خاطئة"],
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذه الصورة؟",
+          "audio": "/audio/s1_q3_audio_ar.mp3",
+          "options": ["سمكة", "فأر", "صخرة"],
           "visualMedia": {
             "image": "",
-            "video": "/introduction/introduction_video_ar.mp4",
+            "video": "",
             "images": []
           }
         },
         "solution": {
-          "correctOptionIndex": 1,
-          "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
-          "audio": "/quiz/s1_i1_audio_ar.mp3e"
+          "correctOption": 3,
+          "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
+          "audio": "/audio/s1_a3_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الرابع",
+          "audio": "/audio/s1_i4_audio_ar.mp3",
+          "captions": "/captions/s1_i4_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذا الفيديو؟",
+          "audio": "/audio/s1_q4_audio_ar.mp3",
+          "options": ["ضوء وامض", "العاب ناريه", "فقاعات"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
+          "audio": "/audio/s1_a4_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الخامس",
+          "audio": "/audio/s1_i5_audio_ar.mp3",
+          "captions": "/captions/s1_i5_audio_ar.vtt"
+        },
+        "question": {
+          "type": "true-false",
+          "text": ".صواب أم خطأ: ستكون رؤية العين الإلكترونية في يوم من الأيام جيدة مثل هذه الصورة المحاكية",
+          "audio": "/audio/s1_q5_audio_ar.mp3",
+          "options": ["خطأ شنيع", "حقيقي"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": ".يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح",
+          "audio": "/audio/s1_a5_audio_ar.mp3"
         }
       }
     ],
@@ -81,53 +125,259 @@
     [
       {
         "questionIntro": {
-          "title": "سؤال واحد (from quiz 2)",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "سؤال واحد",
+          "audio": "/audio/s2_i1_audio_ar.mp3",
+          "captions": "/captions/s2_i1_audio_ar.vtt"
         },
         "question": {
           "type": "multi-choice-media",
-          "text": "؟ﺔﻴﻟوأ ﺔﻴﻧوﺮﺘﻜﻟإ ﺔﻳؤر ﻞﻀﻓأ ﻞﺜﻤﺗ ﻲﺘﻟا ةرﻮﺼﻟا ﺎﻣ",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
+          "text": "أي من هذه الصور يمثل أفضل شكل ستبدو عليه العيون الآلية في المستقبل؟",
+          "audio": "/audio/s2_q1_audio_ar.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
             "image": "",
             "video": "",
-            "images": [
-              "/quiz/s1_q1_image_1.png",
-              "/quiz/s1_q1_image_2.png",
-              "/quiz/s1_q1_image_3.png"
-            ]
+            "images": ["", "", ""]
           }
         },
         "solution": {
-          "correctOptionIndex": 0,
-          "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
-          "audio": "/quiz/s1_i1_audio_ar.mp3"
+          "correctOption": 2,
+          "text": ".يهدف الباحثون إلى جعل العيون الآلية تبدو مثل العيون الحقيقية قدر الإمكان",
+          "audio": "/audio/s2_a1_audio_ar.mp3"
         }
       },
 
       {
         "questionIntro": {
-          "title": "سؤال واحد (from quiz 2)",
-          "audio": "/quiz/s1_i1_audio_ar.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "السؤال الثاني",
+          "audio": "/audio/s2_i2_audio_ar.mp3",
+          "captions": "/captions/s2_i2_audio_ar.vtt"
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "ما الصورة التي تمثل أفضل رؤية إلكترونية أولية؟",
-          "audio": "/path/to/audio/narration/file",
-          "options": ["طائر", "طائرة ورقية", "طائرة"],
+          "text": "ماذا ترى في هذه الصورة؟",
+          "audio": "/audio/s2_q2_audio_ar.mp3",
+          "options": ["امرأة وحصان", "رجل وجمل", "شخصان"],
           "visualMedia": {
-            "image": "/quiz/s1_q2_image.png",
+            "image": "",
             "video": "",
             "images": []
           }
         },
         "solution": {
-          "correctOptionIndex": 2,
-          "text": "يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح.",
-          "audio": "/quiz/s1_i1_audio_ar.mp3"
+          "correctOption": 2,
+          "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
+          "audio": "/audio/s2_a2_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثالث",
+          "audio": "/audio/s2_i3_audio_ar.mp3",
+          "captions": "/captions/s2_i3_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذه الصورة؟",
+          "audio": "/audio/s2_q3_audio_ar.mp3",
+          "options": ["طفل", "قطة", "كلب"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
+          "audio": "/audio/s2_a3_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الرابع",
+          "audio": "/audio/s2_i4_audio_ar.mp3",
+          "captions": "/captions/s2_i4_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى هنا؟",
+          "audio": "/audio/s2_q4_audio_ar.mp3",
+          "options": [
+            "مواد البقالة على حزام ناقل",
+            "البط على النهر",
+            "غيوم في يوم عاصف"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
+          "audio": "/audio/s2_a4_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الخامس",
+          "audio": "/audio/s2_i5_audio_ar.mp3",
+          "captions": "/captions/s2_i5_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ما أنواع اضطرابات العين التي يجب على الشخص أن يتأهلها للعيون الإلكترونية؟",
+          "audio": "/audio/s2_q5_audio_ar.mp3",
+          "options": [
+            "التهاب الشبكية الصباغي",
+            "العمى العام",
+            "لا شيء - يمكن لأي شخص الحصول على عيون آلية"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": ".يؤدي هذا الاضطراب النادر والشديد إلى العمى من التدهور التدريجي لشبكية العين ، الغشاء الحساس للضوء داخل العين",
+          "audio": "/audio/s2_a5_audio_ar.mp3"
+        }
+      }
+    ],
+
+    [
+      {
+        "questionIntro": {
+          "title": "سؤال واحد",
+          "audio": "/audio/s3_i1_audio_ar.mp3",
+          "captions": "/captions/s3_i1_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": ":تعمل العيون الإلكترونية عن طريق إرسال إشارات بصرية إلى أقطاب كهربائية مزروعة في العين أو الدماغ. تحتوي الأجهزة الحالية على عدد الأقطاب الكهربائية",
+          "audio": "/audio/s3_q1_audio_ar.mp3",
+          "options": [
+            "قطب كهربائي 60",
+            "قطب كهربائي 1200",
+            "قطب كهربائي 15000"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": ["", "", ""]
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s3_a1_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثاني",
+          "audio": "/audio/s3_i2_audio_ar.mp3",
+          "captions": "/captions/s3_i2_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذه الصورة؟",
+          "audio": "/audio/s3_q2_audio_ar.mp3",
+          "options": [
+            "زوجان من البرتقال",
+            "كرتان لكرة القدم",
+            "جوز الهند على الشاطئ"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
+          "audio": "/audio/s3_a2_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثالث",
+          "audio": "/audio/s3_i3_audio_ar.mp3",
+          "captions": "/captions/s3_i3_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذه الصورة؟",
+          "audio": "/audio/s3_q3_audio_ar.mp3",
+          "options": ["مصباح", "إناء من الزهور", "مدخنة مبنى"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
+          "audio": "/audio/s3_a3_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الرابع",
+          "audio": "/audio/s3_i4_audio_ar.mp3",
+          "captions": "/captions/s3_i4_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى هنا؟",
+          "audio": "/audio/s3_q4_audio_ar.mp3",
+          "options": ["مركب شراعي", "قطار", "سيارة لعبة على المسار"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
+          "audio": "/audio/s3_a4_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الخامس",
+          "audio": "/audio/s3_i5_audio_ar.mp3",
+          "captions": "/captions/s3_i5_audio_ar.vtt"
+        },
+        "question": {
+          "type": "true-false",
+          "text": ".صواب أم خطأ: تستخدم تقنية العين الإلكترونية الحالية كاميرا لالتقاط الصور وتحويلها إلى نبضات إلكترونية لمستخدم الغرسة",
+          "audio": "/audio/s3_q5_audio_ar.mp3",
+          "options": ["خطأ شنيع", "حقيقي"],
+          "visualMedia": {
+            "image": "",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": ".تستجيب الخلايا العصبية والدماغية للإشارات الكهربائية ، ويمكنها أن تتعلم تفسير النبضات على أنها معلومات بصرية",
+          "audio": "/audio/s3_a5_audio_ar.mp3"
         }
       }
     ]

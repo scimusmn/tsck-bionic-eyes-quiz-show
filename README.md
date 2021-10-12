@@ -25,7 +25,7 @@ You can find all the content files in the `/src/content` directory.
     },
     
     "solution": {
-        "correctOptionIndex": 0,
+        "correctOption": 1,
         "text": "This is the solution.",
         "audio": "/path/to/audio/file"
     }

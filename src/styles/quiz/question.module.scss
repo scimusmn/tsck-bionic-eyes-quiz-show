@@ -72,3 +72,11 @@
     font-weight: 700;
   }
 }
+
+.video-wrapper {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

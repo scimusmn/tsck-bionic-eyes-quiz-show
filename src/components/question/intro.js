@@ -22,7 +22,7 @@ const Intro = ({ content, startQuestion }) => {
 
       <div className={styles.videoWrapper}>
         <video
-          controls
+          controls={false}
           autoPlay
           preload='metadata'
           onEnded={startQuestion}

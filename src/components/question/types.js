@@ -8,7 +8,7 @@ export const LayoutOne = ({ media, showSolution = false }) => (
       ${showSolution ? styles.active : undefined}`}
   >
     {media.video ? (
-      <video controls autoPlay preload='metadata'>
+      <video controls={false} autoPlay preload='metadata'>
         <source src={media.video} type='video/mp4' />
       </video>
     ) : (
@@ -17,17 +17,13 @@ export const LayoutOne = ({ media, showSolution = false }) => (
   </div>
 );
 
-export const LayoutTwo = ({
-  media,
-  correctOptionIndex,
-  showSolution = false,
-}) => (
+export const LayoutTwo = ({ media, correctOption, showSolution = false }) => (
   <div className={`${styles.media} ${styles.multi} `}>
     {media.images.map((src, index) => (
       <div
         key={src}
         className={
-          showSolution && correctOptionIndex === index
+          showSolution && correctOption - 1 === index
             ? styles.correct
             : undefined
         }
@@ -47,5 +43,5 @@ LayoutOne.propTypes = {
 LayoutTwo.propTypes = {
   media: PropTypes.instanceOf(Object).isRequired,
   showSolution: PropTypes.bool.isRequired,
-  correctOptionIndex: PropTypes.number.isRequired,
+  correctOption: PropTypes.number.isRequired,
 };
