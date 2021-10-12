@@ -15,7 +15,11 @@
           "visualMedia": {
             "image": "",
             "video": "",
-            "images": ["", "", ""]
+            "images": [
+              "/media/s1_q1_Image.png",
+              "/media/s1_q1_image_2.png",
+              "/media/s1_q1_image_3.png"
+            ]
           }
         },
         "solution": {
@@ -38,14 +42,18 @@
           "options": ["طائرة ورقية", "طائرة", "طائر"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s1_q2_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 2,
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
-          "audio": "/audio/s1_a2_audio_ar.mp3"
+          "audio": "/audio/s1_a2_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a2_Image.png",
+            "video": ""
+          }
         }
       },
 
@@ -62,14 +70,18 @@
           "options": ["سمكة", "فأر", "صخرة"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s1_q3_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 3,
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
-          "audio": "/audio/s1_a3_audio_ar.mp3"
+          "audio": "/audio/s1_a3_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a3_Image.png",
+            "video": ""
+          }
         }
       },
 
@@ -86,14 +98,18 @@
           "options": ["ضوء وامض", "العاب ناريه", "فقاعات"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s1_a4_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 2,
           "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
-          "audio": "/audio/s1_a4_audio_ar.mp3"
+          "audio": "/audio/s1_a4_audio_ar.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_a4_video.mp4"
+          }
         }
       },
 
@@ -137,7 +153,11 @@
           "visualMedia": {
             "image": "",
             "video": "",
-            "images": ["", "", ""]
+            "images": [
+              "/media/s2_q1_image_1.png",
+              "/media/s2_q1_image_2.png",
+              "/media/s2_q1_image_3.png"
+            ]
           }
         },
         "solution": {
@@ -160,14 +180,18 @@
           "options": ["امرأة وحصان", "رجل وجمل", "شخصان"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s2_q2_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 2,
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
-          "audio": "/audio/s2_a2_audio_ar.mp3"
+          "audio": "/audio/s2_a2_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s2_a2_image.png",
+            "video": ""
+          }
         }
       },
 
@@ -184,14 +208,18 @@
           "options": ["طفل", "قطة", "كلب"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s2_q3_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 3,
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
-          "audio": "/audio/s2_a3_audio_ar.mp3"
+          "audio": "/audio/s2_a3_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s2_a3_image.png",
+            "video": ""
+          }
         }
       },
 
@@ -212,14 +240,18 @@
           ],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s2_q4_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 2,
           "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
-          "audio": "/audio/s2_a4_audio_ar.mp3"
+          "audio": "/audio/s2_a4_audio_ar.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_a4_video.mp4"
+          }
         }
       },
 
@@ -239,7 +271,7 @@
             "لا شيء - يمكن لأي شخص الحصول على عيون آلية"
           ],
           "visualMedia": {
-            "image": "",
+            "image": "/media/s2_q5_image.png",
             "video": "",
             "images": []
           }
@@ -269,9 +301,9 @@
             "قطب كهربائي 15000"
           ],
           "visualMedia": {
-            "image": "",
+            "image": "/media/s3_q1_image.png",
             "video": "",
-            "images": ["", "", ""]
+            "images": []
           }
         },
         "solution": {
@@ -298,14 +330,18 @@
           ],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s3_q2_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 3,
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
-          "audio": "/audio/s3_a2_audio_ar.mp3"
+          "audio": "/audio/s3_a2_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s3_a2_image.png",
+            "video": ""
+          }
         }
       },
 
@@ -322,14 +358,18 @@
           "options": ["مصباح", "إناء من الزهور", "مدخنة مبنى"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s3_q3_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 2,
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
-          "audio": "/audio/s3_a3_audio_ar.mp3"
+          "audio": "/audio/s3_a3_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s3_a3_image.png",
+            "video": ""
+          }
         }
       },
 
@@ -346,14 +386,18 @@
           "options": ["مركب شراعي", "قطار", "سيارة لعبة على المسار"],
           "visualMedia": {
             "image": "",
-            "video": "",
+            "video": "/media/s3_q4_video.mp4",
             "images": []
           }
         },
         "solution": {
           "correctOption": 3,
           "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
-          "audio": "/audio/s3_a4_audio_ar.mp3"
+          "audio": "/audio/s3_a4_audio_ar.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_a4_video.mp4"
+          }
         }
       },
 
@@ -369,7 +413,7 @@
           "audio": "/audio/s3_q5_audio_ar.mp3",
           "options": ["خطأ شنيع", "حقيقي"],
           "visualMedia": {
-            "image": "",
+            "image": "/media/s3_q5_image.png",
             "video": "",
             "images": []
           }

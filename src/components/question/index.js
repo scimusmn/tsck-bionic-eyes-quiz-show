@@ -97,7 +97,11 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
             correctOption={solution.correctOption}
           />
         ) : (
-          <LayoutOne media={question.visualMedia} showSolution={showSolution} />
+          <LayoutOne
+            media={question.visualMedia}
+            solutionMedia={solution.visualMedia}
+            showSolution={showSolution}
+          />
         )}
         <div className={styles.options}>
           {question.type !== 'multi-choice-media' &&
