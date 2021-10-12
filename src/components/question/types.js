@@ -2,8 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/types.module.scss';
 
-export const LayoutOne = ({ media, solutionMedia, showSolution = false }) => {
-  const visibleMedia = showSolution ? solutionMedia : media;
+export const LayoutOne = ({
+  media,
+  solutionMedia = null,
+  showSolution = false,
+}) => {
+  const visibleMedia = !!solutionMedia && showSolution ? solutionMedia : media;
 
   return (
     <div

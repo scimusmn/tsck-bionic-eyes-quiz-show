@@ -7,7 +7,8 @@ export default function useCaptions(video) {
     const textTrack = video.current.textTracks[0];
     function onCueChange() {
       textTrack.mode = 'hidden';
-      setCaptions(textTrack.activeCues[0].text);
+      if (textTrack.activeCues.length)
+        setCaptions(textTrack.activeCues[0].text);
     }
 
     textTrack.addEventListener('cuechange', onCueChange);
