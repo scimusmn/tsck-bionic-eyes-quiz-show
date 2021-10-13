@@ -14,6 +14,7 @@
   p {
     font-size: toRem(75);
     margin-top: toRem(50);
+    padding: 0 toRem(100);
   }
 }
 
@@ -71,4 +72,12 @@
     @include localize('font-size', toRem(70), toRem(65));
     font-weight: 700;
   }
+}
+
+.video-wrapper {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 }

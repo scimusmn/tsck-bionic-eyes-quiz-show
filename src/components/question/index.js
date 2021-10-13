@@ -25,7 +25,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     if (showSolution) return;
     setShowSolution(true);
     Object.entries(selectedOptionIndex).forEach(([key, value]) => {
-      if (value === solution.correctOptionIndex) {
+      if (value === solution.correctOption - 1) {
         increaseScore(key);
       }
     });
@@ -72,6 +72,14 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
       <div className={styles.question}>
         <h2>{questionIntro.title}</h2>
         <p>{question.text}</p>
+
+        <div className={styles.videoWrapper}>
+          {!showSolution && (
+            <video controls={false} autoPlay preload='metadata'>
+              <source src={question.audio} type='video/mp4' />
+            </video>
+          )}
+        </div>
       </div>
 
       <div
@@ -86,10 +94,14 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
           <LayoutTwo
             media={question.visualMedia}
             showSolution={showSolution}
-            correctOptionIndex={solution.correctOptionIndex}
+            correctOption={solution.correctOption}
           />
         ) : (
-          <LayoutOne media={question.visualMedia} showSolution={showSolution} />
+          <LayoutOne
+            media={question.visualMedia}
+            solutionMedia={solution.visualMedia}
+            showSolution={showSolution}
+          />
         )}
         <div className={styles.options}>
           {question.type !== 'multi-choice-media' &&
@@ -97,7 +109,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
               <div
                 key={option}
                 className={
-                  showSolution && solution.correctOptionIndex === index
+                  showSolution && solution.correctOption - 1 === index
                     ? styles.correct
                     : undefined
                 }
@@ -113,7 +125,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         scores={scores}
         selectedOptionIndex={selectedOptionIndex}
         showSolution={showSolution}
-        correctOptionIndex={solution.correctOptionIndex}
+        correctOption={solution.correctOption}
       />
 
       <Timer timeLeft={timeLeft} />

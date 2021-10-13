@@ -3,77 +3,137 @@
     [
       {
         "questionIntro": {
-          "title": "Question 1",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "captions": "/introduction/placeholder_captions_en.vtt"
+          "title": "Question one",
+          "audio": "/audio/s1_i1_audio_en.mp3",
+          "captions": "/captions/s1_i1_audio_en.vtt"
         },
         "question": {
           "type": "multi-choice-media",
-          "text": "Which image best represents the earliest bionic vision?",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
+          "text": "The first people to use bionic eyes got their implants in 2009. Which image best represents the earliest bionic vision?",
+          "audio": "/audio/s1_q1_audio_en.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
             "image": "",
             "video": "",
             "images": [
-              "/quiz/s1_q1_image_1.png",
-              "/quiz/s1_q1_image_2.png",
-              "/quiz/s1_q1_image_3.png"
+              "/media/s1_q1_image.png",
+              "/media/s1_q1_image_2.png",
+              "/media/s1_q1_image_3.png"
             ]
           }
         },
         "solution": {
-          "correctOptionIndex": 0,
-          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
-          "audio": "/quiz/s1_i1_audio_en.mp3"
+          "correctOption": 1,
+          "text": "The earliest bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.",
+          "audio": "/audio/s1_a1_audio_en.mp3"
         }
       },
 
       {
         "questionIntro": {
-          "title": "Question 2",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "Question two",
+          "audio": "/audio/s1_i2_audio_en.mp3",
+          "captions": "/captions/s1_i2_audio_en.vtt"
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "What do you see?",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "options": ["A bird", "A kite", "A plane"],
+          "text": "What do you see in this image?",
+          "audio": "/audio/s1_q2_audio_en.mp3",
+          "options": ["A bird", "A plane", "A kite"],
           "visualMedia": {
-            "image": "/quiz/s1_q2_image.png",
+            "image": "",
+            "video": "/media/s1_q2_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
+          "audio": "/audio/s1_a2_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a2_image.png",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question three",
+          "audio": "/audio/s1_i3_audio_en.mp3",
+          "captions": "/captions/s1_i3_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this image?",
+          "audio": "/audio/s1_q3_audio_en.mp3",
+          "options": ["A rock", "A mouse", "A fish"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_q3_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
+          "audio": "/audio/s1_a3_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a3_image.png",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question four",
+          "audio": "/audio/s1_i4_audio_en.mp3",
+          "captions": "/captions/s1_i4_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this video?",
+          "audio": "/audio/s1_q4_audio_en.mp3",
+          "options": ["Bubbles", "Fireworks", "A flickering light"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_q4_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "Moving images contain more information than still ones, and can be easier to identify.",
+          "audio": "/audio/s1_a4_audio_en.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_a4_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question five",
+          "audio": "/audio/s1_i5_audio_en.mp3",
+          "captions": "/captions/s1_q5_audio_en.vtt"
+        },
+        "question": {
+          "type": "true-false",
+          "text": "True or False: Bionic eye vision will someday be as good as this simulated image.",
+          "audio": "/audio/s1_q5_audio_en.mp3",
+          "options": ["True", "False"],
+          "visualMedia": {
+            "image": "/media/s1_q5_image.jpg",
             "video": "",
             "images": []
           }
         },
         "solution": {
-          "correctOptionIndex": 2,
-          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
-          "audio": "/quiz/s1_i1_audio_en.mp3"
-        }
-      },
-
-      {
-        "questionIntro": {
-          "title": "Question 3",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "captions": "/path/to/captions/file"
-        },
-        "question": {
-          "type": "true-false",
-          "text": "True or False: Bionic eye vision will never be better than this, simulated here:",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "options": ["True", "False"],
-          "visualMedia": {
-            "image": "",
-            "video": "/introduction/introduction_video_en.mp4",
-            "images": []
-          }
-        },
-        "solution": {
-          "correctOptionIndex": 1,
-          "text": "The correct answer is False. This simulation shows what vision could be like in a few decades.",
-          "audio": "/quiz/s1_i1_audio_en.mp3"
+          "correctOption": 1,
+          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may even surpass natural vision in power and clarity.",
+          "audio": "/audio/s1_a5_audio_en.mp3"
         }
       }
     ],
@@ -81,53 +141,283 @@
     [
       {
         "questionIntro": {
-          "title": "Question 1 (from quiz 2)",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "Question one",
+          "audio": "/audio/s2_i1_audio_en.mp3",
+          "captions": "/captions/s2_i1_audio_en.vtt"
         },
         "question": {
           "type": "multi-choice-media",
-          "text": "Which image best represents the earliest bionic vision?",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
+          "text": "Which of these images best represents what future bionic eyes will look like?",
+          "audio": "/audio/s2_q1_audio_en.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
             "image": "",
             "video": "",
             "images": [
-              "/quiz/s1_q1_image_1.png",
-              "/quiz/s1_q1_image_2.png",
-              "/quiz/s1_q1_image_3.png"
+              "/media/s2_q1_image_1.png",
+              "/media/s2_q1_image_2.png",
+              "/media/s2_q1_image_3.png"
             ]
           }
         },
         "solution": {
-          "correctOptionIndex": 0,
-          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
-          "audio": "/quiz/s1_i1_audio_en.mp3"
+          "correctOption": 2,
+          "text": "Researchers aim to make bionic eyes look as much like real eyes as possible.",
+          "audio": "/audio/s2_a1_audio_en.mp3"
         }
       },
 
       {
         "questionIntro": {
-          "title": "Question 2 (from quiz 2)",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "captions": "/path/to/captions/file"
+          "title": "Question two",
+          "audio": "/audio/s2_i2_audio_en.mp3",
+          "captions": "/captions/s2_i2_audio_en.vtt"
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "What do you see?",
-          "audio": "/quiz/s1_i1_audio_en.mp3",
-          "options": ["A bird", "A kite", "A plane"],
+          "text": "What do you see in this image?",
+          "audio": "/audio/s2_q2_audio_en.mp3",
+          "options": ["Two people", "A man and a camel", "A woman and a horse"],
           "visualMedia": {
-            "image": "/quiz/s1_q2_image.png",
+            "image": "",
+            "video": "/media/s2_q2_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
+          "audio": "/audio/s2_a2_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s2_a2_image.png",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question three",
+          "audio": "/audio/s2_i3_audio_en.mp3",
+          "captions": "/captions/s2_i3_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this image?",
+          "audio": "/audio/s2_q3_audio_en.mp3",
+          "options": ["A child", "A cat", "A dog"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_q3_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
+          "audio": "/audio/s2_a3_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s2_a3_image.png",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question four",
+          "audio": "/audio/s2_i4_audio_en.mp3",
+          "captions": "/captions/s2_i4_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see here?",
+          "audio": "/audio/s2_q4_audio_en.mp3",
+          "options": [
+            "Grocery items on a conveyor belt",
+            "Ducks on a river",
+            "Clouds on a windy day"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_q4_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "Moving images contain more information than still ones, and can be easier to identify.",
+          "audio": "/audio/s2_a4_audio_en.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_a4_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question five",
+          "audio": "/audio/s2_i5_audio_en.mp3",
+          "captions": "/captions/s2_i5_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "Which types of eye disorders must a person have to qualify for bionic eyes?",
+          "audio": "/audio/s2_i5_audio_en.mp3",
+          "options": [
+            "Retinitis pigmentosa",
+            "General blindness",
+            "Nothing - anyone can get bionic eyes"
+          ],
+          "visualMedia": {
+            "image": "/media/s2_q5_image.png",
             "video": "",
             "images": []
           }
         },
         "solution": {
-          "correctOptionIndex": 2,
-          "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may surpass natural vision in power and clarity.",
-          "audio": "/quiz/s1_i1_audio_en.mp3"
+          "correctOption": 1,
+          "text": "This rare and severe disorder leads to blindness from progressive degeneration of the retina, the light-sensitive membrane inside the eye.",
+          "audio": "/audio/s2_a5_audio_en.mp3"
+        }
+      }
+    ],
+
+    [
+      {
+        "questionIntro": {
+          "title": "Question one",
+          "audio": "/audio/s3_i1_audio_en.mp3",
+          "captions": "/captions/s3_i1_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "Bionic eyes work by sending visual signals to electrodes implanted in the eye or the brain. Current devices have how many electrodes:",
+          "audio": "/audio/s3_q1_audio_en.mp3",
+          "options": ["60 electrodes", "1,200 electrodes", "15,000 electrodes"],
+          "visualMedia": {
+            "image": "/media/s3_q1_image.png",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "The correct answer is 1, 60 electrodes.",
+          "audio": "/audio/s3_a1_audio_en.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question two",
+          "audio": "/audio/s3_i2_audio_en.mp3",
+          "captions": "/captions/s3_i2_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this image?",
+          "audio": "/audio/s3_q2_audio_en.mp3",
+          "options": [
+            "A couple of oranges",
+            "Two soccer balls",
+            "Cocnuts on a beach"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_q2_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
+          "audio": "/audio/s3_a2_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s3_a2_image.png",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question three",
+          "audio": "/audio/s3_i3_audio_en.mp3",
+          "captions": "/captions/s3_i3_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this image?",
+          "audio": "/audio/s3_q3_audio_en.mp3",
+          "options": ["A building's smokestack", "A vase of flowers", "A lamp"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_q3_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
+          "audio": "/audio/s3_a3_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s3_a3_image.png",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question four",
+          "audio": "/audio/s3_i4_audio_en.mp3",
+          "captions": "/captions/s3_i4_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see here?",
+          "audio": "/audio/s3_q4_audio_en.mp3",
+          "options": ["A toy car on a track", "A train", "A sailboat"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_q4_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "Moving images contain more information than still ones, and can be easier to identify.",
+          "audio": "/audio/s3_a4_audio_en.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_a4_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question five",
+          "audio": "/audio/s3_i5_audio_en.mp3",
+          "captions": "/captions/s3_i5_audio_en.vtt"
+        },
+        "question": {
+          "type": "true-false",
+          "text": "True or False: Current bionic eye technology uses a camera to take images and convert them into electronic impulses for the implant user.",
+          "audio": "/audio/s3_q5_audio_en.mp3",
+          "options": ["True", "False"],
+          "visualMedia": {
+            "image": "/media/s3_q5_image.png",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "Nerve and brain cells respond to electrical signals, and can learn to interpret impulses as visual information.",
+          "audio": "/audio/s3_a5_audio_en.mp3"
         }
       }
     ]

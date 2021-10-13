@@ -13,6 +13,10 @@ const AttractScreen = () => (
       <span>{commonAR.attract.instructions}</span>
       <span>{commonEN.attract.instructions}</span>
     </div>
+
+    <video controls={false} preload='metadata' autoPlay loop>
+      <source src={commonAR.attract.video} type='video/mp4' />
+    </video>
   </section>
 );
 

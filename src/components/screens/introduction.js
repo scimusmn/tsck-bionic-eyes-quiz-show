@@ -47,7 +47,7 @@ const IntroductionScreen = ({ goTo }) => {
       <div className={styles.videoWrapper}>
         <video
           ref={videoRef}
-          controls
+          controls={false}
           preload='metadata'
           autoPlay
           onEnded={() => goTo('quiz')}

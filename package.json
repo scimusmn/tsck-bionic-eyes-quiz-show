@@ -64,6 +64,11 @@
     "lint": "npm-run-all lint:*",
     "lint:code": "node_modules/.bin/eslint .",
     "lint:style": "node_modules/.bin/stylelint \"**/*.*css\"",
-    "serve": "gatsby serve --port 3000"
+    "serve": "gatsby serve --port 3000",
+    "pull:assets": "echo Copy contents into local ./static directory. && open https://drive.google.com/drive/folders/1oGcegalN2YYuyDHV5dF3Us88NUfgAphi?usp=sharing",
+    "drive-bucket-sync": "node scripts/drive-sync.js",
+    "update-media-urls": "node scripts/update-urls.js",
+    "save-captions": "node scripts/save-captions.js",
+    "save-assets": "node scripts/save-assets.js"
   }
 }

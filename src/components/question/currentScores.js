@@ -6,7 +6,7 @@ import styles from '@styles/quiz/currentScores.module.scss';
 const CurrentScores = ({
   scores,
   selectedOptionIndex,
-  correctOptionIndex,
+  correctOption,
   showSolution,
 }) => {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ const CurrentScores = ({
   }
 
   function getCorrectClass(choice) {
-    return showSolution && choice === correctOptionIndex
+    return showSolution && choice === correctOption - 1
       ? styles.correct
       : undefined;
   }
@@ -61,6 +61,6 @@ export default CurrentScores;
 CurrentScores.propTypes = {
   selectedOptionIndex: PropTypes.instanceOf(Object).isRequired,
   scores: PropTypes.instanceOf(Object).isRequired,
-  correctOptionIndex: PropTypes.number.isRequired,
+  correctOption: PropTypes.number.isRequired,
   showSolution: PropTypes.bool.isRequired,
 };

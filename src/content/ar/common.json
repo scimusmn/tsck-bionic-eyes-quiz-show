@@ -1,13 +1,14 @@
 {
   "attract": {
-    "title": "عنوان الإختبار",
-    "instructions": "اضغط على ابدأ للبدء"
+    "title": "مسابقة عين الكترونية",
+    "instructions": "اضغط على ابدأ للبدء",
+    "video": "/media/attract_video.mp4"
   },
 
   "introduction": {
-    "title": "عنوان الإختبار",
-    "video": "/introduction/introduction_video_ar.mp4",
-    "captions": "/introduction/placeholder_captions_ar.vtt"
+    "title": "مرحبًا بك في اختبار عين",
+    "video": "/media/quizintro_video_ar.mp4",
+    "captions": ""
   },
 
   "quizCommon": {
@@ -17,7 +18,7 @@
 
   "score": {
     "title": "النتيجة النهائية",
-    "video": "/score/score_video_ar.mp4",
-    "captions": "/introduction/placeholder_captions_ar.vtt"
+    "video": "/media/finalscore_video_ar.mp4",
+    "captions": ""
   }
 }
