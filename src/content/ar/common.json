@@ -1,12 +1,13 @@
 {
   "attract": {
     "title": "مسابقة عين الكترونية",
-    "instructions": "اضغط على ابدأ للبدء"
+    "instructions": "اضغط على ابدأ للبدء",
+    "video": "/media/attract_video.mp4"
   },
 
   "introduction": {
     "title": "مرحبًا بك في اختبار عين",
-    "video": "/media/s1_quizintro_video_ar.mp4",
+    "video": "/media/quizintro_video_ar.mp4",
     "captions": ""
   },
 
@@ -17,7 +18,7 @@
 
   "score": {
     "title": "النتيجة النهائية",
-    "video": "/media/s1_finalscore_video_ar.mp4",
+    "video": "/media/finalscore_video_ar.mp4",
     "captions": ""
   }
 }

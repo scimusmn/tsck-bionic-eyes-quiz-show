@@ -16,7 +16,7 @@
             "image": "",
             "video": "",
             "images": [
-              "/media/s1_q1_Image.png",
+              "/media/s1_q1_image.png",
               "/media/s1_q1_image_2.png",
               "/media/s1_q1_image_3.png"
             ]
@@ -51,7 +51,7 @@
           "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s1_a2_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s1_a2_Image.png",
+            "image": "/media/s1_a2_image.png",
             "video": ""
           }
         }
@@ -79,7 +79,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s1_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s1_a3_Image.png",
+            "image": "/media/s1_a3_image.png",
             "video": ""
           }
         }
@@ -125,7 +125,7 @@
           "audio": "/audio/s1_q5_audio_en.mp3",
           "options": ["True", "False"],
           "visualMedia": {
-            "image": "",
+            "image": "/media/s1_q5_image.jpg",
             "video": "",
             "images": []
           }
@@ -304,7 +304,7 @@
         },
         "solution": {
           "correctOption": 1,
-          "text": "",
+          "text": "The correct answer is 1, 60 electrodes.",
           "audio": "/audio/s3_a1_audio_en.mp3"
         }
       },

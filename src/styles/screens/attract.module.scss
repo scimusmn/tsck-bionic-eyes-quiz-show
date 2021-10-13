@@ -3,11 +3,17 @@
   @extend %flex-center;
   text-align: center;
   position: relative;
-  background: radial-gradient(
-    100% 316.05% at 100% 3.27%,
-    #1cd8bc 0%,
-    #0d003a 100%
-  );
+  // background: radial-gradient(
+  //   100% 316.05% at 100% 3.27%,
+  //   #1cd8bc 0%,
+  //   #0d003a 100%
+  // );
+
+  video {
+    @extend %cover;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .titleAR {

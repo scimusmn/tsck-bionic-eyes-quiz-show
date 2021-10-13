@@ -1,12 +1,13 @@
 {
   "attract": {
     "title": "Bionic Eye Quiz",
-    "instructions": "Press Start to begin"
+    "instructions": "Press Start to begin",
+    "video": "/media/attract_video.mp4"
   },
 
   "introduction": {
     "title": "Welcome to the Bionic Eye Quiz",
-    "video": "/media/s1_quizintro_video_en.mp4",
+    "video": "/media/quizintro_video_en.mp4",
     "captions": ""
   },
 
@@ -17,7 +18,7 @@
 
   "score": {
     "title": "Final Score",
-    "video": "/media/s1_finalscore_video_en.mp4",
+    "video": "/media/finalscore_video_en.mp4",
     "captions": ""
   }
 }
