@@ -2,9 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import styles from '@styles/screens/introduction.module.scss';
-import useKeyPress from '../../hooks/useKeyPress2';
 import { controls } from '../../config.json';
-import useCaptions from '../../hooks/useCaptions';
+import { useCaptions, useKeyPress } from '../../hooks';
 
 const IntroductionScreen = ({ goTo }) => {
   const { t } = useTranslation();

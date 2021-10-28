@@ -2,10 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import styles from '@styles/screens/score.module.scss';
-import useKeyPress from '../../hooks/useKeyPress2';
 import { controls } from '../../config.json';
-import useCaptions from '../../hooks/useCaptions';
-import useSoundEffect from '../../hooks/useSoundEffect';
+import { useCaptions, useSoundEffect, useKeyPress } from '../../hooks';
 
 const ScoreScreen = ({ goTo, scores }) => {
   const { t } = useTranslation();
@@ -25,9 +23,9 @@ const ScoreScreen = ({ goTo, scores }) => {
     return winners;
   }
 
-  const [playingScoreSound, toggleScoreSound] = useSoundEffect('finalScore');
+  const [playScoreSound] = useSoundEffect('finalScore');
   useEffect(() => {
-    if (!playingScoreSound) toggleScoreSound();
+    playScoreSound();
   }, []);
 
   return (

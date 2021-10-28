@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/solution.module.scss';
-import useKeyPress from '../../hooks/useKeyPress2';
+import { useKeyPress } from '../../hooks';
 import { controls } from '../../config.json';
 
 const Solution = ({ content, goToNext }) => {

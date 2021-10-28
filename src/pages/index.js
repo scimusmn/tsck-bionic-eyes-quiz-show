@@ -7,7 +7,7 @@ import {
   QuizScreen,
   ScoreScreen,
 } from '../components/screens';
-import useKeyPress from '../hooks/useKeyPress2';
+import { useKeyPress } from '../hooks';
 import { controls, pointPerQuestion } from '../config.json';
 import { addLangClass } from '../helpers';
 

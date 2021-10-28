@@ -5,23 +5,28 @@ const useSoundEffect = (type, loop = false) => {
   const [audio] = useState(new Audio(soundEffect[type]));
   audio.loop = loop;
   audio.volume = 0.2;
+
   const [playing, setPlaying] = useState(false);
 
-  const toggle = () => setPlaying(!playing);
+  // const toggle = () => setPlaying(!playing);
+  const play = () => setPlaying(true);
+  const pause = () => setPlaying(false);
 
   useEffect(() => {
     if (playing) audio.play();
     else audio.pause();
+
+    return () => audio.pause();
   }, [playing]);
 
-  useEffect(() => {
-    audio.addEventListener('ended', () => setPlaying(false));
-    return () => {
-      audio.removeEventListener('ended', () => setPlaying(false));
-    };
-  }, []);
+  // useEffect(() => {
+  //   audio.addEventListener('ended', () => setPlaying(false));
+  //   return () => {
+  //     audio.removeEventListener('ended', () => setPlaying(false));
+  //   };
+  // }, []);
 
-  return [playing, toggle];
+  return [play, pause];
 };
 
 export default useSoundEffect;

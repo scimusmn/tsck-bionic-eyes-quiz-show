@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/questionIntro.module.scss';
-import useKeyPress from '../../hooks/useKeyPress2';
 import { controls } from '../../config.json';
-import useCaptions from '../../hooks/useCaptions';
+import { useCaptions, useKeyPress } from '../../hooks';
 
 const Intro = ({ content, startQuestion }) => {
   // skip media

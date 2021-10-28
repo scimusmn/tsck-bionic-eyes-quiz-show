@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/question.module.scss';
-import useKeyPress from '../../hooks/useKeyPress2';
-import { controls, timePerQuestion } from '../../config.json';
+import { controls } from '../../config.json';
 import { LayoutOne, LayoutTwo } from './layouts';
 import Solution from './solution';
 import CurrentScores from './currentScores';
 import Timer from './timer';
 import Options from './options';
-import useSoundEffect from '../../hooks/useSoundEffect';
+import { useSoundEffect, useKeyPress } from '../../hooks';
 
 const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
@@ -20,22 +19,23 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     p3: null,
   });
   const [showSolution, setShowSolution] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(timePerQuestion);
 
   // sound effects
-  const inputSoundEffect = {
+  const inputSound = {
     p1: useSoundEffect('input'),
     p2: useSoundEffect('input'),
     p3: useSoundEffect('input'),
   };
-  const [playingWaitSound, toggleWaitSound] = useSoundEffect('wait', true);
-  const [, toggleSuccessSound] = useSoundEffect('success');
-  const [, toggleFailSound] = useSoundEffect('fail');
+  const [playWaitSound, pauseWaitSound] = useSoundEffect('wait', true);
+  const [playSuccessSound] = useSoundEffect('success');
+  const [playFailSound] = useSoundEffect('fail');
 
   // show solution and increase scores
   function revealSolution() {
     if (showSolution) return;
     setShowSolution(true);
+
+    pauseWaitSound();
 
     const answersArray = Object.entries(selectedOptionIndex);
     let allCorrect = true;
@@ -48,9 +48,9 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     });
 
     if (allCorrect) {
-      toggleSuccessSound();
+      playSuccessSound();
     } else {
-      toggleFailSound();
+      playFailSound();
     }
   }
 
@@ -58,7 +58,8 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   function choose(player, optionIndex) {
     if (showSolution || selectedOptionIndex[player] !== null) return;
 
-    if (!inputSoundEffect[player][0]) inputSoundEffect[player][1]();
+    // play input sound effect
+    inputSound[player][0]();
 
     setSelectedOptionIndex((prevState) => ({
       ...prevState,
@@ -76,30 +77,13 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   // if everyone has answered - go to the next question
   useEffect(() => {
     if (Object.values(selectedOptionIndex).every((p) => p !== null)) {
-      if (playingWaitSound) toggleWaitSound();
       revealSolution();
     }
   }, [selectedOptionIndex]);
 
-  // set timer for every question
-  useEffect(() => {
-    if (!timeLeft) {
-      revealSolution();
-      return;
-    }
-    const intervalId = setInterval(() => {
-      setTimeLeft(timeLeft - 1);
-    }, 1000);
-    return () => clearInterval(intervalId);
-  }, [timeLeft]);
-
   // play wait music
   useEffect(() => {
-    if (!playingWaitSound) toggleWaitSound();
-
-    return () => {
-      if (playingWaitSound) toggleWaitSound();
-    };
+    playWaitSound();
   }, []);
 
   return (
@@ -153,7 +137,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         correctOption={solution.correctOption}
       />
 
-      <Timer timeLeft={timeLeft} />
+      <Timer callback={revealSolution} />
     </div>
   );
 };
