@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import styles from '@styles/screens/score.module.scss';
-import useKeyPress from '../../hooks/useKeyPress';
+import useKeyPress from '../../hooks/useKeyPress2';
 import { controls } from '../../config.json';
 import useCaptions from '../../hooks/useCaptions';
 import useSoundEffect from '../../hooks/useSoundEffect';
@@ -15,10 +15,7 @@ const ScoreScreen = ({ goTo, scores }) => {
   const captions = useCaptions(videoRef);
 
   // skip media
-  const skip = useKeyPress(controls.skip);
-  useEffect(() => {
-    if (skip) goTo('attract', true);
-  }, [skip]);
+  useKeyPress(controls.skip, () => goTo('attract', true));
 
   // get key with max value
   function getWinners() {

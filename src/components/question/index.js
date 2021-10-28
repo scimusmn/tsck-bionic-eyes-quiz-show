@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/question.module.scss';
-import useKeyPress from '../../hooks/useKeyPress';
+import useKeyPress from '../../hooks/useKeyPress2';
 import { controls, timePerQuestion } from '../../config.json';
 import { LayoutOne, LayoutTwo } from './layouts';
 import Solution from './solution';
@@ -60,19 +60,18 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
 
     if (!inputSoundEffect[player][0]) inputSoundEffect[player][1]();
 
-    setSelectedOptionIndex({
-      ...selectedOptionIndex,
+    setSelectedOptionIndex((prevState) => ({
+      ...prevState,
       [player]: optionIndex,
-    });
+    }));
   }
 
   // listen to players keyboard input
-  const p1Keys = question.options.map((_, i) => useKeyPress(controls.p1[i]));
-  const p2Keys = question.options.map((_, i) => useKeyPress(controls.p2[i]));
-  const p3Keys = question.options.map((_, i) => useKeyPress(controls.p3[i]));
-  p1Keys.forEach((key, i) => key && choose('p1', i));
-  p2Keys.forEach((key, i) => key && choose('p2', i));
-  p3Keys.forEach((key, i) => key && choose('p3', i));
+  question.options.forEach((_, i) => {
+    useKeyPress(controls.p1[i], () => choose('p1', i));
+    useKeyPress(controls.p2[i], () => choose('p2', i));
+    useKeyPress(controls.p3[i], () => choose('p3', i));
+  });
 
   // if everyone has answered - go to the next question
   useEffect(() => {
@@ -97,6 +96,10 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   // play wait music
   useEffect(() => {
     if (!playingWaitSound) toggleWaitSound();
+
+    return () => {
+      if (playingWaitSound) toggleWaitSound();
+    };
   }, []);
 
   return (

@@ -1,16 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/questionIntro.module.scss';
-import useKeyPress from '../../hooks/useKeyPress';
+import useKeyPress from '../../hooks/useKeyPress2';
 import { controls } from '../../config.json';
 import useCaptions from '../../hooks/useCaptions';
 
 const Intro = ({ content, startQuestion }) => {
   // skip media
-  const skip = useKeyPress(controls.skip);
-  useEffect(() => {
-    if (skip) startQuestion();
-  }, [skip]);
+  useKeyPress(controls.skip, () => startQuestion());
 
   // Load captions
   const videoRef = useRef();
