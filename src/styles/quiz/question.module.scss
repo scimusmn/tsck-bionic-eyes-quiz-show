@@ -30,50 +30,6 @@
   }
 }
 
-.options {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: toRem(200);
-
-  div {
-    margin-top: toRem(100);
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    gap: toRem(61);
-    &:first-child {
-      margin-top: 0;
-    }
-    padding: toRem(25) toRem(57) toRem(25) toRem(67);
-    &.correct {
-      background: linear-gradient(180deg, #0d003a 0%, #22cab1 100%);
-      box-shadow: 0 toRem(10) toRem(20) toRem(8) rgba(3, 0, 15, 0.3);
-      border-radius: toRem(29);
-    }
-  }
-
-  .index {
-    font-family: $smm-en-font;
-    font-size: toRem(70);
-    border-radius: 50%;
-    background: $white;
-    color: #0d003a;
-    font-weight: 700;
-    width: toRem(118.8);
-    height: toRem(118.8);
-    @extend %flex-center;
-  }
-
-  button {
-    background: none;
-    border: none;
-    color: $white;
-    @include localize('font-size', toRem(70), toRem(65));
-    font-weight: 700;
-  }
-}
-
 .video-wrapper {
   visibility: hidden;
   pointer-events: none;

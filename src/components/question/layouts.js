@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import styles from '@styles/quiz/types.module.scss';
+import styles from '@styles/quiz/layouts.module.scss';
 
 export const LayoutOne = ({ media, solutionMedia, showSolution = false }) => {
   const visibleMedia = !!solutionMedia && showSolution ? solutionMedia : media;

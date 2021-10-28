@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/solution.module.scss';
-import useKeyPress from '../../hooks/useKeyPress';
+import { useKeyPress } from '../../hooks';
 import { controls } from '../../config.json';
 
 const Solution = ({ content, goToNext }) => {
   // skip media
-  const skip = useKeyPress(controls.skip);
-  useEffect(() => {
-    if (skip) goToNext();
-  }, [skip]);
+  useKeyPress(controls.skip, goToNext);
 
   return (
     <div className={styles.solution}>
