@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import styles from '@styles/quiz/question.module.scss';
 import useKeyPress from '../../hooks/useKeyPress';
 import { controls, timePerQuestion } from '../../config.json';
-import { LayoutOne, LayoutTwo } from './types';
+import { LayoutOne, LayoutTwo } from './layouts';
 import Solution from './solution';
 import CurrentScores from './currentScores';
 import Timer from './timer';
+import Options from './options';
+import useSoundEffect from '../../hooks/useSoundEffect';
 
 const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
@@ -20,20 +22,44 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   const [showSolution, setShowSolution] = useState(false);
   const [timeLeft, setTimeLeft] = useState(timePerQuestion);
 
+  // sound effects
+  const inputSoundEffect = {
+    p1: useSoundEffect('input'),
+    p2: useSoundEffect('input'),
+    p3: useSoundEffect('input'),
+  };
+  const [playingWaitSound, toggleWaitSound] = useSoundEffect('wait', true);
+  const [, toggleSuccessSound] = useSoundEffect('success');
+  const [, toggleFailSound] = useSoundEffect('fail');
+
   // show solution and increase scores
   function revealSolution() {
     if (showSolution) return;
     setShowSolution(true);
-    Object.entries(selectedOptionIndex).forEach(([key, value]) => {
-      if (value === solution.correctOption - 1) {
+
+    const answersArray = Object.entries(selectedOptionIndex);
+    let allCorrect = true;
+    answersArray.forEach(([key, value]) => {
+      const isCorrect = value === solution.correctOption - 1;
+      if (isCorrect) {
         increaseScore(key);
       }
+      allCorrect = allCorrect && isCorrect;
     });
+
+    if (allCorrect) {
+      toggleSuccessSound();
+    } else {
+      toggleFailSound();
+    }
   }
 
   // choose option for player
   function choose(player, optionIndex) {
     if (showSolution || selectedOptionIndex[player] !== null) return;
+
+    if (!inputSoundEffect[player][0]) inputSoundEffect[player][1]();
+
     setSelectedOptionIndex({
       ...selectedOptionIndex,
       [player]: optionIndex,
@@ -51,6 +77,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   // if everyone has answered - go to the next question
   useEffect(() => {
     if (Object.values(selectedOptionIndex).every((p) => p !== null)) {
+      if (playingWaitSound) toggleWaitSound();
       revealSolution();
     }
   }, [selectedOptionIndex]);
@@ -66,6 +93,11 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     }, 1000);
     return () => clearInterval(intervalId);
   }, [timeLeft]);
+
+  // play wait music
+  useEffect(() => {
+    if (!playingWaitSound) toggleWaitSound();
+  }, []);
 
   return (
     <div className={styles.wrapper}>
@@ -103,22 +135,12 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
             showSolution={showSolution}
           />
         )}
-        <div className={styles.options}>
-          {question.type !== 'multi-choice-media' &&
-            question.options.map((option, index) => (
-              <div
-                key={option}
-                className={
-                  showSolution && solution.correctOption - 1 === index
-                    ? styles.correct
-                    : undefined
-                }
-              >
-                <button type='button'>{option}</button>
-                <span className={styles.index}>{index + 1}</span>
-              </div>
-            ))}
-        </div>
+
+        <Options
+          question={question}
+          solution={solution}
+          showSolution={showSolution}
+        />
       </div>
 
       <CurrentScores

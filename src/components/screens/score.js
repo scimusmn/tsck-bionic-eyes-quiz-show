@@ -5,6 +5,7 @@ import styles from '@styles/screens/score.module.scss';
 import useKeyPress from '../../hooks/useKeyPress';
 import { controls } from '../../config.json';
 import useCaptions from '../../hooks/useCaptions';
+import useSoundEffect from '../../hooks/useSoundEffect';
 
 const ScoreScreen = ({ goTo, scores }) => {
   const { t } = useTranslation();
@@ -26,6 +27,11 @@ const ScoreScreen = ({ goTo, scores }) => {
     );
     return winners;
   }
+
+  const [playingScoreSound, toggleScoreSound] = useSoundEffect('finalScore');
+  useEffect(() => {
+    if (!playingScoreSound) toggleScoreSound();
+  }, []);
 
   return (
     <section className={styles.score}>
