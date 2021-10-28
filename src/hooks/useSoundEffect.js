@@ -8,7 +8,6 @@ const useSoundEffect = (type, loop = false) => {
 
   const [playing, setPlaying] = useState(false);
 
-  // const toggle = () => setPlaying(!playing);
   const play = () => setPlaying(true);
   const pause = () => setPlaying(false);
 
@@ -18,13 +17,6 @@ const useSoundEffect = (type, loop = false) => {
 
     return () => audio.pause();
   }, [playing]);
-
-  // useEffect(() => {
-  //   audio.addEventListener('ended', () => setPlaying(false));
-  //   return () => {
-  //     audio.removeEventListener('ended', () => setPlaying(false));
-  //   };
-  // }, []);
 
   return [play, pause];
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout';
 import {
@@ -23,28 +23,32 @@ const IndexPage = () => {
 
   // Jump to next quiz
   function handleNextQuiz() {
-    setQuizIndex((quizIndex + 1) % numOfQuiz);
+    setQuizIndex((prevState) => (prevState + 1) % numOfQuiz);
     setScores({ p1: 0, p2: 0, p3: 0 });
   }
 
   // Change screen
   function goTo(screen, restart = false) {
     setActiveScreen(screen);
-    if (restart) handleNextQuiz();
+    if (restart) {
+      handleNextQuiz();
+    }
   }
 
   // Change language
-  useKeyPress(controls.start.ar, () => {
-    i18n.changeLanguage('ar');
-    addLangClass('ar');
+  const ar = useKeyPress(controls.start.ar);
+  const en = useKeyPress(controls.start.en);
+  useEffect(() => {
+    if (!(ar || en) || activeScreen === 'introduction') return;
+    if (ar) {
+      i18n.changeLanguage('ar');
+      addLangClass('ar');
+    } else if (en) {
+      i18n.changeLanguage('en');
+      addLangClass('en');
+    }
     goTo('introduction', activeScreen !== 'attract');
-  });
-
-  useKeyPress(controls.start.en, () => {
-    i18n.changeLanguage('en');
-    addLangClass('en');
-    goTo('introduction', activeScreen !== 'attract');
-  });
+  }, [ar, en]);
 
   // Handle game state
   function increaseScore(player) {
@@ -52,6 +56,10 @@ const IndexPage = () => {
       ...prevState,
       [player]: prevState[player] + pointPerQuestion,
     }));
+  }
+
+  function showResults() {
+    goTo('score');
   }
 
   return (
@@ -62,10 +70,10 @@ const IndexPage = () => {
           introduction: <IntroductionScreen goTo={goTo} />,
           quiz: (
             <QuizScreen
-              goTo={goTo}
               quiz={questionSets[quizIndex]}
               scores={scores}
               increaseScore={increaseScore}
+              showResults={showResults}
             />
           ),
           score: <ScoreScreen goTo={goTo} scores={scores} />,
