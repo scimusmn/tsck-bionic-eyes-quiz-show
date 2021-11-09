@@ -38,16 +38,16 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     pauseWaitSound();
 
     const answersArray = Object.entries(selectedOptionIndex);
-    let allCorrect = true;
+    let someCorrect = false;
     answersArray.forEach(([key, value]) => {
       const isCorrect = value === solution.correctOption - 1;
       if (isCorrect) {
         increaseScore(key);
       }
-      allCorrect = allCorrect && isCorrect;
+      someCorrect = someCorrect || isCorrect;
     });
 
-    if (allCorrect) {
+    if (someCorrect) {
       playSuccessSound();
     } else {
       playFailSound();
