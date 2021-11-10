@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/question.module.scss';
-import { controls } from '../../config.json';
-import { LayoutOne, LayoutTwo } from './layouts';
+import useKeyPress from '../../hooks/useKeyPress';
+import { controls, timePerQuestion } from '../../config.json';
+import { LayoutOne, LayoutTwo } from './types';
 import Solution from './solution';
 import CurrentScores from './currentScores';
 import Timer from './timer';
-import Options from './options';
-import { useSoundEffect, useKeyPress } from '../../hooks';
 
 const Question = ({ content, goToNext, scores, increaseScore }) => {
   const { question, questionIntro, solution } = content;
@@ -19,60 +18,35 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     p3: null,
   });
   const [showSolution, setShowSolution] = useState(false);
-
-  // sound effects
-  const inputSound = {
-    p1: useSoundEffect('input'),
-    p2: useSoundEffect('input'),
-    p3: useSoundEffect('input'),
-  };
-  const [playWaitSound, pauseWaitSound] = useSoundEffect('wait', true);
-  const [playSuccessSound] = useSoundEffect('success');
-  const [playFailSound] = useSoundEffect('fail');
+  const [timeLeft, setTimeLeft] = useState(timePerQuestion);
 
   // show solution and increase scores
   function revealSolution() {
     if (showSolution) return;
     setShowSolution(true);
-
-    pauseWaitSound();
-
-    const answersArray = Object.entries(selectedOptionIndex);
-    let someCorrect = false;
-    answersArray.forEach(([key, value]) => {
-      const isCorrect = value === solution.correctOption - 1;
-      if (isCorrect) {
+    Object.entries(selectedOptionIndex).forEach(([key, value]) => {
+      if (value === solution.correctOption - 1) {
         increaseScore(key);
       }
-      someCorrect = someCorrect || isCorrect;
     });
-
-    if (someCorrect) {
-      playSuccessSound();
-    } else {
-      playFailSound();
-    }
   }
 
   // choose option for player
   function choose(player, optionIndex) {
     if (showSolution || selectedOptionIndex[player] !== null) return;
-
-    // play input sound effect
-    inputSound[player][0]();
-
-    setSelectedOptionIndex((prevState) => ({
-      ...prevState,
+    setSelectedOptionIndex({
+      ...selectedOptionIndex,
       [player]: optionIndex,
-    }));
+    });
   }
 
   // listen to players keyboard input
-  question.options.forEach((_, i) => {
-    useKeyPress(controls.p1[i], () => choose('p1', i));
-    useKeyPress(controls.p2[i], () => choose('p2', i));
-    useKeyPress(controls.p3[i], () => choose('p3', i));
-  });
+  const p1Keys = question.options.map((_, i) => useKeyPress(controls.p1[i]));
+  const p2Keys = question.options.map((_, i) => useKeyPress(controls.p2[i]));
+  const p3Keys = question.options.map((_, i) => useKeyPress(controls.p3[i]));
+  p1Keys.forEach((key, i) => key && choose('p1', i));
+  p2Keys.forEach((key, i) => key && choose('p2', i));
+  p3Keys.forEach((key, i) => key && choose('p3', i));
 
   // if everyone has answered - go to the next question
   useEffect(() => {
@@ -81,10 +55,17 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     }
   }, [selectedOptionIndex]);
 
-  // play wait music
+  // set timer for every question
   useEffect(() => {
-    playWaitSound();
-  }, []);
+    if (!timeLeft) {
+      revealSolution();
+      return;
+    }
+    const intervalId = setInterval(() => {
+      setTimeLeft(timeLeft - 1);
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, [timeLeft]);
 
   return (
     <div className={styles.wrapper}>
@@ -122,12 +103,22 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
             showSolution={showSolution}
           />
         )}
-
-        <Options
-          question={question}
-          solution={solution}
-          showSolution={showSolution}
-        />
+        <div className={styles.options}>
+          {question.type !== 'multi-choice-media' &&
+            question.options.map((option, index) => (
+              <div
+                key={option}
+                className={
+                  showSolution && solution.correctOption - 1 === index
+                    ? styles.correct
+                    : undefined
+                }
+              >
+                <button type='button'>{option}</button>
+                <span className={styles.index}>{index + 1}</span>
+              </div>
+            ))}
+        </div>
       </div>
 
       <CurrentScores
@@ -137,7 +128,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         correctOption={solution.correctOption}
       />
 
-      <Timer callback={revealSolution} />
+      <Timer timeLeft={timeLeft} />
     </div>
   );
 };

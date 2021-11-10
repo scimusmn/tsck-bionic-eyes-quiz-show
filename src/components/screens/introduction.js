@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import styles from '@styles/screens/introduction.module.scss';
+import useKeyPress from '../../hooks/useKeyPress';
 import { controls } from '../../config.json';
-import { useCaptions, useKeyPress } from '../../hooks';
+import useCaptions from '../../hooks/useCaptions';
 
 const IntroductionScreen = ({ goTo }) => {
   const { t } = useTranslation();
@@ -23,7 +24,10 @@ const IntroductionScreen = ({ goTo }) => {
   }, [captions]);
 
   // skip media
-  useKeyPress(controls.skip, () => goTo('quiz'));
+  const skip = useKeyPress(controls.skip);
+  useEffect(() => {
+    if (skip) goTo('quiz');
+  }, [skip]);
 
   // reload video and captions
   useEffect(() => {

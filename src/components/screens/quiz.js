@@ -5,14 +5,15 @@ import Question from '../question';
 import Intro from '../question/intro';
 import Progress from '../question/progress';
 
-const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
+const QuizScreen = ({ goTo, quiz, increaseScore, scores }) => {
   const [question, setQuestion] = useState({ index: 0, start: false });
 
   function startQuestion() {
-    setQuestion((prevState) => ({
-      ...prevState,
-      start: true,
-    }));
+    setQuestion({ ...question, start: true });
+  }
+
+  function showResults() {
+    goTo('score');
   }
 
   function goToNext() {
@@ -50,8 +51,8 @@ const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
 export default QuizScreen;
 
 QuizScreen.propTypes = {
+  goTo: PropTypes.func.isRequired,
   quiz: PropTypes.instanceOf(Array).isRequired,
   scores: PropTypes.instanceOf(Object).isRequired,
   increaseScore: PropTypes.func.isRequired,
-  showResults: PropTypes.func.isRequired,
 };

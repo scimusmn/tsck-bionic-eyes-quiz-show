@@ -3,11 +3,11 @@
   "pointPerQuestion": 1,
 
   "soundEffect": {
-    "success": "/sound-effects/success.wav",
-    "fail": "/sound-effects/fail.wav",
-    "finalScore": "/sound-effects/final score.wav",
-    "input": "/sound-effects/input.wav",
-    "wait": "/sound-effects/wait.wav"
+    "wait": "/path/to/players/waiting/music",
+    "correct": "/path/to/correct/answer/sound",
+    "wrong": "/path/to/wrong/answer/sound",
+    "beforeTimer": "/path/to/players/answer/before/timer/sound",
+    "afterTimer": "/path/to/players/answer/after/timer/sound"
   },
 
   "controls": {

@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 
-export default function useKeyPress(targetKey, callback = () => {}) {
+export default function useKeyPress(targetKey) {
   const [keyPressed, setKeyPressed] = useState(false);
 
   function downHandler({ key }) {
     if (key === targetKey) {
       setKeyPressed(true);
-      callback();
     }
   }
 

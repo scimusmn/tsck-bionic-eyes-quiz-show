@@ -1,18 +1,15 @@
 .introduction {
   @extend %full-screen;
   display: grid;
-  grid-template-columns: auto 41%;
+  grid-template-columns: 60% 40%;
   align-items: center;
+  background: linear-gradient(360deg, #0d003a 0%, #242466 100%);
 }
 
 .video-wrapper {
   height: 100%;
   video {
     @extend %cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
   }
 }
 
