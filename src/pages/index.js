@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Layout from '../components/layout';
 import {
@@ -7,7 +7,7 @@ import {
   QuizScreen,
   ScoreScreen,
 } from '../components/screens';
-import useKeyPress from '../hooks/useKeyPress';
+import { useKeyPress } from '../hooks';
 import { controls, pointPerQuestion } from '../config.json';
 import { addLangClass } from '../helpers';
 
@@ -23,22 +23,23 @@ const IndexPage = () => {
 
   // Jump to next quiz
   function handleNextQuiz() {
-    setQuizIndex((quizIndex + 1) % numOfQuiz);
+    setQuizIndex((prevState) => (prevState + 1) % numOfQuiz);
     setScores({ p1: 0, p2: 0, p3: 0 });
   }
 
   // Change screen
   function goTo(screen, restart = false) {
     setActiveScreen(screen);
-    if (restart) handleNextQuiz();
+    if (restart) {
+      handleNextQuiz();
+    }
   }
 
   // Change language
-
   const ar = useKeyPress(controls.start.ar);
   const en = useKeyPress(controls.start.en);
   useEffect(() => {
-    if (!(ar || en)) return;
+    if (!(ar || en) || activeScreen === 'introduction') return;
     if (ar) {
       i18n.changeLanguage('ar');
       addLangClass('ar');
@@ -57,6 +58,10 @@ const IndexPage = () => {
     }));
   }
 
+  function showResults() {
+    goTo('score');
+  }
+
   return (
     <Layout>
       {
@@ -65,10 +70,10 @@ const IndexPage = () => {
           introduction: <IntroductionScreen goTo={goTo} />,
           quiz: (
             <QuizScreen
-              goTo={goTo}
               quiz={questionSets[quizIndex]}
               scores={scores}
               increaseScore={increaseScore}
+              showResults={showResults}
             />
           ),
           score: <ScoreScreen goTo={goTo} scores={scores} />,
