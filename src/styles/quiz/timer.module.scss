@@ -10,6 +10,10 @@
   width: toRem(125);
   height: toRem(125);
 
+  &.active {
+    opacity: 0.3;
+  }
+
   span {
     position: absolute;
     @extend %abs-center;
