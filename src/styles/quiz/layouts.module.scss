@@ -1,8 +1,11 @@
 .media {
-  height: 100%;
+  // position: relative;
+  // height: 100%;
   img,
   video {
-    @extend %cover;
+    width: 100%;
+    height: auto;
+    // @extend %cover;
   }
 
   &.active {
@@ -21,7 +24,6 @@
     overflow: hidden;
     width: toRem(1024);
     height: toRem(395);
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;

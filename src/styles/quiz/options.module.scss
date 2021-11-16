@@ -26,6 +26,8 @@
     border: none;
     color: $white;
     @include localize('font-size', toRem(70), toRem(65));
+    @include localize('text-align', right, left);
+
     font-weight: 700;
   }
 }

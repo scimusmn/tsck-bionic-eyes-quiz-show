@@ -21,7 +21,7 @@
 .content {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   grid-gap: toRem(100);
   align-items: center;
 

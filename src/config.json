@@ -1,5 +1,5 @@
 {
-  "timePerQuestion": 10,
+  "timePerQuestion": 10000,
   "pointPerQuestion": 1,
 
   "soundEffect": {

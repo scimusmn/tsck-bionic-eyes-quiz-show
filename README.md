@@ -63,19 +63,17 @@ You can set the global config of the application in `/src/config.json`.
 ```
 
 ## To Do
-- Styling
-- Captions for all the audio/video files
-- Sound effects used throughout the application
-- Update with final assets
 - Code cleanup and optimization
 - Some edge cases for the quiz
+- Layout changes if required
 
 ## Edge cases
 1. The users are able to answer even after the solution has been revealed. *This is only relevant for styling purposes, as the scores are not updated*.
-2. If all players enter answers before audio narration completes, the results are shown as soon as the audio narration completes.
-3. When appropriate, the media asset updates to display the "reveal" answer version.
-4. Inactivity timeout - if no answers are entered for two quiz questions in a row, the application reloads/resets to the Attract screen.
-5. Software must be able to run in an exhibit for ~twelve hours without crashing or noticeable performance issues. You may reload the
+2. Inactivity timeout - if no answers are entered for two quiz questions in a row, the application reloads/resets to the Attract screen.
+3. Software must be able to run in an exhibit for ~twelve hours without crashing or noticeable performance issues. You may reload the
 page programmatically after a period of inactivity to help avoid memory issues.
+
+## Image optimization
+According to the design the width x height of the images used in `multi-choice-media` should be `698.41 x 395`. The size of all other images/videos should be `1900 x 1200`. I am also compressing the images further using the TinyPNG plugin (https://tinypng.com/). The images should load properly after that.
 
 
