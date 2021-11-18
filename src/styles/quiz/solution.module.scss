@@ -1,7 +1,6 @@
 .solution {
   position: relative;
   display: block;
-  margin-left: toRem(150);
 
   @include localize('text-align', right, left);
   @include localize('font-size', toRem(45), toRem(40));

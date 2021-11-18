@@ -74,6 +74,8 @@ You can set the global config of the application in `/src/config.json`.
 page programmatically after a period of inactivity to help avoid memory issues.
 
 ## Image optimization
-According to the design the width x height of the images used in `multi-choice-media` should be `698.41 x 395`. The size of all other images/videos should be `1900 x 1200`. I am also compressing the images further using the TinyPNG plugin (https://tinypng.com/). The images should load properly after that.
+According to the design the width x height of the images used in `multi-choice-media` should be `699 x 395`. The size of all other images/videos should be `1900 x 1200`. The size of fullscreen videos, however, should be `3840 x 2160`
+
+The images can further be compressed using a service like TinyPNG plugin (https://tinypng.com/). The images should load properly after that.
 
 

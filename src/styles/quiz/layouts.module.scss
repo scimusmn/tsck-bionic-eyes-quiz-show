@@ -1,11 +1,8 @@
 .media {
-  // position: relative;
-  // height: 100%;
   img,
   video {
-    width: 100%;
-    height: auto;
-    // @extend %cover;
+    width: toRem(1900);
+    height: toRem(1200);
   }
 
   &.active {
@@ -15,24 +12,26 @@
 
 .media.multi {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: toRem(51);
+  grid-template-rows: repeat(3, auto);
+  gap: toRem(50);
 
-  div {
+  & > div {
     border: toRem(3) solid $white;
     border-radius: toRem(20);
     overflow: hidden;
-    width: toRem(1024);
-    height: toRem(395);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-items: center;
+
+    &.correct {
+      background: linear-gradient(180deg, #0d003a 0%, #22cab1 108.41%);
+      box-shadow: 0 0 toRem(70) #00ffd9;
+    }
   }
 
-  div.correct {
-    background: linear-gradient(180deg, #0d003a 0%, #22cab1 108.41%);
-    box-shadow: 0 0 toRem(70) #00ffd9;
+  img {
+    width: toRem(699);
+    height: toRem(395);
   }
 
   .index {
@@ -45,5 +44,6 @@
     width: toRem(118.8);
     height: toRem(118.8);
     @extend %flex-center;
+    margin: 0 toRem(96);
   }
 }

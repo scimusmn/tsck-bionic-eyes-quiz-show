@@ -34,3 +34,10 @@ h6 {
   text-transform: uppercase;
   @include localize('font-weight', 700, 500);
 }
+
+video,
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
