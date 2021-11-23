@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { timePerQuestion } from '../config.json';
 
-export default function useTimer(callback) {
-  const [timeLeft, setTimeLeft] = useState(timePerQuestion);
+export default function useTimer(totalTime, stop, callback) {
+  const [timeLeft, setTimeLeft] = useState(totalTime);
   useEffect(() => {
-    if (!timeLeft) {
+    if (!timeLeft || stop) {
       callback();
       return;
     }
@@ -13,7 +12,7 @@ export default function useTimer(callback) {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [timeLeft]);
+  }, [timeLeft, stop]);
 
   return timeLeft;
 }

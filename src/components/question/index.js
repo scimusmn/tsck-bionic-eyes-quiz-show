@@ -19,6 +19,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     p3: null,
   });
   const [showSolution, setShowSolution] = useState(false);
+  const [showTimer, setShowTimer] = useState(false);
 
   // sound effects
   const inputSound = {
@@ -26,7 +27,6 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     p2: useSoundEffect('input'),
     p3: useSoundEffect('input'),
   };
-  const [playWaitSound, pauseWaitSound] = useSoundEffect('wait', true);
   const [playSuccessSound] = useSoundEffect('success');
   const [playFailSound] = useSoundEffect('fail');
 
@@ -34,8 +34,6 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
   function revealSolution() {
     if (showSolution) return;
     setShowSolution(true);
-
-    pauseWaitSound();
 
     const answersArray = Object.entries(selectedOptionIndex);
     let someCorrect = false;
@@ -81,11 +79,6 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
     }
   }, [selectedOptionIndex]);
 
-  // play wait music
-  useEffect(() => {
-    playWaitSound();
-  }, []);
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.question}>
@@ -94,7 +87,12 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
 
         <div className={styles.videoWrapper}>
           {!showSolution && (
-            <video controls={false} autoPlay preload='metadata'>
+            <video
+              controls={false}
+              autoPlay
+              preload='metadata'
+              onEnded={() => setShowTimer(true)}
+            >
               <source src={question.audio} type='video/mp4' />
             </video>
           )}
@@ -137,7 +135,7 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
         correctOption={solution.correctOption}
       />
 
-      <Timer callback={revealSolution} />
+      {showTimer && <Timer callback={revealSolution} stop={showSolution} />}
     </div>
   );
 };

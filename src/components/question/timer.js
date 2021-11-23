@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/timer.module.scss';
-import { useTimer } from '../../hooks';
+import { useSoundEffect, useTimer } from '../../hooks';
+import { timePerQuestion } from '../../config.json';
 
-const norm = (value, inMin = 0, inMax = 15, outMin = 0, outMax = 251) =>
+const norm = (value, inMin = 0, inMax = 10, outMin = 0, outMax = 251) =>
   ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
 
-const Timer = ({ callback }) => {
-  const timeLeft = useTimer(callback);
+const Timer = ({ stop, callback }) => {
+  const [playWaitSound, pauseWaitSound] = useSoundEffect('wait', true);
+
+  const timeLeft = useTimer(timePerQuestion, stop, callback);
+
+  const timerClass = `${styles.timer} ${(!timeLeft || stop) && styles.active}`;
+
+  // play wait music
+  useEffect(() => {
+    playWaitSound();
+  }, []);
+
+  // pause wait music
+  useEffect(() => {
+    if (stop) pauseWaitSound();
+  }, [stop]);
+
   return (
-    <div className={styles.timer}>
+    <div className={timerClass}>
       <svg
         height='100'
         width='100'
@@ -24,7 +40,7 @@ const Timer = ({ callback }) => {
           strokeDashoffset='251'
           stroke-mitterlimit='0'
           style={{
-            strokeDashoffset: norm(timeLeft),
+            strokeDashoffset: norm(timeLeft, 0, timePerQuestion),
           }}
         />
       </svg>
@@ -37,4 +53,5 @@ export default Timer;
 
 Timer.propTypes = {
   callback: PropTypes.func.isRequired,
+  stop: PropTypes.bool.isRequired,
 };

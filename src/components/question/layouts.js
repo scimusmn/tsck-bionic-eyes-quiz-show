@@ -20,37 +20,41 @@ export const LayoutOne = ({ media, solutionMedia, showSolution = false }) => {
 
   return (
     <div
-      className={`${styles.media}
-      ${showSolution ? styles.active : undefined}`}
+      className={`${styles.media} ${showSolution ? styles.active : undefined}`}
     >
       {visibleMedia.video ? (
-        <video controls={false} autoPlay preload='metadata' ref={videoRef}>
+        <video
+          controls={false}
+          autoPlay
+          preload='metadata'
+          ref={videoRef}
+          width='1900'
+          height='1200'
+        >
           <source src={visibleMedia.video} type='video/mp4' ref={sourceRef} />
         </video>
       ) : (
-        <img src={visibleMedia.image} alt='' />
+        <img src={visibleMedia.image} alt='' width='1900' height='1200' />
       )}
     </div>
   );
 };
 
-export const LayoutTwo = ({ media, correctOption, showSolution = false }) => (
-  <div className={`${styles.media} ${styles.multi} `}>
-    {media.images.map((src, index) => (
-      <div
-        key={src}
-        className={
-          showSolution && correctOption - 1 === index
-            ? styles.correct
-            : undefined
-        }
-      >
-        <img src={src} alt='' />
-        <span className={styles.index}>{index + 1}</span>
-      </div>
-    ))}
-  </div>
-);
+export const LayoutTwo = ({ media, correctOption, showSolution = false }) => {
+  const correctStyles = (index) =>
+    showSolution && correctOption - 1 === index ? styles.correct : undefined;
+
+  return (
+    <div className={`${styles.media} ${styles.multi} `}>
+      {media.images.map((src, index) => (
+        <div key={src} className={correctStyles(index)}>
+          <img src={src} alt='' width='699' height='395' />
+          <span className={styles.index}>{index + 1}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 LayoutOne.propTypes = {
   media: PropTypes.instanceOf(Object).isRequired,
