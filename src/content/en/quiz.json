@@ -9,22 +9,22 @@
         },
         "question": {
           "type": "multi-choice-media",
-          "text": "The first people to use bionic eyes got their implants in 2009. Which image best represents the earliest bionic vision?",
+          "text": "The first bionic eye became commercially available in 2011. Which image best represents this early bionic vision?",
           "audio": "/audio/s1_q1_audio_en.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
             "image": "",
             "video": "",
             "images": [
-              "/media/s1_q1_Image.png",
-              "/media/s1_q1_image_2.png",
-              "/media/s1_q1_image_3.png"
+              "/media/s1_q1_image_1.jpg",
+              "/media/s1_q1_image_2.jpg",
+              "/media/s1_q1_image_3.jpg"
             ]
           }
         },
         "solution": {
           "correctOption": 1,
-          "text": "The earliest bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.",
+          "text": "The earliest bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.Early bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.",
           "audio": "/audio/s1_a1_audio_en.mp3"
         }
       },
@@ -51,7 +51,7 @@
           "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s1_a2_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s1_a2_Image.png",
+            "image": "/media/s1_a2_image.jpg",
             "video": ""
           }
         }
@@ -79,7 +79,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s1_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s1_a3_Image.png",
+            "image": "/media/s1_a3_image.jpg",
             "video": ""
           }
         }
@@ -135,6 +135,94 @@
           "text": "Researchers predict that within a few years, bionic eyes will produce vision as good as this image. In the decades to come, artificial vision may even surpass natural vision in power and clarity.",
           "audio": "/audio/s1_a5_audio_en.mp3"
         }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question six",
+          "audio": "/audio/s1_i6_audio_en.mp3",
+          "captions": "/captions/s1_i6_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "When was the first bionic eye device implanted?",
+          "audio": "/audio/s1_q6_audio_en.mp3",
+          "options": ["1802", "1958", "2009"],
+          "visualMedia": {
+            "image": "/media/s1_q6_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "The first experimental bionic eye was implanted in 1958. But, as you might remember from Question 1, implants weren’t commercially available until 2011.",
+          "audio": "/audio/s1_a6_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a6_image.jpg",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question seven",
+          "audio": "/audio/s1_i7_audio_en.mp3",
+          "captions": "/captions/s1_i7_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "This video simulates artificial vision. What animals do you see moving here?",
+          "audio": "/audio/s1_q7_audio_en.mp3",
+          "options": ["Elephants", "Ostriches", "Camels"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_q7_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "",
+          "audio": "/audio/s1_a2_audio_en.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question eight",
+          "audio": "/audio/s1_i8_audio_en.mp3",
+          "captions": "/captions/s1_i8_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "Some researchers predict that bionic eyes will achieve much clearer vision with the same number of photoreceptors as a human eye by what year?",
+          "audio": "/audio/s1_q8_audio_en.mp3",
+          "options": [
+            "2030",
+            "2048",
+            "They will never achieve clearer vision."
+          ],
+          "visualMedia": {
+            "image": "/media/s1_q8_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "",
+          "audio": "/audio/s1_a8_audio_en.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a8_image.jpg",
+            "video": ""
+          }
+        }
       }
     ],
 
@@ -154,9 +242,9 @@
             "image": "",
             "video": "",
             "images": [
-              "/media/s2_q1_image_1.png",
-              "/media/s2_q1_image_2.png",
-              "/media/s2_q1_image_3.png"
+              "/media/s2_q1_image_1.jpg",
+              "/media/s2_q1_image_2.jpg",
+              "/media/s2_q1_image_3.jpg"
             ]
           }
         },
@@ -189,7 +277,7 @@
           "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s2_a2_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s2_a2_image.png",
+            "image": "/media/s2_a2_image.jpg",
             "video": ""
           }
         }
@@ -217,7 +305,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s2_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s2_a3_image.png",
+            "image": "/media/s2_a3_image.jpg",
             "video": ""
           }
         }
@@ -271,7 +359,7 @@
             "Nothing - anyone can get bionic eyes"
           ],
           "visualMedia": {
-            "image": "/media/s2_q5_image.png",
+            "image": "/media/s2_q5_image.jpg",
             "video": "",
             "images": []
           }
@@ -297,7 +385,7 @@
           "audio": "/audio/s3_q1_audio_en.mp3",
           "options": ["60 electrodes", "1,200 electrodes", "15,000 electrodes"],
           "visualMedia": {
-            "image": "/media/s3_q1_image.png",
+            "image": "/media/s3_q1_image.jpg",
             "video": "",
             "images": []
           }
@@ -335,7 +423,7 @@
           "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s3_a2_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s3_a2_image.png",
+            "image": "/media/s3_a2_image.jpg",
             "video": ""
           }
         }
@@ -363,7 +451,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s3_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s3_a3_image.png",
+            "image": "/media/s3_a3_image.jpg",
             "video": ""
           }
         }
@@ -409,7 +497,7 @@
           "audio": "/audio/s3_q5_audio_en.mp3",
           "options": ["True", "False"],
           "visualMedia": {
-            "image": "/media/s3_q5_image.png",
+            "image": "/media/s3_q5_image.jpg",
             "video": "",
             "images": []
           }

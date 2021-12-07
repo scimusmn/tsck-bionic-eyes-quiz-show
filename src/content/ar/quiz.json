@@ -16,9 +16,9 @@
             "image": "",
             "video": "",
             "images": [
-              "/media/s1_q1_Image.png",
-              "/media/s1_q1_image_2.png",
-              "/media/s1_q1_image_3.png"
+              "/media/s1_q1_image_1.jpg",
+              "/media/s1_q1_image_2.jpg",
+              "/media/s1_q1_image_3.jpg"
             ]
           }
         },
@@ -51,7 +51,7 @@
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
           "audio": "/audio/s1_a2_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s1_a2_Image.png",
+            "image": "/media/s1_a2_image.jpg",
             "video": ""
           }
         }
@@ -79,7 +79,7 @@
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
           "audio": "/audio/s1_a3_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s1_a3_Image.png",
+            "image": "/media/s1_a3_image.jpg",
             "video": ""
           }
         }
@@ -135,6 +135,90 @@
           "text": ".يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح",
           "audio": "/audio/s1_a5_audio_ar.mp3"
         }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السادس",
+          "audio": "/audio/s1_i6_audio_ar.mp3",
+          "captions": "/captions/s1_i6_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "متى تم زرع أول جهاز للعين الإلكترونية؟",
+          "audio": "/audio/s1_q6_audio_ar.mp3",
+          "options": ["1802", "1958", "2009"],
+          "visualMedia": {
+            "image": "/media/s1_q6_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": ".تم زرع أول عين الكترونية تجريبية في عام 1958. ولكن ، كما قد تتذكر من السؤال 1 ، لم تكن الغرسات متاحة تجاريًا حتى عام 2011",
+          "audio": "/audio/s1_a6_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a6_image.jpg",
+            "video": ""
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السابع",
+          "audio": "/audio/s1_i7_audio_ar.mp3",
+          "captions": "/captions/s1_i7_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "هذا الفيديو يحاكي الرؤية الاصطناعية. ما الحيوانات التي تراها تتحرك هنا؟",
+          "audio": "/audio/s1_q7_audio_ar.mp3",
+          "options": ["الجمال", "النعام", "الفيلة"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_q7_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "",
+          "audio": "/audio/s1_a2_audio_ar.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s1_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثامن",
+          "audio": "/audio/s1_i8_audio_ar.mp3",
+          "captions": "/captions/s1_i8_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "يتوقع بعض الباحثين أن تحقق العيون الإلكترونية رؤية أوضح بكثير مع نفس عدد المستقبلات الضوئية مثل العين البشرية بحلول أي عام؟",
+          "audio": "/audio/s1_q8_audio_ar.mp3",
+          "options": ["2030", "2048", ".لن يحققوا أبدًا رؤية أوضح"],
+          "visualMedia": {
+            "image": "/media/s1_q8_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "",
+          "audio": "/audio/s1_a8_audio_ar.mp3",
+          "visualMedia": {
+            "image": "/media/s1_a8_image.jpg",
+            "video": ""
+          }
+        }
       }
     ],
 
@@ -154,9 +238,9 @@
             "image": "",
             "video": "",
             "images": [
-              "/media/s2_q1_image_1.png",
-              "/media/s2_q1_image_2.png",
-              "/media/s2_q1_image_3.png"
+              "/media/s2_q1_image_1.jpg",
+              "/media/s2_q1_image_2.jpg",
+              "/media/s2_q1_image_3.jpg"
             ]
           }
         },
@@ -189,7 +273,7 @@
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
           "audio": "/audio/s2_a2_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s2_a2_image.png",
+            "image": "/media/s2_a2_image.jpg",
             "video": ""
           }
         }
@@ -217,7 +301,7 @@
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
           "audio": "/audio/s2_a3_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s2_a3_image.png",
+            "image": "/media/s2_a3_image.jpg",
             "video": ""
           }
         }
@@ -271,7 +355,7 @@
             "لا شيء - يمكن لأي شخص الحصول على عيون آلية"
           ],
           "visualMedia": {
-            "image": "/media/s2_q5_image.png",
+            "image": "/media/s2_q5_image.jpg",
             "video": "",
             "images": []
           }
@@ -301,7 +385,7 @@
             "قطب كهربائي 15000"
           ],
           "visualMedia": {
-            "image": "/media/s3_q1_image.png",
+            "image": "/media/s3_q1_image.jpg",
             "video": "",
             "images": []
           }
@@ -339,7 +423,7 @@
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
           "audio": "/audio/s3_a2_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s3_a2_image.png",
+            "image": "/media/s3_a2_image.jpg",
             "video": ""
           }
         }
@@ -367,7 +451,7 @@
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
           "audio": "/audio/s3_a3_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s3_a3_image.png",
+            "image": "/media/s3_a3_image.jpg",
             "video": ""
           }
         }
@@ -413,7 +497,7 @@
           "audio": "/audio/s3_q5_audio_ar.mp3",
           "options": ["خطأ شنيع", "حقيقي"],
           "visualMedia": {
-            "image": "/media/s3_q5_image.png",
+            "image": "/media/s3_q5_image.jpg",
             "video": "",
             "images": []
           }
