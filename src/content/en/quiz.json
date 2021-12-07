@@ -41,9 +41,7 @@
           "audio": "/audio/s1_q2_audio_en.mp3",
           "options": ["A bird", "A plane", "A kite"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_q2_video.mp4",
-            "images": []
+            "video": "/media/s1_q2_video.mp4"
           }
         },
         "solution": {
@@ -69,9 +67,7 @@
           "audio": "/audio/s1_q3_audio_en.mp3",
           "options": ["A rock", "A mouse", "A fish"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_q3_video.mp4",
-            "images": []
+            "video": "/media/s1_q3_video.mp4"
           }
         },
         "solution": {
@@ -79,8 +75,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s1_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s1_a3_image.jpg",
-            "video": ""
+            "image": "/media/s1_a3_image.jpg"
           }
         }
       },
@@ -97,9 +92,7 @@
           "audio": "/audio/s1_q4_audio_en.mp3",
           "options": ["Bubbles", "Fireworks", "A flickering light"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_q4_video.mp4",
-            "images": []
+            "video": "/media/s1_q4_video.mp4"
           }
         },
         "solution": {
@@ -107,7 +100,6 @@
           "text": "Moving images contain more information than still ones, and can be easier to identify.",
           "audio": "/audio/s1_a4_audio_en.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s1_a4_video.mp4"
           }
         }
@@ -125,9 +117,7 @@
           "audio": "/audio/s1_q5_audio_en.mp3",
           "options": ["True", "False"],
           "visualMedia": {
-            "image": "/media/s1_q5_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s1_q5_image.jpg"
           }
         },
         "solution": {
@@ -149,9 +139,7 @@
           "audio": "/audio/s1_q6_audio_en.mp3",
           "options": ["1802", "1958", "2009"],
           "visualMedia": {
-            "image": "/media/s1_q6_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s1_q6_image.jpg"
           }
         },
         "solution": {
@@ -173,17 +161,14 @@
           "audio": "/audio/s1_q7_audio_en.mp3",
           "options": ["Elephants", "Ostriches", "Camels"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_q7_video.mp4",
-            "images": []
+            "video": "/media/s1_q7_video.mp4"
           }
         },
         "solution": {
           "correctOption": 3,
           "text": "",
-          "audio": "/audio/s1_a2_audio_en.mp3",
+          "audio": "/audio/s1_a7_audio_en.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s1_a7_video.mp4"
           }
         }
@@ -205,13 +190,11 @@
             "They will never achieve clearer vision."
           ],
           "visualMedia": {
-            "image": "/media/s1_q8_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s1_q8_image.jpg"
           }
         },
         "solution": {
-          "correctOption": 3,
+          "correctOption": 2,
           "text": "",
           "audio": "/audio/s1_a8_audio_en.mp3"
         }
@@ -231,8 +214,6 @@
           "audio": "/audio/s2_q1_audio_en.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
-            "image": "",
-            "video": "",
             "images": [
               "/media/s2_q1_image_1.jpg",
               "/media/s2_q1_image_2.jpg",
@@ -259,9 +240,7 @@
           "audio": "/audio/s2_q2_audio_en.mp3",
           "options": ["Two people", "A man and a camel", "A woman and a horse"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q2_video.mp4",
-            "images": []
+            "video": "/media/s2_q2_video.mp4"
           }
         },
         "solution": {
@@ -269,8 +248,7 @@
           "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s2_a2_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s2_a2_image.jpg",
-            "video": ""
+            "image": "/media/s2_a2_image.jpg"
           }
         }
       },
@@ -287,9 +265,7 @@
           "audio": "/audio/s2_q3_audio_en.mp3",
           "options": ["A child", "A dog", "A cat"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q3_video.mp4",
-            "images": []
+            "video": "/media/s2_q3_video.mp4"
           }
         },
         "solution": {
@@ -297,8 +273,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s2_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s2_a3_image.jpg",
-            "video": ""
+            "image": "/media/s2_a3_image.jpg"
           }
         }
       },
@@ -319,9 +294,7 @@
             "People crossing a street"
           ],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q4_video.mp4",
-            "images": []
+            "video": "/media/s2_q4_video.mp4"
           }
         },
         "solution": {
@@ -329,7 +302,6 @@
           "text": "Moving images contain more information than still ones, and can be easier to identify.",
           "audio": "/audio/s2_a4_audio_en.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s2_a4_video.mp4"
           }
         }
@@ -351,9 +323,7 @@
             "Nothing. Anyone can get bionic eyes."
           ],
           "visualMedia": {
-            "image": "/media/s2_q5_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s2_q5_image.jpg"
           }
         },
         "solution": {
@@ -375,9 +345,7 @@
           "audio": "/audio/s2_q6_audio_en.mp3",
           "options": ["600 million", "40 million", "2 million"],
           "visualMedia": {
-            "image": "/media/s2_q6_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s2_q6_image.jpg"
           }
         },
         "solution": {
@@ -403,9 +371,7 @@
             "Kids riding skateboards"
           ],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q7_video.mp4",
-            "images": []
+            "video": "/media/s2_q7_video.mp4"
           }
         },
         "solution": {
@@ -413,7 +379,6 @@
           "text": "",
           "audio": "/audio/s2_a7_audio_en.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s2_a7_video.mp4"
           }
         }
@@ -431,9 +396,7 @@
           "audio": "/audio/s2_q8_audio_en.mp3",
           "options": ["Pacemakers", "Exoskeletons", "Cochlear implants"],
           "visualMedia": {
-            "image": "/media/s2_q8_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s2_q8_image.jpg"
           }
         },
         "solution": {
@@ -457,14 +420,12 @@
           "audio": "/audio/s3_q1_audio_en.mp3",
           "options": ["96 electrodes", "1,536 electrodes", "10,012 electrodes"],
           "visualMedia": {
-            "image": "/media/s3_q1_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s3_q1_image.jpg"
           }
         },
         "solution": {
           "correctOption": 2,
-          "text": "The correct answer is 1, 60 electrodes.",
+          "text": "",
           "audio": "/audio/s3_a1_audio_en.mp3"
         }
       },
@@ -485,9 +446,7 @@
             "Vegetables"
           ],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q2_video.mp4",
-            "images": []
+            "video": "/media/s3_q2_video.mp4"
           }
         },
         "solution": {
@@ -495,8 +454,7 @@
           "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s3_a2_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s3_a2_image.jpg",
-            "video": ""
+            "image": "/media/s3_a2_image.jpg"
           }
         }
       },
@@ -513,9 +471,7 @@
           "audio": "/audio/s3_q3_audio_en.mp3",
           "options": ["A building's smokestack", "A vase of flowers", "A lamp"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q3_video.mp4",
-            "images": []
+            "video": "/media/s3_q3_video.mp4"
           }
         },
         "solution": {
@@ -523,8 +479,7 @@
           "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
           "audio": "/audio/s3_a3_audio_en.mp3",
           "visualMedia": {
-            "image": "/media/s3_a3_image.jpg",
-            "video": ""
+            "image": "/media/s3_a3_image.jpg"
           }
         }
       },
@@ -541,9 +496,7 @@
           "audio": "/audio/s3_q4_audio_en.mp3",
           "options": ["A toy car on a track", "A train", "A sailboat"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q4_video.mp4",
-            "images": []
+            "video": "/media/s3_q4_video.mp4"
           }
         },
         "solution": {
@@ -551,7 +504,6 @@
           "text": "Moving images contain more information than still ones, and can be easier to identify.",
           "audio": "/audio/s3_a4_audio_en.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s3_a4_video.mp4"
           }
         }
@@ -569,9 +521,7 @@
           "audio": "/audio/s3_q5_audio_en.mp3",
           "options": ["True", "False"],
           "visualMedia": {
-            "image": "/media/s3_q5_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s3_q5_image.jpg"
           }
         },
         "solution": {
@@ -593,9 +543,7 @@
           "audio": "/audio/s3_q6_audio_en.mp3",
           "options": ["16 electrodes", "28 electrodes", "35 electrodes"],
           "visualMedia": {
-            "image": "/media/s3_q6_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s3_q6_image.jpg"
           }
         },
         "solution": {
@@ -617,9 +565,7 @@
           "audio": "/audio/s3_q6_audio_en.mp3",
           "options": ["A flag", "Clouds in the sky", "Smoke blowing"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q7_video.mp4",
-            "images": []
+            "video": "/media/s3_q7_video.mp4"
           }
         },
         "solution": {
@@ -627,7 +573,6 @@
           "text": "",
           "audio": "/audio/s3_a7_audio_en.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s3_a7_video.mp4"
           }
         }
@@ -645,9 +590,7 @@
           "audio": "/audio/s3_q6_audio_en.mp3",
           "options": ["60", "500,000", "1,000,000"],
           "visualMedia": {
-            "image": "/media/s3_q8_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s3_q8_image.jpg"
           }
         },
         "solution": {

@@ -30,6 +30,7 @@ export const LayoutOne = ({ media, solutionMedia, showSolution = false }) => {
           ref={videoRef}
           width='1900'
           height='1200'
+          muted
         >
           <source src={visibleMedia.video} type='video/mp4' ref={sourceRef} />
         </video>
