@@ -16,9 +16,9 @@
             "image": "",
             "video": "",
             "images": [
-              "/media/s1_q1_Image.png",
-              "/media/s1_q1_image_2.png",
-              "/media/s1_q1_image_3.png"
+              "/media/s1_q1_image_1.jpg",
+              "/media/s1_q1_image_2.jpg",
+              "/media/s1_q1_image_3.jpg"
             ]
           }
         },
@@ -41,9 +41,7 @@
           "audio": "/audio/s1_q2_audio_ar.mp3",
           "options": ["طائرة ورقية", "طائرة", "طائر"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_q2_video.mp4",
-            "images": []
+            "video": "/media/s1_q2_video.mp4"
           }
         },
         "solution": {
@@ -51,7 +49,7 @@
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
           "audio": "/audio/s1_a2_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s1_a2_Image.png",
+            "image": "/media/s1_a2_image.jpg",
             "video": ""
           }
         }
@@ -69,9 +67,7 @@
           "audio": "/audio/s1_q3_audio_ar.mp3",
           "options": ["سمكة", "فأر", "صخرة"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_q3_video.mp4",
-            "images": []
+            "video": "/media/s1_q3_video.mp4"
           }
         },
         "solution": {
@@ -79,8 +75,7 @@
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
           "audio": "/audio/s1_a3_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s1_a3_Image.png",
-            "video": ""
+            "image": "/media/s1_a3_image.jpg"
           }
         }
       },
@@ -97,9 +92,7 @@
           "audio": "/audio/s1_q4_audio_ar.mp3",
           "options": ["ضوء وامض", "العاب ناريه", "فقاعات"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s1_a4_video.mp4",
-            "images": []
+            "video": "/media/s1_a4_video.mp4"
           }
         },
         "solution": {
@@ -107,7 +100,6 @@
           "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
           "audio": "/audio/s1_a4_audio_ar.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s1_a4_video.mp4"
           }
         }
@@ -125,15 +117,82 @@
           "audio": "/audio/s1_q5_audio_ar.mp3",
           "options": ["خطأ شنيع", "حقيقي"],
           "visualMedia": {
-            "image": "/media/s1_q5_image.jpg",
-            "video": "",
-            "images": []
+            "image": "/media/s1_q5_image.jpg"
           }
         },
         "solution": {
           "correctOption": 1,
           "text": ".يتوقع الباحثون أنه في غضون بضع سنوات ، ستنتج العيون الإلكترونية رؤية جيدة مثل هذه الصورة. في العقود القادمة ، قد تتجاوز الرؤية الاصطناعية الرؤية الطبيعية في القوة والوضوح",
           "audio": "/audio/s1_a5_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السادس",
+          "audio": "/audio/s1_i6_audio_ar.mp3",
+          "captions": "/captions/s1_i6_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "متى تم زرع أول جهاز للعين الإلكترونية؟",
+          "audio": "/audio/s1_q6_audio_ar.mp3",
+          "options": ["1802", "1958", "2009"],
+          "visualMedia": {
+            "image": "/media/s1_q6_image.jpg"
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": ".تم زرع أول عين الكترونية تجريبية في عام 1958. ولكن ، كما قد تتذكر من السؤال 1 ، لم تكن الغرسات متاحة تجاريًا حتى عام 2011",
+          "audio": "/audio/s1_a6_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السابع",
+          "audio": "/audio/s1_i7_audio_ar.mp3",
+          "captions": "/captions/s1_i7_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "هذا الفيديو يحاكي الرؤية الاصطناعية. ما الحيوانات التي تراها تتحرك هنا؟",
+          "audio": "/audio/s1_q7_audio_ar.mp3",
+          "options": ["الجمال", "النعام", "الفيلة"],
+          "visualMedia": {
+            "video": "/media/s1_q7_video.mp4"
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "",
+          "audio": "/audio/s1_a7_audio_ar.mp3",
+          "visualMedia": {
+            "video": "/media/s1_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثامن",
+          "audio": "/audio/s1_i8_audio_ar.mp3",
+          "captions": "/captions/s1_i8_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "يتوقع بعض الباحثين أن تحقق العيون الإلكترونية رؤية أوضح بكثير مع نفس عدد المستقبلات الضوئية مثل العين البشرية بحلول أي عام؟",
+          "audio": "/audio/s1_q8_audio_ar.mp3",
+          "options": ["2030", "2048", ".لن يحققوا أبدًا رؤية أوضح"],
+          "visualMedia": {
+            "image": "/media/s1_q8_image.jpg"
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "",
+          "audio": "/audio/s1_a8_audio_ar.mp3"
         }
       }
     ],
@@ -151,12 +210,10 @@
           "audio": "/audio/s2_q1_audio_ar.mp3",
           "options": ["1", "2", "3"],
           "visualMedia": {
-            "image": "",
-            "video": "",
             "images": [
-              "/media/s2_q1_image_1.png",
-              "/media/s2_q1_image_2.png",
-              "/media/s2_q1_image_3.png"
+              "/media/s2_q1_image_1.jpg",
+              "/media/s2_q1_image_2.jpg",
+              "/media/s2_q1_image_3.jpg"
             ]
           }
         },
@@ -179,9 +236,7 @@
           "audio": "/audio/s2_q2_audio_ar.mp3",
           "options": ["امرأة وحصان", "رجل وجمل", "شخصان"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q2_video.mp4",
-            "images": []
+            "video": "/media/s2_q2_video.mp4"
           }
         },
         "solution": {
@@ -189,8 +244,7 @@
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
           "audio": "/audio/s2_a2_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s2_a2_image.png",
-            "video": ""
+            "image": "/media/s2_a2_image.jpg"
           }
         }
       },
@@ -207,9 +261,7 @@
           "audio": "/audio/s2_q3_audio_ar.mp3",
           "options": ["طفل", "قطة", "كلب"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q3_video.mp4",
-            "images": []
+            "video": "/media/s2_q3_video.mp4"
           }
         },
         "solution": {
@@ -217,8 +269,7 @@
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
           "audio": "/audio/s2_a3_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s2_a3_image.png",
-            "video": ""
+            "image": "/media/s2_a3_image.jpg"
           }
         }
       },
@@ -239,9 +290,7 @@
             "غيوم في يوم عاصف"
           ],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s2_q4_video.mp4",
-            "images": []
+            "video": "/media/s2_q4_video.mp4"
           }
         },
         "solution": {
@@ -249,7 +298,6 @@
           "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
           "audio": "/audio/s2_a4_audio_ar.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s2_a4_video.mp4"
           }
         }
@@ -271,15 +319,90 @@
             "لا شيء - يمكن لأي شخص الحصول على عيون آلية"
           ],
           "visualMedia": {
-            "image": "/media/s2_q5_image.png",
-            "video": "",
-            "images": []
+            "image": "/media/s2_q5_image.jpg"
           }
         },
         "solution": {
           "correctOption": 1,
           "text": ".يؤدي هذا الاضطراب النادر والشديد إلى العمى من التدهور التدريجي لشبكية العين ، الغشاء الحساس للضوء داخل العين",
           "audio": "/audio/s2_a5_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السادس",
+          "audio": "/audio/s2_i6_audio_ar.mp3",
+          "captions": "/captions/s2_i6_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "يمكن أن تساعد العيون الإلكترونية يومًا ما جميع الأشخاص المصابين بالعمى ، بغض النظر عن السبب. كم عدد الأشخاص المصابين بالعمى في العالم تقريبًا؟",
+          "audio": "/audio/s2_q6_audio_ar.mp3",
+          "options": ["مليون 2", "مليون 40", "مليون 600"],
+          "visualMedia": {
+            "image": "/media/s2_q6_image.jpg"
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "",
+          "audio": "/audio/s2_a6_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السابع",
+          "audio": "/audio/s2_i7_audio_ar.mp3",
+          "captions": "/captions/s2_i7_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذا الفيديو؟",
+          "audio": "/audio/s2_q7_audio_ar.mp3",
+          "options": [
+            "قيادة السيارات",
+            "الناس يمشون",
+            "أطفال يركبون ألواح التزلج"
+          ],
+          "visualMedia": {
+            "video": "/media/s2_q7_video.mp4"
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s2_a7_audio_ar.mp3",
+          "visualMedia": {
+            "video": "/media/s2_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثامن",
+          "audio": "/audio/s2_i8_audio_ar.mp3",
+          "captions": "/captions/s2_i8_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "تمت مقارنة تقنية العين الإلكترونية الناشئة بأي جهاز مبتكر آخر يخفف من حالة كانت تعتبر غير قابلة للعلاج؟",
+          "audio": "/audio/s2_q8_audio_ar.mp3",
+          "options": [
+            "أجهزة تنظيم ضربات القلب",
+            "الهياكل الخارجية",
+            "زراعة قوقعة"
+          ],
+          "visualMedia": {
+            "image": "/media/s2_q8_image.jpg"
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".توفر غرسات القوقعة الصوتية للأشخاص الذين يعانون من ضعف شديد في السمع. أنتجت الغرسات المبكرة صوتًا منخفض الدقة ، لكن الإصدارات الحديثة تقترب كثيرًا من توفير سمع كامل النطاق",
+          "audio": "/audio/s2_a8_audio_ar.mp3"
         }
       }
     ],
@@ -301,9 +424,7 @@
             "قطب كهربائي 15000"
           ],
           "visualMedia": {
-            "image": "/media/s3_q1_image.png",
-            "video": "",
-            "images": []
+            "image": "/media/s3_q1_image.jpg"
           }
         },
         "solution": {
@@ -329,9 +450,7 @@
             "جوز الهند على الشاطئ"
           ],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q2_video.mp4",
-            "images": []
+            "video": "/media/s3_q2_video.mp4"
           }
         },
         "solution": {
@@ -339,8 +458,7 @@
           "text": ".بينما تولد العيون الإلكترونية الحالية صورًا محببة جدًا ، فإن التطورات المستقبلية في التكنولوجيا ستؤدي إلى رؤية صناعية أكثر وضوحًا",
           "audio": "/audio/s3_a2_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s3_a2_image.png",
-            "video": ""
+            "image": "/media/s3_a2_image.jpg"
           }
         }
       },
@@ -357,9 +475,7 @@
           "audio": "/audio/s3_q3_audio_ar.mp3",
           "options": ["مصباح", "إناء من الزهور", "مدخنة مبنى"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q3_video.mp4",
-            "images": []
+            "video": "/media/s3_q3_video.mp4"
           }
         },
         "solution": {
@@ -367,8 +483,7 @@
           "text": ".أبلغ مستخدمو العيون الإلكترونية أن التعرف على الأشياء يصبح أسهل مع الممارسة",
           "audio": "/audio/s3_a3_audio_ar.mp3",
           "visualMedia": {
-            "image": "/media/s3_a3_image.png",
-            "video": ""
+            "image": "/media/s3_a3_image.jpg"
           }
         }
       },
@@ -385,9 +500,7 @@
           "audio": "/audio/s3_q4_audio_ar.mp3",
           "options": ["مركب شراعي", "قطار", "سيارة لعبة على المسار"],
           "visualMedia": {
-            "image": "",
-            "video": "/media/s3_q4_video.mp4",
-            "images": []
+            "video": "/media/s3_q4_video.mp4"
           }
         },
         "solution": {
@@ -395,7 +508,6 @@
           "text": ".تحتوي الصور المتحركة على معلومات أكثر من الصور الثابتة ، ويمكن أن يكون التعرف عليها أسهل",
           "audio": "/audio/s3_a4_audio_ar.mp3",
           "visualMedia": {
-            "image": "",
             "video": "/media/s3_a4_video.mp4"
           }
         }
@@ -413,15 +525,82 @@
           "audio": "/audio/s3_q5_audio_ar.mp3",
           "options": ["خطأ شنيع", "حقيقي"],
           "visualMedia": {
-            "image": "/media/s3_q5_image.png",
-            "video": "",
-            "images": []
+            "image": "/media/s3_q5_image.jpg"
           }
         },
         "solution": {
           "correctOption": 1,
           "text": ".تستجيب الخلايا العصبية والدماغية للإشارات الكهربائية ، ويمكنها أن تتعلم تفسير النبضات على أنها معلومات بصرية",
           "audio": "/audio/s3_a5_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السادس",
+          "audio": "/audio/s3_i6_audio_ar.mp3",
+          "captions": "/captions/s3_i6_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "أول غرسة عين إلكترونية متاحة تجاريًا. كم عدد الأقطاب الكهربائية التي استخدمها هذا الجهاز المبكر؟ Argus II في عام 2011 ، أصبح جهاز",
+          "audio": "/audio/s3_q6_audio_ar.mp3",
+          "options": ["قطب كهربائي 35", "قطب كهربائي 28", "قطب كهربائي 16"],
+          "visualMedia": {
+            "image": "/media/s3_q6_image.jpg"
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": ".مع هذه المدخلات المحدودة ، يمكن للمستخدمين الأوائل للعيون الإلكترونية إدراك الضوء والظل ، ولكن القليل من الأشياء الأخرى",
+          "audio": "/audio/s3_a6_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السابع",
+          "audio": "/audio/s3_i7_audio_ar.mp3",
+          "captions": "/captions/s3_i7_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذا الفيديو؟",
+          "audio": "/audio/s3_q7_audio_ar.mp3",
+          "options": ["نفخ الدخان", "الغيوم في السماء", "علم"],
+          "visualMedia": {
+            "video": "/media/s3_q7_video.mp4"
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s3_a7_audio_ar.mp3",
+          "visualMedia": {
+            "video": "/media/s3_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثامن",
+          "audio": "/audio/s3_i8_audio_ar.mp3",
+          "captions": "/captions/s3_i8_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "تستخدم العيون الآلية الأقطاب الكهربائية لتحفيز الأعصاب في العين أو الدماغ. كم عدد الأقطاب الكهربائية التي تحتاجها لإعادة إنتاج الرؤية ”الطبيعية“؟",
+          "audio": "/audio/s3_q8_audio_ar.mp3",
+          "options": ["60", "500,000", "1,000,000"],
+          "visualMedia": {
+            "image": "/media/s3_q8_image.jpg"
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".تأتي الرؤية عالية الدقة التي نتمتع بها من ملايين مستقبلات الضوء في أعيننا",
+          "audio": "/audio/s3_a8_audio_ar.mp3"
         }
       }
     ]
