@@ -74,7 +74,11 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
 
   // if everyone has answered - go to the next question
   useEffect(() => {
-    if (Object.values(selectedOptionIndex).every((p) => p !== null)) {
+    const hasEveryoneAnswered = Object.values(selectedOptionIndex).every(
+      (p) => p !== null
+    );
+
+    if (hasEveryoneAnswered) {
       revealSolution();
     }
   }, [selectedOptionIndex]);

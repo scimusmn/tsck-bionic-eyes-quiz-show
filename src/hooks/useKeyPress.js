@@ -6,7 +6,6 @@ export default function useKeyPress(targetKey, callback = () => {}) {
   function downHandler({ key }) {
     if (key === targetKey) {
       setKeyPressed(true);
-      callback();
     }
   }
 
@@ -15,6 +14,10 @@ export default function useKeyPress(targetKey, callback = () => {}) {
       setKeyPressed(false);
     }
   };
+
+  useEffect(() => {
+    if (keyPressed) callback();
+  }, [keyPressed]);
 
   useEffect(() => {
     window.addEventListener('keydown', downHandler);

@@ -562,7 +562,7 @@
         "question": {
           "type": "multi-choice-text",
           "text": "What do you see in this video?",
-          "audio": "/audio/s3_q6_audio_en.mp3",
+          "audio": "/audio/s3_q7_audio_en.mp3",
           "options": ["A flag", "Clouds in the sky", "Smoke blowing"],
           "visualMedia": {
             "video": "/media/s3_q7_video.mp4"
@@ -587,7 +587,7 @@
         "question": {
           "type": "multi-choice-text",
           "text": "Bionic eyes use electrodes to stimulate nerves in the eye or brain.  How many electrodes would you need to reproduce “natural” vision? ",
-          "audio": "/audio/s3_q6_audio_en.mp3",
+          "audio": "/audio/s3_q8_audio_en.mp3",
           "options": ["60", "500,000", "1,000,000"],
           "visualMedia": {
             "image": "/media/s3_q8_image.jpg"

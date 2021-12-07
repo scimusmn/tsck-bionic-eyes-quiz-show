@@ -566,7 +566,7 @@
         "question": {
           "type": "multi-choice-text",
           "text": "ماذا ترى في هذا الفيديو؟",
-          "audio": "/audio/s3_q6_audio_ar.mp3",
+          "audio": "/audio/s3_q7_audio_ar.mp3",
           "options": ["نفخ الدخان", "الغيوم في السماء", "علم"],
           "visualMedia": {
             "video": "/media/s3_q7_video.mp4"
@@ -591,7 +591,7 @@
         "question": {
           "type": "multi-choice-text",
           "text": "تستخدم العيون الآلية الأقطاب الكهربائية لتحفيز الأعصاب في العين أو الدماغ. كم عدد الأقطاب الكهربائية التي تحتاجها لإعادة إنتاج الرؤية ”الطبيعية“؟",
-          "audio": "/audio/s3_q6_audio_ar.mp3",
+          "audio": "/audio/s3_q8_audio_ar.mp3",
           "options": ["60", "500,000", "1,000,000"],
           "visualMedia": {
             "image": "/media/s3_q8_image.jpg"
