@@ -157,11 +157,7 @@
         "solution": {
           "correctOption": 2,
           "text": "The first experimental bionic eye was implanted in 1958. But, as you might remember from Question 1, implants weren’t commercially available until 2011.",
-          "audio": "/audio/s1_a6_audio_en.mp3",
-          "visualMedia": {
-            "image": "/media/s1_a6_image.jpg",
-            "video": ""
-          }
+          "audio": "/audio/s1_a6_audio_en.mp3"
         }
       },
 
@@ -217,11 +213,7 @@
         "solution": {
           "correctOption": 3,
           "text": "",
-          "audio": "/audio/s1_a8_audio_en.mp3",
-          "visualMedia": {
-            "image": "/media/s1_a8_image.jpg",
-            "video": ""
-          }
+          "audio": "/audio/s1_a8_audio_en.mp3"
         }
       }
     ],
@@ -293,7 +285,7 @@
           "type": "multi-choice-text",
           "text": "What do you see in this image?",
           "audio": "/audio/s2_q3_audio_en.mp3",
-          "options": ["A child", "A cat", "A dog"],
+          "options": ["A child", "A dog", "A cat"],
           "visualMedia": {
             "image": "",
             "video": "/media/s2_q3_video.mp4",
@@ -322,9 +314,9 @@
           "text": "What do you see here?",
           "audio": "/audio/s2_q4_audio_en.mp3",
           "options": [
-            "Grocery items on a conveyor belt",
-            "Ducks on a river",
-            "Clouds on a windy day"
+            "People playing soccer",
+            "People at the market",
+            "People crossing a street"
           ],
           "visualMedia": {
             "image": "",
@@ -351,12 +343,12 @@
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "Which types of eye disorders must a person have to qualify for bionic eyes?",
-          "audio": "/audio/s2_i5_audio_en.mp3",
+          "text": "Researchers are currently working on bionic eyes to treat which types of eye disorders?",
+          "audio": "/audio/s2_q5_audio_en.mp3",
           "options": [
-            "Retinitis pigmentosa",
-            "General blindness",
-            "Nothing - anyone can get bionic eyes"
+            "Retinitis pigmentosa, age-related macular degeneration, and general blindness",
+            "Near and far sightedness",
+            "Nothing. Anyone can get bionic eyes."
           ],
           "visualMedia": {
             "image": "/media/s2_q5_image.jpg",
@@ -366,8 +358,88 @@
         },
         "solution": {
           "correctOption": 1,
-          "text": "This rare and severe disorder leads to blindness from progressive degeneration of the retina, the light-sensitive membrane inside the eye.",
+          "text": "",
           "audio": "/audio/s2_a5_audio_en.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question six",
+          "audio": "/audio/s2_i6_audio_en.mp3",
+          "captions": "/captions/s2_i6_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "Bionic eyes could one day help all people with blindness, regardless of cause. Approximately how many people in the world live with blindness?",
+          "audio": "/audio/s2_q6_audio_en.mp3",
+          "options": ["600 million", "40 million", "2 million"],
+          "visualMedia": {
+            "image": "/media/s2_q6_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "",
+          "audio": "/audio/s2_a6_audio_en.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question seven",
+          "audio": "/audio/s2_i7_audio_en.mp3",
+          "captions": "/captions/s2_i7_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this video?",
+          "audio": "/audio/s2_q7_audio_en.mp3",
+          "options": [
+            "Cars driving",
+            "People walking",
+            "Kids riding skateboards"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_q7_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s2_a7_audio_en.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question eight",
+          "audio": "/audio/s2_i8_audio_en.mp3",
+          "captions": "/captions/s2_i8_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "Emerging bionic eye technology has been compared to which other innovative device that relieves a condition once deemed untreatable?",
+          "audio": "/audio/s2_q8_audio_en.mp3",
+          "options": ["Pacemakers", "Exoskeletons", "Cochlear implants"],
+          "visualMedia": {
+            "image": "/media/s2_q8_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "Cochlear implants provide sound to people with severe hearing loss. Early implants produced low-fidelity sound, but modern versions come much closer to providing full-range hearing.",
+          "audio": "/audio/s2_a8_audio_en.mp3"
         }
       }
     ],
@@ -381,9 +453,9 @@
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "Bionic eyes work by sending visual signals to electrodes implanted in the eye or the brain. Current devices have how many electrodes:",
+          "text": "Bionic eyes work by sending visual signals to electrodes implanted in the eye or the brain—the more electrodes they have, the clearer the image is. How many electrodes are needed for an implant user to see images this clear?",
           "audio": "/audio/s3_q1_audio_en.mp3",
-          "options": ["60 electrodes", "1,200 electrodes", "15,000 electrodes"],
+          "options": ["96 electrodes", "1,536 electrodes", "10,012 electrodes"],
           "visualMedia": {
             "image": "/media/s3_q1_image.jpg",
             "video": "",
@@ -391,7 +463,7 @@
           }
         },
         "solution": {
-          "correctOption": 1,
+          "correctOption": 2,
           "text": "The correct answer is 1, 60 electrodes.",
           "audio": "/audio/s3_a1_audio_en.mp3"
         }
@@ -408,9 +480,9 @@
           "text": "What do you see in this image?",
           "audio": "/audio/s3_q2_audio_en.mp3",
           "options": [
-            "A couple of oranges",
-            "Two soccer balls",
-            "Coconuts on a beach"
+            "Two people sitting at a table",
+            "Sunlight through the leaves of a tree",
+            "Vegetables"
           ],
           "visualMedia": {
             "image": "",
@@ -506,6 +578,82 @@
           "correctOption": 1,
           "text": "Nerve and brain cells respond to electrical signals, and can learn to interpret impulses as visual information.",
           "audio": "/audio/s3_a5_audio_en.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question six",
+          "audio": "/audio/s3_i6_audio_en.mp3",
+          "captions": "/captions/s3_i6_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "In 2011, the Argus II device became the first commercially available bionic eye implant. How many electrodes did this early device have?",
+          "audio": "/audio/s3_q6_audio_en.mp3",
+          "options": ["16 electrodes", "28 electrodes", "35 electrodes"],
+          "visualMedia": {
+            "image": "/media/s3_q6_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "With such limited input, early users of bionic eyes could perceive light and shadow, but little else.",
+          "audio": "/audio/s3_a6_audio_en.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question seven",
+          "audio": "/audio/s3_i7_audio_en.mp3",
+          "captions": "/captions/s3_i7_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "What do you see in this video?",
+          "audio": "/audio/s3_q6_audio_en.mp3",
+          "options": ["A flag", "Clouds in the sky", "Smoke blowing"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_q7_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s3_a7_audio_en.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "Question eight",
+          "audio": "/audio/s3_i8_audio_en.mp3",
+          "captions": "/captions/s3_i8_audio_en.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "Bionic eyes use electrodes to stimulate nerves in the eye or brain.  How many electrodes would you need to reproduce “natural” vision? ",
+          "audio": "/audio/s3_q6_audio_en.mp3",
+          "options": ["60", "500,000", "1,000,000"],
+          "visualMedia": {
+            "image": "/media/s3_q8_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": "The high-resolution vision we enjoy comes from the millions of light receptors in our eyes.",
+          "audio": "/audio/s3_a8_audio_en.mp3"
         }
       }
     ]

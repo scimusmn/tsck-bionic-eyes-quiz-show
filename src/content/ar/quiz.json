@@ -157,11 +157,7 @@
         "solution": {
           "correctOption": 2,
           "text": ".تم زرع أول عين الكترونية تجريبية في عام 1958. ولكن ، كما قد تتذكر من السؤال 1 ، لم تكن الغرسات متاحة تجاريًا حتى عام 2011",
-          "audio": "/audio/s1_a6_audio_ar.mp3",
-          "visualMedia": {
-            "image": "/media/s1_a6_image.jpg",
-            "video": ""
-          }
+          "audio": "/audio/s1_a6_audio_ar.mp3"
         }
       },
 
@@ -213,11 +209,7 @@
         "solution": {
           "correctOption": 3,
           "text": "",
-          "audio": "/audio/s1_a8_audio_ar.mp3",
-          "visualMedia": {
-            "image": "/media/s1_a8_image.jpg",
-            "video": ""
-          }
+          "audio": "/audio/s1_a8_audio_ar.mp3"
         }
       }
     ],
@@ -365,6 +357,90 @@
           "text": ".يؤدي هذا الاضطراب النادر والشديد إلى العمى من التدهور التدريجي لشبكية العين ، الغشاء الحساس للضوء داخل العين",
           "audio": "/audio/s2_a5_audio_ar.mp3"
         }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السادس",
+          "audio": "/audio/s2_i6_audio_ar.mp3",
+          "captions": "/captions/s2_i6_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "يمكن أن تساعد العيون الإلكترونية يومًا ما جميع الأشخاص المصابين بالعمى ، بغض النظر عن السبب. كم عدد الأشخاص المصابين بالعمى في العالم تقريبًا؟",
+          "audio": "/audio/s2_q6_audio_ar.mp3",
+          "options": ["مليون 2", "مليون 40", "مليون 600"],
+          "visualMedia": {
+            "image": "/media/s2_q6_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 2,
+          "text": "",
+          "audio": "/audio/s2_a6_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السابع",
+          "audio": "/audio/s2_i7_audio_ar.mp3",
+          "captions": "/captions/s2_i7_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذا الفيديو؟",
+          "audio": "/audio/s2_q7_audio_ar.mp3",
+          "options": [
+            "قيادة السيارات",
+            "الناس يمشون",
+            "أطفال يركبون ألواح التزلج"
+          ],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_q7_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s2_a7_audio_ar.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s2_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثامن",
+          "audio": "/audio/s2_i8_audio_ar.mp3",
+          "captions": "/captions/s2_i8_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "تمت مقارنة تقنية العين الإلكترونية الناشئة بأي جهاز مبتكر آخر يخفف من حالة كانت تعتبر غير قابلة للعلاج؟",
+          "audio": "/audio/s2_q8_audio_ar.mp3",
+          "options": [
+            "أجهزة تنظيم ضربات القلب",
+            "الهياكل الخارجية",
+            "زراعة قوقعة"
+          ],
+          "visualMedia": {
+            "image": "/media/s2_q8_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".توفر غرسات القوقعة الصوتية للأشخاص الذين يعانون من ضعف شديد في السمع. أنتجت الغرسات المبكرة صوتًا منخفض الدقة ، لكن الإصدارات الحديثة تقترب كثيرًا من توفير سمع كامل النطاق",
+          "audio": "/audio/s2_a8_audio_ar.mp3"
+        }
       }
     ],
 
@@ -506,6 +582,82 @@
           "correctOption": 1,
           "text": ".تستجيب الخلايا العصبية والدماغية للإشارات الكهربائية ، ويمكنها أن تتعلم تفسير النبضات على أنها معلومات بصرية",
           "audio": "/audio/s3_a5_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السادس",
+          "audio": "/audio/s3_i6_audio_ar.mp3",
+          "captions": "/captions/s3_i6_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "أول غرسة عين إلكترونية متاحة تجاريًا. كم عدد الأقطاب الكهربائية التي استخدمها هذا الجهاز المبكر؟ Argus II في عام 2011 ، أصبح جهاز",
+          "audio": "/audio/s3_q6_audio_ar.mp3",
+          "options": ["قطب كهربائي 35", "قطب كهربائي 28", "قطب كهربائي 16"],
+          "visualMedia": {
+            "image": "/media/s3_q6_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": ".مع هذه المدخلات المحدودة ، يمكن للمستخدمين الأوائل للعيون الإلكترونية إدراك الضوء والظل ، ولكن القليل من الأشياء الأخرى",
+          "audio": "/audio/s3_a6_audio_ar.mp3"
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال السابع",
+          "audio": "/audio/s3_i7_audio_ar.mp3",
+          "captions": "/captions/s3_i7_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "ماذا ترى في هذا الفيديو؟",
+          "audio": "/audio/s3_q6_audio_ar.mp3",
+          "options": ["نفخ الدخان", "الغيوم في السماء", "علم"],
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_q7_video.mp4",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 1,
+          "text": "",
+          "audio": "/audio/s3_a7_audio_ar.mp3",
+          "visualMedia": {
+            "image": "",
+            "video": "/media/s3_a7_video.mp4"
+          }
+        }
+      },
+
+      {
+        "questionIntro": {
+          "title": "السؤال الثامن",
+          "audio": "/audio/s3_i8_audio_ar.mp3",
+          "captions": "/captions/s3_i8_audio_ar.vtt"
+        },
+        "question": {
+          "type": "multi-choice-text",
+          "text": "تستخدم العيون الآلية الأقطاب الكهربائية لتحفيز الأعصاب في العين أو الدماغ. كم عدد الأقطاب الكهربائية التي تحتاجها لإعادة إنتاج الرؤية ”الطبيعية“؟",
+          "audio": "/audio/s3_q6_audio_ar.mp3",
+          "options": ["60", "500,000", "1,000,000"],
+          "visualMedia": {
+            "image": "/media/s3_q8_image.jpg",
+            "video": "",
+            "images": []
+          }
+        },
+        "solution": {
+          "correctOption": 3,
+          "text": ".تأتي الرؤية عالية الدقة التي نتمتع بها من ملايين مستقبلات الضوء في أعيننا",
+          "audio": "/audio/s3_a8_audio_ar.mp3"
         }
       }
     ]
