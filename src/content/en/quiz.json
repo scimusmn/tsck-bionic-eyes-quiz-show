@@ -24,7 +24,7 @@
         },
         "solution": {
           "correctOption": 1,
-          "text": "The earliest bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.Early bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.",
+          "text": "Early bionic eyes provided very limited vision. Users could distinguish light and shadow, but not much else.",
           "audio": "/audio/s1_a1_audio_en.mp3"
         }
       },
@@ -586,7 +586,7 @@
         },
         "question": {
           "type": "multi-choice-text",
-          "text": "Bionic eyes use electrodes to stimulate nerves in the eye or brain.  How many electrodes would you need to reproduce “natural” vision? ",
+          "text": "Bionic eyes use electrodes to stimulate nerves in the eye or brain. How many electrodes would you need to reproduce “natural” vision? ",
           "audio": "/audio/s3_q8_audio_en.mp3",
           "options": ["60", "500,000", "1,000,000"],
           "visualMedia": {
