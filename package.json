@@ -70,7 +70,7 @@
     "drive-bucket-sync": "node scripts/drive-sync.js",
     "update-media-urls": "node scripts/update-urls.js",
     "save-captions": "node scripts/save-captions.js",
-    "save-bucket-captions": "node scripts/save-bucket-captoions.js",
+    "save-bucket-captions": "node scripts/save-bucket-captions.js",
     "save-assets": "node scripts/save-assets.js"
   }
 }
