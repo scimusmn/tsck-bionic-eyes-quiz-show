@@ -18,7 +18,7 @@ const IndexPage = () => {
 
   // Game state
   const [activeScreen, setActiveScreen] = useState('attract'); // change to attract
-  const [quizIndex, setQuizIndex] = useState(0);
+  const [quizIndex, setQuizIndex] = useState(-1);
   const [scores, setScores] = useState({ p1: 0, p2: 0, p3: 0 });
 
   // Jump to next quiz
@@ -28,18 +28,15 @@ const IndexPage = () => {
   }
 
   // Change screen
-  function goTo(screen, restart = false) {
+  function goTo(screen) {
     setActiveScreen(screen);
-    if (restart) {
-      handleNextQuiz();
-    }
   }
 
   // Change language
   const ar = useKeyPress(controls.start.ar);
   const en = useKeyPress(controls.start.en);
   useEffect(() => {
-    if (!(ar || en) || activeScreen === 'introduction') return;
+    if (!(ar || en)) return;
     if (ar) {
       i18n.changeLanguage('ar');
       addLangClass('ar');
@@ -47,7 +44,8 @@ const IndexPage = () => {
       i18n.changeLanguage('en');
       addLangClass('en');
     }
-    goTo('introduction', activeScreen !== 'attract');
+    handleNextQuiz();
+    goTo('introduction');
   }, [ar, en]);
 
   // Handle game state
@@ -67,7 +65,7 @@ const IndexPage = () => {
       {
         {
           attract: <AttractScreen />,
-          introduction: <IntroductionScreen goTo={goTo} />,
+          introduction: <IntroductionScreen goTo={goTo} refresh={ar || en} />,
           quiz: (
             <QuizScreen
               quiz={questionSets[quizIndex]}
