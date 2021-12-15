@@ -5,7 +5,7 @@ import styles from '@styles/screens/introduction.module.scss';
 import { controls } from '../../config.json';
 import { useCaptions, useKeyPress } from '../../hooks';
 
-const IntroductionScreen = ({ goTo }) => {
+const IntroductionScreen = ({ goTo, refresh }) => {
   const { t } = useTranslation();
 
   const videoRef = useRef();
@@ -38,6 +38,13 @@ const IntroductionScreen = ({ goTo }) => {
     setWrappedCaptions('');
   }, [videoSrc]);
 
+  useEffect(() => {
+    if (refresh) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play();
+    }
+  }, [refresh]);
+
   return (
     <div className={styles.introduction}>
       <div className={styles.videoWrapper}>
@@ -64,4 +71,5 @@ export default IntroductionScreen;
 
 IntroductionScreen.propTypes = {
   goTo: PropTypes.func.isRequired,
+  refresh: PropTypes.bool.isRequired,
 };

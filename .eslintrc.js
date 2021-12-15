@@ -18,6 +18,7 @@ module.exports = {
     ],
     'jsx-a11y/media-has-caption': 'off',
     'consistent-return': 'off',
+    'react/jsx-no-bind': 'off',
   },
   settings: {
     'import/resolver': {
