@@ -9,7 +9,14 @@ import Timer from './timer';
 import Options from './options';
 import { useSoundEffect, useKeyPress } from '../../hooks';
 
-const Question = ({ content, goToNext, scores, increaseScore }) => {
+const Question = ({
+  content,
+  goToNext,
+  scores,
+  increaseScore,
+  unanswered,
+  setUnanswered,
+}) => {
   const { question, questionIntro, solution } = content;
 
   // state
@@ -37,18 +44,25 @@ const Question = ({ content, goToNext, scores, increaseScore }) => {
 
     const answersArray = Object.entries(selectedOptionIndex);
     let someCorrect = false;
+    let allNull = true;
     answersArray.forEach(([key, value]) => {
       const isCorrect = value === solution.correctOption - 1;
       if (isCorrect) {
         increaseScore(key);
       }
       someCorrect = someCorrect || isCorrect;
+      allNull = allNull && value === null;
     });
 
     if (someCorrect) {
       playSuccessSound();
     } else {
       playFailSound();
+    }
+
+    // if nobody answered increment the 'unanswered' counter
+    if (allNull) {
+      setUnanswered(unanswered + 1);
     }
   }
 
@@ -151,4 +165,6 @@ Question.propTypes = {
   goToNext: PropTypes.func.isRequired,
   scores: PropTypes.instanceOf(Object).isRequired,
   increaseScore: PropTypes.func.isRequired,
+  unanswered: PropTypes.number.isRequired,
+  setUnanswered: PropTypes.func.isRequired,
 };
