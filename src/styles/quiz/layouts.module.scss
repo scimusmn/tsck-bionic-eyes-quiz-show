@@ -5,8 +5,16 @@
     height: toRem(1200);
   }
 
+  &.single {
+    border-radius: toRem(50);
+    border: toRem(3) solid $white;
+    overflow: hidden;
+    box-shadow: 0 0 70px 0 #0d003a;
+  }
+
   &.active {
     filter: drop-shadow(0 0 toRem(70) #00ffd9);
+    border-color: #22cab1;
   }
 }
 
@@ -26,6 +34,11 @@
     &.correct {
       background: linear-gradient(180deg, #0d003a 0%, #22cab1 108.41%);
       box-shadow: 0 0 toRem(70) #00ffd9;
+      border-color: #22cab1;
+    }
+
+    &.incorrect {
+      opacity: 0.3;
     }
   }
 

@@ -11,7 +11,9 @@ const AttractScreen = () => (
 
     <div className={styles.instructions}>
       <span>{commonAR.attract.instructions}</span>
-      <span>{commonEN.attract.instructions}</span>
+      <span
+        dangerouslySetInnerHTML={{ __html: commonEN.attract.instructions }}
+      />
     </div>
 
     <video controls={false} preload='metadata' autoPlay loop>
