@@ -1,6 +1,7 @@
 .media {
   img,
   video {
+    @extend %cover;
     width: toRem(1900);
     height: toRem(1200);
   }
