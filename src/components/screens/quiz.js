@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/screens/quiz.module.scss';
 import Question from '../question';
@@ -8,6 +8,7 @@ import { unansweredLimit } from '../../config.json';
 
 const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
   const [question, setQuestion] = useState({ index: 0, start: false });
+  const [unanswered, setUnanswered] = useState(0);
 
   function startQuestion() {
     setQuestion((prevState) => ({
@@ -17,6 +18,11 @@ const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
   }
 
   function goToNext() {
+    // if users don't answer 2 consecutive questions, refresh the app
+    if (unanswered === unansweredLimit) {
+      window.location.reload();
+    }
+
     if (quiz.length - 1 === question.index) {
       showResults();
     }
@@ -25,14 +31,6 @@ const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
       start: false,
     }));
   }
-
-  // if users don't answer 2 consecutive questions, refresh the app
-  const [unanswered, setUnanswered] = useState(0);
-  useEffect(() => {
-    if (unanswered === unansweredLimit) {
-      window.location.reload();
-    }
-  }, [unanswered]);
 
   return (
     <div className={styles.quiz}>

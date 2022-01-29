@@ -63,6 +63,8 @@ const Question = ({
     // if nobody answered increment the 'unanswered' counter
     if (allNull) {
       setUnanswered(unanswered + 1);
+    } else {
+      setUnanswered(0);
     }
   }
 
