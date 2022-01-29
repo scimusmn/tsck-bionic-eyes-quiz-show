@@ -31,6 +31,6 @@
     stroke-width: toRem(10);
 
     transform-origin: 50% 50%;
-    transform: rotate(-90deg);
+    transform: scaleX(-1) rotate(-90deg);
   }
 }
