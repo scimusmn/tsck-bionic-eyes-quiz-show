@@ -15,10 +15,6 @@ const AttractScreen = () => (
         dangerouslySetInnerHTML={{ __html: commonEN.attract.instructions }}
       />
     </div>
-
-    <video controls={false} preload='metadata' autoPlay loop>
-      <source src={commonAR.attract.video} type='video/mp4' />
-    </video>
   </section>
 );
 

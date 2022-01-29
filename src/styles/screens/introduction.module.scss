@@ -27,12 +27,19 @@
     @include localize('letter-spacing', 0, 0.18em);
   }
 
+  // p {
+  //   padding: 0 1rem;
+  //   width: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   @include localize('bottom', toRem(81.03), toRem(99.09));
+  //   @include localize('font-size', toRem(45), toRem(35));
+  // }
+
   p {
-    padding: 0 1rem;
-    width: 100%;
     position: absolute;
-    left: 0;
-    @include localize('bottom', toRem(81.03), toRem(99.09));
-    @include localize('font-size', toRem(45), toRem(35));
+    right: toRem(88.65);
+    @include localize('bottom', toRem(80.63), toRem(95.86));
+    @include localize('font-size', toRem(45), toRem(40));
   }
 }
