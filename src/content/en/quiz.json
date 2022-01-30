@@ -144,7 +144,7 @@
         },
         "solution": {
           "correctOption": 2,
-          "text": "The first experimental bionic eye was implanted in 1958. But, as you might remember from Question 1, implants weren’t commercially available until 2011.",
+          "text": "The first experimental bionic eye was implanted in 1958. But, as you might remember from Question 1, implants weren’t commercially available until&nbsp;2011.",
           "audio": "/audio/s1_a6_audio_en.mp3"
         }
       },
