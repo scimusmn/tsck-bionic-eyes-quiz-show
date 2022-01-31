@@ -20,7 +20,9 @@ export const LayoutOne = ({ media, solutionMedia, showSolution = false }) => {
 
   return (
     <div
-      className={`${styles.media} ${showSolution ? styles.active : undefined}`}
+      className={`${styles.media} ${styles.single} ${
+        showSolution ? styles.active : undefined
+      }`}
     >
       {visibleMedia.video ? (
         <video
@@ -43,8 +45,12 @@ export const LayoutOne = ({ media, solutionMedia, showSolution = false }) => {
 };
 
 export const LayoutTwo = ({ media, correctOption, showSolution = false }) => {
-  const correctStyles = (index) =>
-    showSolution && correctOption - 1 === index ? styles.correct : undefined;
+  const correctStyles = (index) => {
+    if (showSolution) {
+      return correctOption - 1 === index ? styles.correct : styles.incorrect;
+    }
+    return undefined;
+  };
 
   return (
     <div className={`${styles.media} ${styles.multi} `}>

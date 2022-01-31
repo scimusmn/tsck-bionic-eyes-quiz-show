@@ -40,7 +40,7 @@ const Timer = ({ stop, callback }) => {
           strokeDashoffset='251'
           stroke-mitterlimit='0'
           style={{
-            strokeDashoffset: norm(timeLeft, 0, timePerQuestion),
+            strokeDashoffset: norm(timeLeft, timePerQuestion, 0),
           }}
         />
       </svg>

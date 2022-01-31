@@ -1,7 +1,7 @@
 {
   "attract": {
     "title": "Bionic Eye Quiz",
-    "instructions": "Press Start to begin",
+    "instructions": "Press <strong>Start</strong> to begin",
     "video": "/media/attract_video.mp4"
   },
 

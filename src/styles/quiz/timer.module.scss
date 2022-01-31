@@ -29,5 +29,8 @@
     fill: transparent;
     stroke: $white;
     stroke-width: toRem(10);
+
+    transform-origin: 50% 50%;
+    transform: scaleX(-1) rotate(-90deg);
   }
 }

@@ -12,12 +12,20 @@
   video {
     @extend %cover;
     filter: drop-shadow(0 0 toRem(70) rgba(0, 255, 217, 0.54));
+    border-radius: toRem(50);
+    border: toRem(3) solid #22cab1;
+    overflow: hidden;
   }
 }
 
 .bottom-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   margin-top: toRem(64);
   padding-top: toRem(64);
+  padding-bottom: toRem(226.3);
   border-top: toRem(4) solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -28,12 +36,13 @@
     #22cab1 56.25%,
     #0d003a 100%
   );
+  background: linear-gradient(180deg, #0d003a 0%, #242466 100%);
 }
 
 .title {
   @include localize('font-size', toRem(80), toRem(75));
   @include localize('letter-spacing', 0, 0.18em);
-  font-weight: 700;
+  @include localize('font-weight', 700, 700);
 }
 
 .grid {

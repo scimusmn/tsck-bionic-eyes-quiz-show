@@ -10,7 +10,8 @@ const Solution = ({ content, goToNext }) => {
 
   return (
     <div className={styles.solution}>
-      <p>{content.text}</p>
+      {/* <p>{content.text}</p> */}
+      <p dangerouslySetInnerHTML={{ __html: content.text }} />
       <video controls={false} autoPlay preload='metadata' onEnded={goToNext}>
         <source src={content.audio} type='video/mp4' />
       </video>

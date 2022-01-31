@@ -14,10 +14,16 @@
       margin-top: 0;
     }
     padding: toRem(25) toRem(57) toRem(25) toRem(57);
+
     &.correct {
       background: linear-gradient(180deg, #0d003a 0%, #22cab1 100%);
       box-shadow: 0 toRem(10) toRem(20) toRem(8) rgba(3, 0, 15, 0.3);
       border-radius: toRem(29);
+      border: toRem(3) solid #22cab1;
+    }
+
+    &.incorrect {
+      opacity: 0.3;
     }
   }
 
