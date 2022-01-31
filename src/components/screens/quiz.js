@@ -4,9 +4,11 @@ import styles from '@styles/screens/quiz.module.scss';
 import Question from '../question';
 import Intro from '../question/intro';
 import Progress from '../question/progress';
+import { unansweredLimit } from '../../config.json';
 
 const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
   const [question, setQuestion] = useState({ index: 0, start: false });
+  const [unanswered, setUnanswered] = useState(0);
 
   function startQuestion() {
     setQuestion((prevState) => ({
@@ -16,6 +18,11 @@ const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
   }
 
   function goToNext() {
+    // if users don't answer 2 consecutive questions, refresh the app
+    if (unanswered === unansweredLimit) {
+      window.location.reload();
+    }
+
     if (quiz.length - 1 === question.index) {
       showResults();
     }
@@ -33,6 +40,8 @@ const QuizScreen = ({ quiz, increaseScore, scores, showResults }) => {
           goToNext={goToNext}
           scores={scores}
           increaseScore={increaseScore}
+          unanswered={unanswered}
+          setUnanswered={setUnanswered}
         />
       ) : (
         <Intro

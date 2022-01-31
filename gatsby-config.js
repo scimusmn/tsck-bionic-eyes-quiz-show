@@ -39,13 +39,5 @@ module.exports = {
         display: 'minimal-ui',
       },
     },
-
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: [`montserrat:500,700`, `open sans:400`, `tajawal:500,700`],
-        display: 'swap',
-      },
-    },
   ],
 };

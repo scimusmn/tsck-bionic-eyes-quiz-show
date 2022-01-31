@@ -92,7 +92,7 @@
           "audio": "/audio/s1_q4_audio_ar.mp3",
           "options": ["ضوء وامض", "العاب ناريه", "فقاعات"],
           "visualMedia": {
-            "video": "/media/s1_a4_video.mp4"
+            "video": "/media/s1_q4_video.mp4"
           }
         },
         "solution": {

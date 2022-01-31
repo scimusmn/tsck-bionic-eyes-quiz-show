@@ -1,4 +1,5 @@
 @import './reset';
+@import './fonts';
 
 html {
   font-size: calc(100vw / 3840 * #{$base-font-size});

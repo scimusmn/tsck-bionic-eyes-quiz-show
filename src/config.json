@@ -2,6 +2,8 @@
   "timePerQuestion": 10,
   "pointPerQuestion": 1,
 
+  "unansweredLimit": 2,
+
   "soundEffect": {
     "success": "/sound-effects/success.wav",
     "fail": "/sound-effects/fail.wav",

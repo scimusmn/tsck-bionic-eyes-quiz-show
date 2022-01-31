@@ -66,7 +66,7 @@ const IndexPage = () => {
         {
           attract: <AttractScreen />,
           introduction: <IntroductionScreen goTo={goTo} refresh={ar || en} />,
-          quiz: (
+          quiz: quizIndex > -1 && (
             <QuizScreen
               quiz={questionSets[quizIndex]}
               scores={scores}

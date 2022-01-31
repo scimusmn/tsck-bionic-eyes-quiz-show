@@ -8,7 +8,7 @@
   "introduction": {
     "title": "مرحبًا بك في اختبار عين",
     "video": "/media/quizintro_video_ar.mp4",
-    "captions": ""
+    "captions": "/captions/s1_quizintro_video_ar.vtt"
   },
 
   "quizCommon": {
@@ -19,6 +19,6 @@
   "score": {
     "title": "النتيجة النهائية",
     "video": "/media/finalscore_video_ar.mp4",
-    "captions": ""
+    "captions": "/captions/s1_finalscore_video_ar.vtt"
   }
 }
