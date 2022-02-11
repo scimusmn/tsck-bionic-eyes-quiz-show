@@ -5,7 +5,7 @@ Quiz show app to learn more about Bionic eyes. 3 players can use this app at a t
 You can find all the content files in the `/src/content` directory. There are two types of content files we'll be using i.e. `common.json` and `quiz.json`. We will have two separate (quiz.json and common.json) files to handle the arabic and english content.
 
 ### 1. Common
-```json
+```js
 {
   "attract": {
     "title": "Bionic Eye Quiz",
@@ -33,7 +33,7 @@ You can find all the content files in the `/src/content` directory. There are tw
 ```
 
 ### 2. Quiz
-```json
+```js
 "questionSets": [
   [
     {
@@ -72,7 +72,7 @@ Note: There can be three types of questions i.e. `multi-choice-text`, `multi-cho
 
 ## Config
 You can set the global config of the application in `/src/config.json`.
-```json
+```js
 {
   // time to answer a question (default: 10sec)
   "timePerQuestion": 10,
@@ -111,16 +111,16 @@ According to the design the width x height of the images used in `multi-choice-m
 The images can be compressed using a service like TinyPNG plugin (https://tinypng.com/). They can also be converted to `jpg` to reduce their size even further.
 
 ## Prevent a single hanging word
-It was requested that there should be no one-word lines in the `solution` text. Look at the image below if the to understand the issue:
+It was requested that there should be no one-word lines in the `solution` text. Look at the image below to understand the issue:
 
-[image before]
+<img width="238" alt="Screenshot 2022-02-11 at 11 15 05 PM" src="https://user-images.githubusercontent.com/26784406/153648309-514a5cff-73c8-46b0-8095-442c8a50a6bc.png">
 
 To solve this, you need to add `&nbsp;` between the second-last and the last word.
 
-[image apply]
+<img width="854" alt="Screenshot 2022-02-11 at 11 20 42 PM" src="https://user-images.githubusercontent.com/26784406/153648333-e21f69fc-b668-45bd-b198-0f8d72e7712c.png">
 
 Here's the same text after making this change:
 
-[image after]
+<img width="227" alt="Screenshot 2022-02-11 at 11 21 39 PM" src="https://user-images.githubusercontent.com/26784406/153648354-f493ce5f-28ba-47dd-896f-43e81eb4bf7a.png">
 
 
