@@ -19,6 +19,12 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  background: radial-gradient(
+    100% 316.05% at 100% 3.27%,
+    #22cab1 0%,
+    #0d003a 100%
+  );
 }
 
 p {
