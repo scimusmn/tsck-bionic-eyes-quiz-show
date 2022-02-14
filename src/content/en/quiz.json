@@ -70,9 +70,10 @@
             "video": "/media/s1_q3_video.mp4"
           }
         },
+
         "solution": {
           "correctOption": 3,
-          "text": "Users of bionic eyes report that identifying objects gets easier with practice.",
+          "text": "Users of bionic eyes report that identifying objects gets easier with&nbsp;practice.",
           "audio": "/audio/s1_a3_audio_en.mp3",
           "visualMedia": {
             "image": "/media/s1_a3_image.jpg"
