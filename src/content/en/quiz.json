@@ -46,7 +46,7 @@
         },
         "solution": {
           "correctOption": 2,
-          "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
+          "text": "While current bionic eyes generate unclear images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s1_a2_audio_en.mp3",
           "visualMedia": {
             "image": "/media/s1_a2_image.jpg",
@@ -246,7 +246,7 @@
         },
         "solution": {
           "correctOption": 2,
-          "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
+          "text": "While current bionic eyes generate unclear images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s2_a2_audio_en.mp3",
           "visualMedia": {
             "image": "/media/s2_a2_image.jpg"
@@ -290,7 +290,7 @@
           "text": "What do you see here?",
           "audio": "/audio/s2_q4_audio_en.mp3",
           "options": [
-            "People playing soccer",
+            "People playing football",
             "People at the market",
             "People crossing a street"
           ],
@@ -452,7 +452,7 @@
         },
         "solution": {
           "correctOption": 3,
-          "text": "While current bionic eyes generate very grainy images, future advances in technology will lead to much clearer artificial vision.",
+          "text": "While current bionic eyes generate unclear images, future advances in technology will lead to much clearer artificial vision.",
           "audio": "/audio/s3_a2_audio_en.mp3",
           "visualMedia": {
             "image": "/media/s3_a2_image.jpg"
