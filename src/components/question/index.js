@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/question.module.scss';
+import { useTranslation } from 'react-i18next';
 import { controls } from '../../config.json';
 import { LayoutOne, LayoutTwo } from './layouts';
 import Solution from './solution';
@@ -18,6 +19,8 @@ const Question = ({
   setUnanswered,
 }) => {
   const { question, questionIntro, solution } = content;
+
+  const { i18n } = useTranslation();
 
   // state
   const [selectedOptionIndex, setSelectedOptionIndex] = useState({
@@ -102,8 +105,8 @@ const Question = ({
   return (
     <div className={styles.wrapper}>
       <div className={styles.question}>
-        <h2>{questionIntro.title}</h2>
-        <p>{question.text}</p>
+        <h2 dir={i18n.dir()}>{questionIntro.title}</h2>
+        <p dir={i18n.dir()}>{question.text}</p>
 
         <div className={styles.videoWrapper}>
           {!showSolution && (
