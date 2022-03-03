@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '@styles/quiz/options.module.scss';
+import { useTranslation } from 'react-i18next';
 
 const Options = ({ question, solution, showSolution }) => {
+  const { i18n } = useTranslation();
   const correctStyles = (index) => {
     if (showSolution) {
       return solution.correctOption - 1 === index
@@ -17,7 +19,7 @@ const Options = ({ question, solution, showSolution }) => {
       {question.type !== 'multi-choice-media' &&
         question.options.map((option, index) => (
           <div key={option} className={correctStyles(index)}>
-            <button type='button'>{option}</button>
+            <button dir={i18n.dir()} type='button'>{option}</button>
             <span className={styles.index}>{index + 1}</span>
           </div>
         ))}
