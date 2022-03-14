@@ -36,7 +36,7 @@ const ScoreScreen = ({ goTo, scores }) => {
           controls={false}
           preload='metadata'
           autoPlay
-          // onEnded={() => goTo('attract')}
+          onEnded={() => goTo('attract')}
         >
           <source src={t('score.video')} type='video/mp4' />
           <track kind='subtitles' src={t('score.captions')} default />
