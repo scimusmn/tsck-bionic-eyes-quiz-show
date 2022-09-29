@@ -1,24 +1,24 @@
 {
   "attract": {
-    "title": "مسابقة عين الكترونية",
-    "instructions": "اضغط على ابدأ للبدء",
+    "title": "اختبار العين الآلية الحيوية",
+    "instructions": "للبدء، اضغط على ابدأ",
     "video": "/media/attract_video.mp4"
   },
 
   "introduction": {
-    "title": "مرحبًا بك في اختبار عين",
+    "title": "مرحبًا بك في اختبار العين الآلية الحيوية",
     "video": "/media/quizintro_video_ar.mp4",
-    "captions": "/captions/s1_quizintro_video_ar.vtt"
+    "captions": "/captions/quizintro_video_ar.vtt"
   },
 
   "quizCommon": {
     "players": ["اللاعب 1", "اللاعب 2", "اللاعب 3"],
-    "scoreTitle": "نتيجة"
+    "scoreTitle": "النتيجة"
   },
 
   "score": {
     "title": "النتيجة النهائية",
     "video": "/media/finalscore_video_ar.mp4",
-    "captions": "/captions/s1_finalscore_video_ar.vtt"
+    "captions": "/captions/finalscore_video_ar.vtt"
   }
 }

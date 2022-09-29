@@ -8,7 +8,7 @@
   "introduction": {
     "title": "Welcome to the Bionic Eye Quiz",
     "video": "/media/quizintro_video_en.mp4",
-    "captions": "/captions/s1_quizintro_video_en.vtt"
+    "captions": "/captions/quizintro_video_en.vtt"
   },
 
   "quizCommon": {
