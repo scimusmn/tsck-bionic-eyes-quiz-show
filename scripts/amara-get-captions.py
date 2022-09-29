@@ -27,4 +27,6 @@ for i in videos:
       name = os.path.splitext(name)[0]
       # TODO: Abstract caption asset path to env var
       with open('./static/captions/'+ name + '.vtt', 'w') as data:
-        data.write(str(sub['subtitles']))
+        # data.write(str(sub['subtitles']))
+        data.write(sub['subtitles'].encode('utf-8'))
+        
