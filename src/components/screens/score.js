@@ -6,7 +6,7 @@ import { controls } from '../../config.json';
 import { useCaptions, useSoundEffect, useKeyPress } from '../../hooks';
 
 const ScoreScreen = ({ goTo, scores }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // load captions
   const videoRef = useRef();
@@ -73,7 +73,7 @@ const ScoreScreen = ({ goTo, scores }) => {
           </div>
         </div>
       </div>
-      <p className={styles.captions}>{captions}</p>
+      <p className={styles.captions} dir={i18n.dir()}>{captions}</p>
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import styles from '@styles/quiz/questionIntro.module.scss';
 import { controls } from '../../config.json';
 import { useCaptions, useKeyPress } from '../../hooks';
@@ -7,6 +8,8 @@ import { useCaptions, useKeyPress } from '../../hooks';
 const Intro = ({ content, startQuestion }) => {
   // skip media
   useKeyPress(controls.skip, () => startQuestion());
+
+  const { i18n } = useTranslation();
 
   // Load captions
   const videoRef = useRef();
@@ -29,7 +32,7 @@ const Intro = ({ content, startQuestion }) => {
         </video>
       </div>
 
-      <p className={styles.captions}>{captions}</p>
+      <p className={styles.captions} dir={i18n.dir()}>{captions}</p>
     </div>
   );
 };

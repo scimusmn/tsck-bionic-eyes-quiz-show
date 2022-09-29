@@ -6,7 +6,7 @@ import { controls } from '../../config.json';
 import { useCaptions, useKeyPress } from '../../hooks';
 
 const IntroductionScreen = ({ goTo, refresh }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const videoRef = useRef();
   const sourceRef = useRef();
@@ -61,7 +61,7 @@ const IntroductionScreen = ({ goTo, refresh }) => {
       </div>
       <div className={styles.titleWrapper}>
         <h1>{t('introduction.title')}</h1>
-        <p>{wrappedCaptions}</p>
+        <p dir={i18n.dir()}>{wrappedCaptions}</p>
       </div>
     </div>
   );
