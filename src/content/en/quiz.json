@@ -239,7 +239,7 @@
           "type": "multi-choice-text",
           "text": "What do you see in this image?",
           "audio": "/audio/s2_q2_audio_en.mp3",
-          "options": ["Two people", "A man and a camel", "A woman and a horse"],
+          "options": ["A bird", "A plane", "A kite"],
           "visualMedia": {
             "video": "/media/s2_q2_video.mp4"
           }
@@ -527,7 +527,7 @@
         },
         "solution": {
           "correctOption": 1,
-          "text": "Nerve and brain cells respond to electrical signals, and can learn to interpret impulses as visual information.",
+          "text": "Nerve and brain cells respond to electrical signals, and can learn to interpret impulses from the device as visual information.",
           "audio": "/audio/s3_a5_audio_en.mp3"
         }
       },
