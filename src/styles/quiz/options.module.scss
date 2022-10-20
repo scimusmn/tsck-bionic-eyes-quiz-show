@@ -5,7 +5,7 @@
   align-items: flex-end;
 
   div {
-    margin-top: toRem(90);
+    margin-top: toRem(90);   
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -33,7 +33,7 @@
     color: $white;
     @include localize('font-size', toRem(55), toRem(50));
     @include localize('text-align', right, right);
-    line-height: 1.2;
+    line-height: 1.5; 
     font-weight: 700;
   }
 }
