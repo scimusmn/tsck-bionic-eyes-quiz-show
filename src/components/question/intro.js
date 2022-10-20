@@ -31,8 +31,7 @@ const Intro = ({ content, startQuestion }) => {
           <track kind='subtitles' src={content.captions} default />
         </video>
       </div>
-
-      <p className={styles.captions} dir={i18n.dir()}>{captions}</p>
+      <p className={styles.captions} dir={i18n.dir()} dangerouslySetInnerHTML={{ __html: captions }} />
     </div>
   );
 };

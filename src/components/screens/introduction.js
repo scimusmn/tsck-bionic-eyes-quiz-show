@@ -61,7 +61,7 @@ const IntroductionScreen = ({ goTo, refresh }) => {
       </div>
       <div className={styles.titleWrapper}>
         <h1>{t('introduction.title')}</h1>
-        <p dir={i18n.dir()}>{wrappedCaptions}</p>
+        <p dir={i18n.dir()} dangerouslySetInnerHTML={{ __html: wrappedCaptions }} />
       </div>
     </div>
   );

@@ -73,7 +73,8 @@ const ScoreScreen = ({ goTo, scores }) => {
           </div>
         </div>
       </div>
-      <p className={styles.captions} dir={i18n.dir()}>{captions}</p>
+      <p className={styles.captions} dir={i18n.dir()} dangerouslySetInnerHTML={{ __html: captions }} />
+      
     </section>
   );
 };
