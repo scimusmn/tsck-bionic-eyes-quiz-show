@@ -7,7 +7,12 @@ export default function useCaptions(video) {
     const textTrack = video.current.textTracks[0];
     function onCueChange() {
       textTrack.mode = 'hidden';
-      if (textTrack.activeCues.length)
+      // inject new font in specific cases
+      if (textTrack.activeCues.length && textTrack.activeCues[0].text === "أحسنت عملًا،"
+      || textTrack.activeCues[0].text === "ولكن السؤال التالي قد يكون أصعب قليلًا."
+      || textTrack.activeCues[0].text === "هيا نجرب سؤالًا آخرًا مثل هذا.")
+        setCaptions(`<span style="font-family: segoeUI">${textTrack.activeCues[0].text}</span>`);
+      else if (textTrack.activeCues.length)
         setCaptions(textTrack.activeCues[0].text);
     }
 
